@@ -507,8 +507,13 @@ def scrape_model(slug: str, display: str, logger: logging.Logger,
     return offers
 
 
-def run(db_path: Path, models=MODELS, quiet=False, use_fallback=True) -> int:
+def run(db_path: Path, models=None, quiet=False, use_fallback=True) -> int:
     """Scrape every model and persist. Returns process exit code (0 = all ok)."""
+    # FIXED: was `models=MODELS` — a default bound at import time, so the
+    # dashboard's in-process "Scrape now" button kept using a stale model list
+    # after the hub rewrote config.json.  Re-read the config on every run.
+    if models is None:
+        models = _load_models()
     logger = get_logger(quiet)
     now = datetime.now()
     scrape_date = now.strftime("%Y-%m-%d")
@@ -563,13 +568,16 @@ def parse_args(argv=None):
 
 def main(argv=None) -> int:
     args = parse_args(argv)
-    models = MODELS
+    # FIXED: filter against a freshly-loaded config rather than the
+    # import-time MODELS constant (same stale-config issue as run()).
+    all_models = _load_models()
+    models = None
     if args.models:
         wanted = {m.upper() for m in args.models}
-        models = [(s, d) for (s, d) in MODELS if d.upper() in wanted]
+        models = [(s, d) for (s, d) in all_models if d.upper() in wanted]
         if not models:
             print(f"No known models match {args.models}; choices: "
-                  f"{[d for _, d in MODELS]}", file=sys.stderr)
+                  f"{[d for _, d in all_models]}", file=sys.stderr)
             return 2
     return run(args.db, models=models, quiet=args.quiet,
                use_fallback=not args.no_fallback)

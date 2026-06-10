@@ -27,15 +27,20 @@ SCRAPER_LOG="$LOG_DIR/scraper.log"
 CRON_MARKER="# gpus-io-tracker"
 
 SCRAPE_TIME="${SCRAPE_TIME:-}"
-DO_CRON=1
+# FIXED: local cron is now OPT-IN (--cron or --time), not opt-out.  The daily
+# scrape runs in the cloud (GitHub Actions) and commits to the same DB file;
+# re-running ./setup.sh with the old default re-registered a local cron job,
+# creating dual writes and git-pull conflicts in the launcher.
+DO_CRON=0
 DO_BROWSER=1
 DO_INITIAL_SCRAPE=1
 
 # ---- args -----------------------------------------------------------------
 while [ $# -gt 0 ]; do
   case "$1" in
-    --time)        SCRAPE_TIME="${2:-}"; shift 2 ;;
-    --time=*)      SCRAPE_TIME="${1#*=}"; shift ;;
+    --cron)        DO_CRON=1; shift ;;
+    --time)        SCRAPE_TIME="${2:-}"; DO_CRON=1; shift 2 ;;
+    --time=*)      SCRAPE_TIME="${1#*=}"; DO_CRON=1; shift ;;
     --no-cron)     DO_CRON=0; shift ;;
     --no-browser)  DO_BROWSER=0; shift ;;
     --no-scrape)   DO_INITIAL_SCRAPE=0; shift ;;
@@ -140,7 +145,7 @@ if [ "$DO_CRON" -eq 1 ]; then
     warn "Access' to /usr/sbin/cron in System Settings > Privacy & Security."
   fi
 else
-  warn "Skipping cron setup (--no-cron)."
+  warn "No local cron registered (scheduling runs in the cloud; use --cron to add one)."
 fi
 
 # ---- done ------------------------------------------------------------------

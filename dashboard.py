@@ -60,6 +60,11 @@ def load_df() -> pd.DataFrame:
     conn = sqlite3.connect(str(DB_PATH))
     try:
         df = pd.read_sql_query("SELECT * FROM prices", conn)
+    except Exception:
+        # FIXED: the file-exists check above isn't enough — a DB file without
+        # the prices table yet (interrupted/concurrent first scrape) made
+        # read_sql_query raise and 500 every page load.  Treat as "no data".
+        return pd.DataFrame()
     finally:
         conn.close()
     if df.empty:
@@ -244,7 +249,10 @@ PAGE = """
         {% for m in all_models %}
           <label class="chk"><input type="checkbox" name="models" value="{{ m }}"
             {% if m in sel_models %}checked{% endif %}>
-            <span class="pill" style="background:{{ colors[m] }}"></span>{{ m }}</label>
+            {# FIXED: was colors[m] — direct indexing raised UndefinedError (HTTP
+               500) for any model added via the hub's Items-config that isn't in
+               MODEL_COLORS; .get with a fallback color keeps the page rendering. #}
+            <span class="pill" style="background:{{ colors.get(m, '#6b7280') }}"></span>{{ m }}</label>
         {% endfor %}
       </fieldset>
       <fieldset>
