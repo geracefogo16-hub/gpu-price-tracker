@@ -46,22 +46,27 @@ def _commitment(v: str) -> int | None:
 
 # ------------------------------------------------------------- GPU series
 
-def build_gpu_page_data(local_id: str, api_slug: str, watch: Watchlist,
+def build_gpu_page_data(local_id: str, slug_set: set[str], watch: Watchlist,
                         presence: list[dict], prices: list[dict],
                         names: dict[str, str]) -> dict:
-    pres = [p for p in presence if p["kind"] == "gpu" and p["item_slug"] == api_slug]
+    """slug_set = canonical slug + any configured aliases: rows under a
+    renamed-away slug merge into the same continuous series."""
+    pres = [p for p in presence if p["kind"] == "gpu" and p["item_slug"] in slug_set]
     pull_dates = sorted({p["pull_date"] for p in presence})  # global run dates
 
     price_by_key = {
         (r["effective_date"], r["provider_slug"], r["gpu_slug"], r["gpu_count"],
          r["pricing_type"], r["commitment_months"]): r
-        for r in prices if r["gpu_slug"] == api_slug
+        for r in prices if r["gpu_slug"] in slug_set
     }
 
     series_presence: dict[tuple, dict[str, dict]] = defaultdict(dict)
     for p in pres:
         skey = (p["provider_slug"], p["gpu_count"], p["pricing_type"], p["commitment_months"])
-        series_presence[skey][p["pull_date"]] = p
+        cur = series_presence[skey].get(p["pull_date"])
+        # Same series under old + new slug on one day: keep the fresher quote.
+        if cur is None or p["last_updated"] > cur["last_updated"]:
+            series_presence[skey][p["pull_date"]] = p
 
     classes: dict[str, list[dict]] = defaultdict(list)
     for (provider, count, ptype, commitment), by_date in sorted(series_presence.items()):
@@ -73,7 +78,7 @@ def build_gpu_page_data(local_id: str, api_slug: str, watch: Watchlist,
                 lus.append(None)
                 continue
             eff = p["last_updated"][:10]
-            row = price_by_key.get((eff, provider, api_slug, count, ptype, commitment))
+            row = price_by_key.get((eff, provider, p["item_slug"], count, ptype, commitment))
             if row is None:
                 ys.append(None)
                 lus.append(None)
@@ -97,24 +102,28 @@ def build_gpu_page_data(local_id: str, api_slug: str, watch: Watchlist,
         })
     for lst in classes.values():
         lst.sort(key=lambda s: (not s["featured"], s["label"]))
-    return {"id": local_id, "slug": api_slug, "pull_dates": pull_dates,
+    return {"id": local_id, "slugs": sorted(slug_set), "pull_dates": pull_dates,
             "classes": classes}
 
 
 # ------------------------------------------------------------- LLM series
 
-def build_llm_page_data(model_slug: str, presence: list[dict], prices: list[dict],
-                        bench: list[dict], names: dict[str, str]) -> dict:
-    pres = [p for p in presence if p["kind"] == "llm" and p["item_slug"] == model_slug]
+def build_llm_page_data(model_slug: str, slug_set: set[str], presence: list[dict],
+                        prices: list[dict], bench: list[dict],
+                        names: dict[str, str]) -> dict:
+    pres = [p for p in presence if p["kind"] == "llm" and p["item_slug"] in slug_set]
     pull_dates = sorted({p["pull_date"] for p in presence})
 
     price_by_key = {
         (r["effective_date"], r["provider_slug"], r["model_slug"], r["pricing_type"]): r
-        for r in prices if r["model_slug"] == model_slug
+        for r in prices if r["model_slug"] in slug_set
     }
     series_presence: dict[tuple, dict[str, dict]] = defaultdict(dict)
     for p in pres:
-        series_presence[(p["provider_slug"], p["pricing_type"])][p["pull_date"]] = p
+        skey = (p["provider_slug"], p["pricing_type"])
+        cur = series_presence[skey].get(p["pull_date"])
+        if cur is None or p["last_updated"] > cur["last_updated"]:
+            series_presence[skey][p["pull_date"]] = p
 
     series = []
     for (provider, ptype), by_date in sorted(series_presence.items()):
@@ -125,7 +134,7 @@ def build_llm_page_data(model_slug: str, presence: list[dict], prices: list[dict
             p = by_date.get(d)
             row = None
             if p is not None:
-                row = price_by_key.get((p["last_updated"][:10], provider, model_slug, ptype))
+                row = price_by_key.get((p["last_updated"][:10], provider, p["item_slug"], ptype))
             for field, col in (("input", "price_per_1m_input_usd"),
                                ("output", "price_per_1m_output_usd"),
                                ("cached", "price_per_1m_cached_input_usd")):
@@ -134,7 +143,7 @@ def build_llm_page_data(model_slug: str, presence: list[dict], prices: list[dict
             rec["lu"].append(row["last_updated"] if row else None)
         series.append(rec)
 
-    bench_rows = [b for b in bench if b["model_slug"] == model_slug]
+    bench_rows = [b for b in bench if b["model_slug"] in slug_set]
     bench_dates = sorted({b["scrape_date"] for b in bench_rows})
     bench_by_provider: dict[str, dict[str, dict]] = defaultdict(dict)
     for b in bench_rows:
@@ -362,6 +371,10 @@ def write_json(name: str, payload: dict) -> None:
 def main() -> int:
     watch = Watchlist.load()
     resolutions = load_resolutions()
+    # Adopt the collector's persisted resolutions (or fall back to the local
+    # id) so slug sets include the canonical slug plus configured aliases.
+    watch.gpu_slugs = {lid: resolutions.get("gpus", {}).get(lid, lid) for lid in watch.gpus}
+    watch.llm_slugs = {lid: resolutions.get("llms", {}).get(lid, lid) for lid in watch.llm_models}
     names = registry_names()
     presence = store.read_csv(paths.PRESENCE_CSV)
     gpu_prices = store.read_csv(paths.GPU_PRICES_CSV)
@@ -375,8 +388,9 @@ def main() -> int:
 
     gpu_links, llm_links = [], []
     for local_id in watch.gpus:
-        api_slug = resolutions.get("gpus", {}).get(local_id, local_id)
-        data = build_gpu_page_data(local_id, api_slug, watch, presence, gpu_prices, names)
+        api_slug = watch.gpu_slugs[local_id]
+        data = build_gpu_page_data(local_id, watch.gpu_slug_set(local_id), watch,
+                                   presence, gpu_prices, names)
         write_json(f"gpu_{local_id}.json", data)
         title = f"GPU: {local_id}" if api_slug == local_id else f"GPU: {local_id} ({api_slug})"
         page = f"gpu_{local_id}.html"
@@ -386,8 +400,9 @@ def main() -> int:
         gpu_links.append(f'<li><a href="{page}">{html.escape(local_id)}</a></li>')
 
     for local_id in watch.llm_models:
-        api_slug = resolutions.get("llms", {}).get(local_id, local_id)
-        data = build_llm_page_data(api_slug, presence, llm_prices, bench, names)
+        api_slug = watch.llm_slugs[local_id]
+        data = build_llm_page_data(api_slug, watch.llm_slug_set(local_id),
+                                   presence, llm_prices, bench, names)
         write_json(f"llm_{local_id}.json", data)
         page = f"llm_{local_id}.html"
         (paths.DOCS_DIR / page).write_text(PAGE_TMPL.format(

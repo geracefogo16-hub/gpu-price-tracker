@@ -31,6 +31,39 @@ class Watchlist:
         self.llm_slugs: dict[str, str] = {}
         self.warnings: list[str] = []
 
+    @staticmethod
+    def _aliases(cfg: dict) -> set[str]:
+        aliases = (cfg or {}).get("aliases") or []
+        return {str(a) for a in aliases}
+
+    def gpu_slug_set(self, local_id: str) -> set[str]:
+        """Canonical resolved slug + configured aliases (rename continuity)."""
+        out = self._aliases(self.gpus.get(local_id) or {})
+        if local_id in self.gpu_slugs:
+            out.add(self.gpu_slugs[local_id])
+        return out
+
+    def llm_slug_set(self, local_id: str) -> set[str]:
+        out = self._aliases(self.llm_models.get(local_id) or {})
+        if local_id in self.llm_slugs:
+            out.add(self.llm_slugs[local_id])
+        return out
+
+    def all_gpu_slugs(self) -> set[str]:
+        return set().union(*(self.gpu_slug_set(i) for i in self.gpus)) if self.gpus else set()
+
+    def all_llm_slugs(self) -> set[str]:
+        return set().union(*(self.llm_slug_set(i) for i in self.llm_models)) if self.llm_models else set()
+
+    def alias_slugs(self) -> set[str]:
+        """Explicitly opted-in former slugs — exempt from the live-catalog
+        check, since a renamed-away slug legitimately no longer appears there."""
+        out: set[str] = set()
+        for section in (self.gpus, self.llm_models):
+            for cfg in section.values():
+                out |= self._aliases(cfg)
+        return out
+
     @classmethod
     def load(cls, path=None) -> "Watchlist":
         with open(path or paths.WATCHLIST, encoding="utf-8") as f:
@@ -80,7 +113,9 @@ class Watchlist:
                     log.warning(msg)
                     self.warnings.append(msg)
             else:
-                msg = f"{label} slug {local_id!r} vanished from the catalog — keeping history, skipping this run"
+                msg = (f"{label} slug {local_id!r} vanished from the catalog — keeping history, "
+                       "skipping this run (if it was renamed, set resolve_name: to follow it "
+                       "and add the old slug under aliases: for series continuity)")
                 log.warning(msg)
                 self.warnings.append(msg)
         return resolved

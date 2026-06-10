@@ -49,16 +49,20 @@ def setup_logging() -> None:
 
 
 def validate_slugs(rows: list[dict], slug_field: str, allowed: set[str],
-                   catalog_slugs: set[str]) -> tuple[list[dict], list[tuple[dict, str]]]:
+                   catalog_slugs: set[str],
+                   alias_slugs: set[str] = frozenset()) -> tuple[list[dict], list[tuple[dict, str]]]:
     """Filter rows to tracked slugs; reject rows whose slug is absent from
     the live catalog (never trust a filter — a bad slug has been observed to
-    return a different GPU's data rather than 404)."""
+    return a different GPU's data rather than 404). Slugs explicitly listed
+    as aliases in the watchlist are exempt from the catalog check: a
+    renamed-away slug legitimately no longer appears in the catalog but its
+    rows must keep flowing for series continuity."""
     kept, rejected = [], []
     for row in rows:
         slug = row.get(slug_field)
         if slug not in allowed:
             continue  # untracked, simply not ingested
-        if catalog_slugs and slug not in catalog_slugs:
+        if catalog_slugs and slug not in catalog_slugs and slug not in alias_slugs:
             rejected.append((row, f"{slug_field}={slug!r} not in live catalog"))
             continue
         kept.append(row)
@@ -82,8 +86,9 @@ def collect(dry_run: bool) -> int:
         watch.resolve(gpu_catalog, llm_catalog, persist=not dry_run)
         warnings.extend(watch.warnings)
 
-        tracked_gpu = set(watch.gpu_slugs.values())
-        tracked_llm = set(watch.llm_slugs.values())
+        tracked_gpu = watch.all_gpu_slugs()
+        tracked_llm = watch.all_llm_slugs()
+        alias_slugs = watch.alias_slugs()
         catalog_gpu_slugs = {e.get("slug") or e.get("gpu_slug") for e in gpu_catalog} - {None}
         catalog_llm_slugs = {e.get("slug") or e.get("model_slug") for e in llm_catalog} - {None}
 
@@ -105,8 +110,10 @@ def collect(dry_run: bool) -> int:
     finally:
         client.close()
 
-    gpu_kept_raw, gpu_slug_rejects = validate_slugs(gpu_raw, "gpu_slug", tracked_gpu, catalog_gpu_slugs)
-    llm_kept_raw, llm_slug_rejects = validate_slugs(llm_raw, "model_slug", tracked_llm, catalog_llm_slugs)
+    gpu_kept_raw, gpu_slug_rejects = validate_slugs(gpu_raw, "gpu_slug", tracked_gpu,
+                                                    catalog_gpu_slugs, alias_slugs)
+    llm_kept_raw, llm_slug_rejects = validate_slugs(llm_raw, "model_slug", tracked_llm,
+                                                    catalog_llm_slugs, alias_slugs)
 
     gpu_rows, llm_rows = [], []
     row_rejects: list[tuple[str, dict, str]] = []

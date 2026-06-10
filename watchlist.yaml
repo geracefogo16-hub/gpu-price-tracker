@@ -13,6 +13,14 @@
 # DIFFERENT GPU's data).
 #
 # `configs:` is a list of gpu_count values, or the string `all`.
+#
+# Slug renames/merges: if computeprices ever renames a slug (e.g. h100 ->
+# h100sxm), add the OLD slug(s) under `aliases:` for that entry. Rows under
+# alias slugs keep being ingested (even after the alias vanishes from the
+# catalog) and the dashboard merges canonical + alias slugs into one
+# continuous series — history never breaks across a rename. The collector
+# WARNs when a tracked slug disappears from the catalog and `resolve_name:`
+# follows the rename forward automatically.
 
 gpus:
   a100sxm: # A100 SXM

@@ -105,6 +105,11 @@ Enable Pages (below) and open `https://<user>.github.io/<repo>/`.
   also why every ingested row's slug is validated). The collector ingests
   **everything** for tracked slugs — all providers/configs/pricing types —
   so the watchlist only controls what is *featured* in the dashboard.
+- **GPU/model slug renamed upstream**: set `resolve_name:` so the watchlist
+  follows the rename forward, and add the old slug under `aliases:` for that
+  entry. Alias rows keep being ingested (even once the old slug leaves the
+  catalog) and the dashboard merges old- and new-slug data into one
+  continuous series — history never breaks across a rename.
 - **Change the schedule**: edit the two `cron:` lines in
   [`collect.yml`](.github/workflows/collect.yml) (UTC).
 - **Local commands**:
