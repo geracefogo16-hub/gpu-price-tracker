@@ -59,13 +59,35 @@ BASE_DIR = Path(__file__).resolve().parent
 DB_PATH = BASE_DIR / "data" / "gpu_prices.db"
 
 # (url-slug, display name).  Order is preserved in the dashboard.
-MODELS = [
+# Overridable via config.json: {"models": [{"slug": "a100", "display": "A100"},
+# ...]} — written by the Price Tracker Hub's "Items config" tab.  The slug is
+# the gpus.io URL path segment (https://gpus.io/en/gpus/<slug>).  If
+# config.json is missing or invalid, this default list is used.
+DEFAULT_MODELS = [
     ("a100", "A100"),
     ("h100", "H100"),
     ("h200", "H200"),
     ("b200", "B200"),
     ("b300", "B300"),
 ]
+
+CONFIG_PATH = Path(__file__).resolve().parent / "config.json"
+
+
+def _load_models():
+    try:
+        cfg = json.loads(CONFIG_PATH.read_text())
+        models = [(m["slug"].strip().lower(), m["display"].strip())
+                  for m in cfg.get("models", [])
+                  if isinstance(m, dict) and m.get("slug") and m.get("display")]
+        if models:
+            return models
+    except (OSError, json.JSONDecodeError, AttributeError, KeyError, TypeError):
+        pass
+    return DEFAULT_MODELS
+
+
+MODELS = _load_models()
 
 MODEL_URL = "https://gpus.io/en/gpus/{slug}"
 
