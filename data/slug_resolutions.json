@@ -1,0 +1,16 @@
+{
+ "gpus": {
+  "a100sxm": "a100sxm",
+  "b200": "b200",
+  "gb200": "gb200",
+  "gb300": "gb300",
+  "h100": "h100",
+  "h100nvl": "h100nvl",
+  "h200": "h200",
+  "mi300x": "mi300x"
+ },
+ "llms": {
+  "claude-opus-4-5": "claude-opus-4-5",
+  "gpt-oss-120b": "gpt-oss-120b"
+ }
+}

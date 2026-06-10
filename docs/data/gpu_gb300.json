@@ -1,1 +1,1 @@
-{"classes":{},"id":"gb300","pull_dates":[],"slugs":["gb300"]}
+{"classes":{"on_demand":[{"commitment_months":null,"featured":true,"gpu_count":1,"label":"Oracle Cloud 1x","lu":["2026-06-10T00:00:34.399446+00:00"],"pricing_type":"on_demand","provider_slug":"oracle","y":[18.0]}]},"id":"gb300","pull_dates":["2026-06-10"],"slugs":["gb300"]}
