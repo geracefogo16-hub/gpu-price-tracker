@@ -35,6 +35,23 @@ from tracker.watchlist import Watchlist
 
 log = logging.getLogger("collector")
 
+# An unfiltered feed of at least this many rows is treated as truncated by a
+# server-side cap (observed: exactly 1000 rows, meta.count == 1000).
+PROBABLE_ROW_CAP = 1000
+
+
+def dedupe_exact(rows: list[dict]) -> list[dict]:
+    """Drop byte-identical rows (overlap between the unfiltered pull and
+    per-slug supplements)."""
+    seen: set[str] = set()
+    out = []
+    for r in rows:
+        k = json.dumps(r, sort_keys=True)
+        if k not in seen:
+            seen.add(k)
+            out.append(r)
+    return out
+
 
 def setup_logging() -> None:
     paths.LOGS_DIR.mkdir(exist_ok=True)
@@ -96,6 +113,29 @@ def collect(dry_run: bool) -> int:
         # future-proof against new providers, immune to filter mistrust.
         gpu_raw, gpu_meta = client.gpu_prices()
         llm_raw, llm_meta = client.llm_prices()
+
+        # Observed 2026-06-10: the unfiltered feed returned exactly 1000 rows
+        # (meta.count == 1000, no pagination fields) — almost certainly a
+        # server-side cap. When a feed hits it, supplement with per-tracked-
+        # slug filtered calls so tracked rows can't silently fall off as the
+        # site grows; row-level slug validation below guards the filtered
+        # responses, and exact-duplicate rows are dropped.
+        if len(gpu_raw) >= PROBABLE_ROW_CAP:
+            msg = (f"gpu-prices returned {len(gpu_raw)} rows (probable server cap) — "
+                   "supplementing with per-slug filtered calls")
+            log.warning(msg)
+            warnings.append(msg)
+            for slug in sorted(tracked_gpu):
+                gpu_raw.extend(client.get_all("gpu-prices", {"gpu": slug})[0])
+        if len(llm_raw) >= PROBABLE_ROW_CAP:
+            msg = (f"llm-prices returned {len(llm_raw)} rows (probable server cap) — "
+                   "supplementing with per-slug filtered calls")
+            log.warning(msg)
+            warnings.append(msg)
+            for slug in sorted(tracked_llm):
+                llm_raw.extend(client.get_all("llm-prices", {"model": slug})[0])
+        gpu_raw = dedupe_exact(gpu_raw)
+        llm_raw = dedupe_exact(llm_raw)
     except ApiError as e:
         log.error("FATAL: API collection failed: %s", e)
         if not dry_run:
