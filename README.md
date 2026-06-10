@@ -63,15 +63,20 @@ client-only rendering). `setup.sh` installs it; the scraper runs fine without it
 
 ## Quick start
 
+Daily price collection runs **in the cloud** (GitHub Actions — see
+[Scheduling](#scheduling--runs-in-the-cloud-github-actions)), so you don't need
+`setup.sh` for scheduling. `setup.sh` just builds the local environment for
+*viewing* the dashboard:
+
 ```bash
 cd "GPU Scraper"
-./setup.sh                 # creates .venv, installs deps, does a first scrape,
-                           # then asks what time to run the daily cron job
+./setup.sh --no-cron       # creates .venv and installs the dashboard's deps
 ```
 
 Then start the dashboard. **Easiest way:** double-click **`Start Dashboard.command`**
-in Finder — it launches the dashboard using the project's own Python and opens
-your browser automatically. (Keep the window open; press Ctrl+C or close it to stop.)
+in Finder — it pulls the latest cloud-collected data, launches the dashboard using
+the project's own Python, and opens your browser. (Keep the window open; press
+Ctrl+C or close it to stop.)
 
 Or from a terminal — note you must use the venv's Python, **not** a bare
 `python`/`python3` (those may point at Anaconda/Homebrew, which don't have the
@@ -142,43 +147,51 @@ retries with backoff. It fetches just five pages per day.
 
 ---
 
-## Scheduling (cron)
+## Scheduling — runs in the cloud (GitHub Actions)
 
-`setup.sh` registers one daily cron job. The line it installs looks like:
+The daily scrape runs on **GitHub's servers**, not your Mac — so it happens
+whether your Mac is on, asleep, or off. The workflow is
+[`.github/workflows/daily-scrape.yml`](.github/workflows/daily-scrape.yml):
 
-```cron
-30 8 * * * cd '/path/to/GPU Scraper' && '/path/to/.venv/bin/python' '/path/to/scraper.py' >> '/path/to/logs/scraper.log' 2>&1 # gpus-io-tracker
-```
+1. Every day (cron `0 1 * * *` UTC ≈ 9 PM US-Eastern) GitHub runs `scraper.py`.
+2. It commits the updated `data/gpu_prices.db` and `data/prices.csv` back to the repo.
+3. Your Mac gets that data automatically — **`Start Dashboard.command`** runs
+   `git pull` before opening the dashboard.
 
-### Change the scrape time
+So the whole routine is: **double-click `Start Dashboard.command`** whenever you
+want to look. No need to keep your Mac awake.
+
+### View / run the workflow manually
+
+- On GitHub: the repo's **Actions** tab → *daily-gpu-scrape* → **Run workflow**.
+- From a terminal: `gh workflow run daily-scrape.yml` then `gh run watch`.
+
+### Change the cloud schedule
+
+Edit the `cron:` line in `.github/workflows/daily-scrape.yml` and push:
 
 ```bash
-./setup.sh --time 22:00      # re-registers at 10:00 PM (idempotent — replaces the old entry)
+git commit -am "scrape at 13:00 UTC" && git push
 ```
 
-…or edit it by hand:
+GitHub cron is always **UTC** and does not observe daylight saving; scheduled
+runs can be delayed a few minutes to ~1 h under load (fine for a daily snapshot).
+
+### Optional: a local cron job instead
+
+If you'd rather collect on *this Mac* (only useful while it's awake at the set
+time), `setup.sh` can register a local `cron` job:
 
 ```bash
-crontab -e        # find the line tagged "# gpus-io-tracker"
-crontab -l        # view current jobs
+./setup.sh --time 22:00      # daily at 10 PM, logs to logs/scraper.log
 ```
 
-To remove the job entirely:
-
-```bash
-crontab -l | grep -v 'gpus-io-tracker' | crontab -
-```
-
-### macOS gotcha — Full Disk Access
-
-Modern macOS sandboxes `cron`. If the job runs but nothing appears in
-`logs/scraper.log`, grant **Full Disk Access** to `/usr/sbin/cron`:
-
-> System Settings → Privacy & Security → Full Disk Access → **+** →
-> press <kbd>⌘⇧G</kbd>, enter `/usr/sbin/cron`, add it, and toggle it on.
-
-(You can verify the schedule fired by checking the timestamps in
-`logs/scraper.log`.)
+Caveats: macOS `cron` silently skips runs while the Mac is asleep, and it writes
+to the same `data/gpu_prices.db` the cloud commits — running both can cause
+`git pull` conflicts. Pick one; the cloud workflow is recommended. Remove a local
+job with `crontab -l | grep -v gpus-io-tracker | crontab -`. (If `cron` runs but
+`logs/scraper.log` stays empty, grant **Full Disk Access** to `/usr/sbin/cron` in
+System Settings → Privacy & Security.)
 
 ---
 
