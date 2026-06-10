@@ -1,0 +1,6 @@
+# GPU price tracker dependencies
+requests>=2.31      # HTTP client for the (server-rendered) gpus.io pages
+Flask>=3.0          # local web dashboard
+plotly>=5.20        # interactive time-series charts
+pandas>=2.0         # data wrangling for the dashboard
+playwright>=1.40    # headless-browser fallback (only used if requests can't get data)

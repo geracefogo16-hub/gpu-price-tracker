@@ -1,0 +1,18 @@
+# Python virtual-env and caches
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# macOS
+.DS_Store
+
+# Log contents (keep the folder via logs/.gitkeep)
+logs/*.log
+
+# Claude Code local settings
+.claude/
+
+# NOTE: data/ is intentionally TRACKED — the daily prices live there
+#       (data/gpu_prices.db and data/prices.csv are committed by CI).

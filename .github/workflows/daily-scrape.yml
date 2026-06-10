@@ -1,0 +1,77 @@
+name: daily-gpu-scrape
+
+# Runs on GitHub's servers — completely independent of your Mac being on,
+# asleep, or off. It scrapes gpus.io, updates the SQLite DB + CSV, and commits
+# the results back to this repo. Pull the repo locally to see fresh data.
+
+on:
+  schedule:
+    # 01:00 UTC ≈ 21:00 (9 PM) America/New_York during EDT. GitHub cron is always
+    # UTC and does NOT observe daylight saving, so in winter (EST) this lands at
+    # 20:00 local. GitHub may also delay scheduled runs by a few minutes to ~1h
+    # under load — fine for a once-daily snapshot. Change the time by editing this.
+    - cron: "0 1 * * *"
+  workflow_dispatch: {} # also lets you trigger it manually from the Actions tab
+
+# Allow the job's token to push the updated data back to the repo.
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-gpu-scrape
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    env:
+      TZ: America/New_York # so the recorded scrape_date matches your local day
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install runtime dependency
+        # Only `requests` is needed for the server-rendered scrape path; the
+        # dashboard-only deps (flask/plotly/pandas) and Playwright are skipped
+        # to keep CI fast.
+        run: python -m pip install --quiet requests
+
+      - name: Scrape prices
+        run: python scraper.py --no-fallback
+
+      - name: Export human-readable CSV snapshot
+        run: |
+          python - <<'PY'
+          import sqlite3, csv
+          conn = sqlite3.connect("data/gpu_prices.db")
+          conn.row_factory = sqlite3.Row
+          rows = conn.execute(
+              "SELECT scrape_date, gpu_model, category, price, currency, unit, "
+              "provider, rental_type, gpu_count, vram_gb, regions "
+              "FROM prices ORDER BY scrape_date, gpu_model, category"
+          ).fetchall()
+          with open("data/prices.csv", "w", newline="") as f:
+              w = csv.writer(f)
+              if rows:
+                  w.writerow(rows[0].keys())
+                  for r in rows:
+                      w.writerow([r[k] for k in r.keys()])
+          print(f"Exported {len(rows)} rows to data/prices.csv")
+          PY
+
+      - name: Commit & push if data changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/gpu_prices.db data/prices.csv
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+          else
+            git commit -m "Daily GPU price scrape ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git push
+          fi
