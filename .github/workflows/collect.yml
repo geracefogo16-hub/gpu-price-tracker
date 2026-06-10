@@ -1,0 +1,82 @@
+name: collect-computeprices
+
+# Daily computeprices.com collection ("git scraping"):
+# - Two crons a few hours apart, off minute 0 (GitHub cron is UTC and runs
+#   can be delayed/skipped under load). The run is idempotent, so the second
+#   trigger is a cheap no-op when the first succeeded — and a recovery when
+#   it didn't.
+# - Every run commits at least data/last_run.json (heartbeat), which keeps
+#   the 60-day scheduled-workflow inactivity clock permanently reset.
+# - On collector failure the job fails loudly (GitHub emails on failed
+#   workflow runs by default); the second cron retries. Failures are never
+#   swallowed — only the optional benchmark step is continue-on-error.
+
+on:
+  schedule:
+    - cron: "17 4 * * *"
+    - cron: "17 9 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect-computeprices
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: python -m pip install --quiet -r requirements.txt
+
+      - name: Collect prices (API)
+        env:
+          # Optional repo secret; everything works keyless within the
+          # 60 req/hr budget (a run uses ~5 requests).
+          COMPUTEPRICES_API_KEY: ${{ secrets.COMPUTEPRICES_API_KEY }}
+        run: python collector.py --once
+
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
+
+      - name: Install Chromium for benchmark scrape
+        continue-on-error: true
+        run: python -m playwright install --with-deps chromium
+
+      - name: Scrape LLM benchmarks (best-effort)
+        # Benchmark failure must never fail the run; prices already landed.
+        continue-on-error: true
+        run: python benchmarks.py
+
+      - name: Build dashboard
+        run: python build_dashboard.py
+
+      - name: Commit & push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add raw data docs
+          # last_run.json changes every run, so there is always a commit —
+          # the heartbeat that keeps scheduled workflows alive.
+          if git diff --cached --quiet; then
+            echo "Nothing changed (unexpected — heartbeat should always change)."
+            exit 0
+          fi
+          git commit -m "Daily computeprices collection ($(date -u +%Y-%m-%dT%H:%MZ))"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push

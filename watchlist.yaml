@@ -1,0 +1,88 @@
+# Watchlist for the computeprices.com tracker.
+#
+# IMPORTANT: the collector ingests and stores EVERYTHING the API returns for
+# the tracked GPU slugs / LLM models — every provider, config and pricing
+# type. This file only controls (a) which slugs count as "tracked" and
+# (b) which (provider, config) series are *featured* (shown by default) on
+# the dashboard. Non-featured series hide behind a "show all" toggle.
+#
+# GPU keys are local ids. By default the id IS the computeprices slug.
+# If the real slug is unknown, set `resolve_name:` and the collector will
+# resolve it against the live /api/v1/gpus catalog on every run (never guess
+# slugs — an unrecognized slug filter has been observed to silently return a
+# DIFFERENT GPU's data).
+#
+# `configs:` is a list of gpu_count values, or the string `all`.
+#
+# Slug renames/merges: if computeprices ever renames a slug (e.g. h100 ->
+# h100sxm), add the OLD slug(s) under `aliases:` for that entry. Rows under
+# alias slugs keep being ingested (even after the alias vanishes from the
+# catalog) and the dashboard merges canonical + alias slugs into one
+# continuous series — history never breaks across a rename. The collector
+# WARNs when a tracked slug disappears from the catalog and `resolve_name:`
+# follows the rename forward automatically.
+
+gpus:
+  a100sxm: # A100 SXM
+    featured:
+      - {provider: crusoe, configs: [1, 2, 4, 8]}
+      - {provider: coreweave, configs: [8]}
+      - {provider: aws, configs: [8]}
+      - {provider: azure, configs: [8]}
+      - {provider: oracle, configs: [1]}
+  h100: # H100 SXM
+    featured:
+      - {provider: digitalocean, configs: all}
+      - {provider: nebius, configs: all}
+      - {provider: coreweave, configs: [8]}
+      - {provider: aws, configs: [8]}
+      - {provider: azure, configs: [8]}
+  h100nvl: # H100 NVL — exact slug resolved from the catalog at run time
+    resolve_name: "H100 NVL"
+    featured:
+      - {provider: runpod, configs: all}
+      - {provider: massedcompute, configs: all}
+      - {provider: sesterce, configs: all}
+      - {provider: azure, configs: all}
+  h200:
+    featured:
+      - {provider: digitalocean, configs: [1, 8]}
+      - {provider: nebius, configs: [1, 8]}
+      - {provider: coreweave, configs: [8]}
+      - {provider: aws, configs: [8]}
+      - {provider: oracle, configs: [1]}
+  b200:
+    featured:
+      - {provider: nebius, configs: [1]}
+      - {provider: lambda, configs: [1, 4, 8]}
+      - {provider: coreweave, configs: [8]}
+      - {provider: together-ai, configs: [8]}
+      - {provider: oracle, configs: all}
+  mi300x:
+    featured:
+      - {provider: digitalocean, configs: [1, 8]}
+      - {provider: crusoe, configs: [1]}
+      - {provider: oracle, configs: [1]}
+  gb200:
+    featured:
+      - {provider: coreweave, configs: [4]}
+      - {provider: oracle, configs: all}
+  gb300:
+    featured:
+      - {provider: verda, configs: all}
+      - {provider: oracle, configs: all}
+
+# LLM models: id is the expected slug; resolve_name is a fallback used to
+# locate the model in /api/v1/llm-models if the slug is not found verbatim.
+llm_models:
+  gpt-oss-120b:
+    resolve_name: "GPT-OSS-120B"
+  claude-opus-4-5:
+    resolve_name: "Claude Opus 4.5"
+
+# Pricing classes shown as dashboard tabs. The collector stores whatever
+# pricing_type values the API returns (the enum is NOT enforced on ingest);
+# "reserved" may be represented by the API either as pricing_type=reserved or
+# as on_demand rows with non-null commitment_months — both map to the
+# "reserved" tab (see tracker/normalize.py: pricing_class).
+pricing_classes: [on_demand, spot, reserved]

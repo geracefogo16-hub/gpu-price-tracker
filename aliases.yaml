@@ -1,0 +1,35 @@
+# Provider display-name → provider_slug alias map, used to join benchmark
+# rows scraped from computeprices.com/inference (which shows display names)
+# to API rows (which carry slugs). Names are matched case-insensitively
+# after trimming. Unmatched names are logged and kept with an empty slug —
+# extend this map over time rather than dropping data silently.
+#
+# Always key on provider_slug, never display name: names are inconsistent
+# ("Lambda" vs "Lambda Labs") and e.g. `vast` and `vast-ai` are separate slugs.
+
+"amazon aws": aws
+"aws": aws
+"amazon web services": aws
+"microsoft azure": azure
+"azure": azure
+"google cloud": gcp
+"google cloud platform": gcp
+"oracle cloud": oracle
+"oracle": oracle
+"lambda": lambda
+"lambda labs": lambda
+"coreweave": coreweave
+"crusoe": crusoe
+"digitalocean": digitalocean
+"digital ocean": digitalocean
+"nebius": nebius
+"runpod": runpod
+"massed compute": massedcompute
+"massedcompute": massedcompute
+"sesterce": sesterce
+"together ai": together-ai
+"together.ai": together-ai
+"together": together-ai
+"verda": verda
+"anthropic": anthropic
+"openai": openai

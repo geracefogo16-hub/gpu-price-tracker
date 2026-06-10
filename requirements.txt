@@ -1,6 +1,13 @@
-# GPU price tracker dependencies
+# --- computeprices.com tracker (primary project) ---
+httpx>=0.27         # API client (computeprices.com/api/v1)
+PyYAML>=6.0         # watchlist.yaml / aliases.yaml
+playwright>=1.40    # best-effort /inference benchmark scrape only
+plotly>=5.20        # (CDN is used in the dashboard; kept for local tinkering)
+
+# --- legacy gpus.io tracker (scraper.py / dashboard.py) ---
 requests>=2.31      # HTTP client for the (server-rendered) gpus.io pages
 Flask>=3.0          # local web dashboard
-plotly>=5.20        # interactive time-series charts
-pandas>=2.0         # data wrangling for the dashboard
-playwright>=1.40    # headless-browser fallback (only used if requests can't get data)
+pandas>=2.0         # data wrangling for the legacy dashboard
+
+# --- dev/test ---
+pytest>=8.0
