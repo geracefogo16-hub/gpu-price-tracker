@@ -78,6 +78,12 @@ def name_to_slug(name: str, aliases: dict[str, str]) -> str:
     return ""
 
 
+def plausible_provider(name: str) -> bool:
+    """A provider display name must contain letters — first observed run
+    captured a table's rank column ('3', '9') as provider names."""
+    return bool(re.search(r"[A-Za-z]", name or ""))
+
+
 def _to_float(value) -> float | None:
     if isinstance(value, (int, float)) and not isinstance(value, bool):
         return float(value)
@@ -112,7 +118,7 @@ def _rows_from_objects(objects: list[dict]) -> list[dict]:
         provider = next((str(obj[k]) for k in PROVIDER_KEYS if obj.get(k)), "")
         speed = next((_to_float(obj[k]) for k in SPEED_KEYS if obj.get(k) is not None), None)
         perf = next((_to_float(obj[k]) for k in PERF_KEYS if obj.get(k) is not None), None)
-        if provider and speed is not None:
+        if plausible_provider(provider) and speed is not None:
             rows.append({"provider": provider, "tokens_per_sec": speed, "price_perf": perf})
     return rows
 
@@ -175,11 +181,9 @@ def parse_with_playwright(url: str) -> list[dict]:
                         continue
                     speed = _to_float(cells[i_speed])
                     perf = _to_float(cells[i_perf]) if (i_perf is not None and i_perf < len(cells)) else None
-                    if cells[i_prov] and speed is not None:
+                    if plausible_provider(cells[i_prov]) and speed is not None:
                         rows.append({"provider": cells[i_prov],
                                      "tokens_per_sec": speed, "price_perf": perf})
-                if rows:
-                    break
         finally:
             browser.close()
     return rows
