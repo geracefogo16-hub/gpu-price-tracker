@@ -16,3 +16,7 @@ logs/*.log
 
 # NOTE: data/ is intentionally TRACKED — the daily prices live there
 #       (data/gpu_prices.db and data/prices.csv are committed by CI).
+
+# computeprices tracker: SQLite cache is derived (rebuild_db.py), not source
+data/cache.db
+.pytest_cache/

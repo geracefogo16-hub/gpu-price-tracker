@@ -1,0 +1,17 @@
+:root { color-scheme: light dark; }
+body { font: 16px/1.5 -apple-system, system-ui, sans-serif; margin: 0; padding: 0 12px 40px; max-width: 1000px; margin-inline: auto; }
+header { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; padding-top: 10px; }
+header a { text-decoration: none; }
+h1 { font-size: 1.3rem; margin: .4em 0; }
+.tabs, .tools { display: flex; gap: 8px; margin: 8px 0; flex-wrap: wrap; }
+button { padding: 6px 14px; border-radius: 8px; border: 1px solid #8884; background: transparent; cursor: pointer; font: inherit; }
+.tabs button.active { background: #3b82f6; color: #fff; border-color: #3b82f6; }
+#plot, main > div[id^=plot] { width: 100%; min-height: 420px; }
+.health { border: 1px solid #8884; border-radius: 10px; padding: 10px 16px; margin: 12px 0; }
+.health.suspicious, .health.error { border-color: #dc2626; }
+.health dl { display: grid; grid-template-columns: max-content 1fr; gap: 2px 16px; margin: 0; }
+.health dt { font-weight: 600; }
+.health dd { margin: 0; }
+.warnings { color: #b45309; }
+ul.nav { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 8px; }
+ul.nav a { display: block; padding: 10px 14px; border: 1px solid #8884; border-radius: 10px; text-decoration: none; }
