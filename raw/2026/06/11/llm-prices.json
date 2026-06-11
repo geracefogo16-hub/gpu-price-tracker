@@ -2,11 +2,11 @@
  "fetched_at_date": "2026-06-11",
  "meta": {
   "count": 480,
-  "generated_at": "2026-06-11T17:48:15.286Z",
+  "generated_at": "2026-06-11T19:27:11.233Z",
   "rate_limit": {
    "limit": 60,
    "remaining": 55,
-   "reset": 1781200800000,
+   "reset": 1781208000000,
    "window_seconds": 3600
   },
   "tier": "public",
@@ -155,7 +155,7 @@
    "context_window": 128000,
    "creator": "OpenAI",
    "knowledge_cutoff": "2025-01-01",
-   "last_updated": "2026-06-10T17:01:25.853082+00:00",
+   "last_updated": "2026-06-11T19:01:07.183971+00:00",
    "modalities": [
     "text"
    ],

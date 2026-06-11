@@ -404,7 +404,7 @@ pull_date,kind,provider_slug,item_slug,gpu_count,pricing_type,commitment_months,
 2026-06-11,gpu,azure,h100nvl,2,reserved,36,2026-06-01T15:04:24.230537+00:00
 2026-06-11,gpu,azure,h100nvl,2,spot,,2026-06-01T15:04:24.251351+00:00
 2026-06-11,gpu,beam,a100sxm,1,on_demand,,2026-06-11T11:01:09.958604+00:00
-2026-06-11,gpu,beyond-pl,b200,8,on_demand,,2026-06-10T11:01:00.931173+00:00
+2026-06-11,gpu,beyond-pl,b200,8,on_demand,,2026-06-11T13:01:03.030484+00:00
 2026-06-11,gpu,civo,a100sxm,1,on_demand,,2026-06-10T13:04:09.841219+00:00
 2026-06-11,gpu,civo,a100sxm,1,reserved,6,2026-06-07T07:03:55.165488+00:00
 2026-06-11,gpu,civo,a100sxm,1,reserved,12,2026-06-07T07:03:55.186339+00:00
@@ -749,7 +749,7 @@ pull_date,kind,provider_slug,item_slug,gpu_count,pricing_type,commitment_months,
 2026-06-11,llm,aws,gpt-oss-120b,,batch,,2026-06-11T05:00:42.071117+00:00
 2026-06-11,llm,aws,gpt-oss-120b,,standard,,2026-06-11T05:00:40.969922+00:00
 2026-06-11,llm,deep-infra,gpt-oss-120b,,standard,,2026-06-11T05:00:52.336190+00:00
-2026-06-11,llm,fireworks-ai,gpt-oss-120b,,standard,,2026-06-10T17:01:25.853082+00:00
+2026-06-11,llm,fireworks-ai,gpt-oss-120b,,standard,,2026-06-11T19:01:07.183971+00:00
 2026-06-11,llm,groq,gpt-oss-120b,,standard,,2026-06-10T21:01:14.008308+00:00
 2026-06-11,llm,hyperstack,gpt-oss-120b,,standard,,2026-06-10T23:01:16.809317+00:00
 2026-06-11,llm,ionet,gpt-oss-120b,,standard,,2026-06-11T05:00:25.490140+00:00
