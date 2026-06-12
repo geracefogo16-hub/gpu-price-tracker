@@ -15,8 +15,8 @@
  },
  "new_providers": [],
  "new_rows": {
-  "gpu": 1,
-  "llm": 1
+  "gpu": 196,
+  "llm": 12
  },
  "pricing_type_combos": {
   "on_demand|None": 276,
@@ -29,7 +29,7 @@
   "reserved|9": 1,
   "spot|None": 40
  },
- "pull_date": "2026-06-11",
+ "pull_date": "2026-06-12",
  "rejected": 0,
  "requests_used": 13,
  "sanity_flagged": 1,
@@ -38,7 +38,7 @@
   "gpu": 388,
   "llm": 15
  },
- "ts": "2026-06-11T19:27:10.243997+00:00",
+ "ts": "2026-06-12T14:24:00.907100+00:00",
  "updated_rows": {
   "gpu": 0,
   "llm": 0
