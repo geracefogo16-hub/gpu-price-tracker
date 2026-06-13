@@ -5956,6 +5956,27 @@
    "website": "https://www.thetaedgecloud.com/"
   },
   {
+   "category": "GPU-focused",
+   "description": "Thunder Compute provides dedicated cloud GPU services with rapid deployment options.",
+   "docs_url": "https://www.thundercompute.com/docs/vscode/quickstart",
+   "hq_country": "US",
+   "id": "86388f13-8674-49d8-9329-94a149a1c4cc",
+   "name": "Thunder Compute",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://www.thundercompute.com/pricing",
+   "slug": "thundercompute-com",
+   "tagline": "One-click GPU servers for quick deployment",
+   "tags": [
+    "gpu",
+    "cloud",
+    "development"
+   ],
+   "website": "https://thundercompute.com"
+  },
+  {
    "category": "Inference specialist",
    "description": "Together AI is the AI Native Cloud platform engineered for developers building with open-source and frontier AI models. They provide serverless inference, fine-tuning, and GPU clusters with industry-leading performance optimizations.",
    "docs_url": "https://docs.together.ai",

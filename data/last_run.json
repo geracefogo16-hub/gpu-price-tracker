@@ -1,7 +1,7 @@
 {
  "api_rows_returned": {
   "gpu": 1054,
-  "llm": 478
+  "llm": 483
  },
  "gpu_rows_by_slug": {
   "a100sxm": 114,
@@ -14,11 +14,11 @@
   "mi300x": 11
  },
  "new_providers": [
-  "impossiblecloud-com"
+  "thundercompute-com"
  ],
  "new_rows": {
-  "gpu": 186,
-  "llm": 13
+  "gpu": 0,
+  "llm": 2
  },
  "pricing_type_combos": {
   "on_demand|None": 275,
@@ -40,13 +40,13 @@
   "gpu": 382,
   "llm": 15
  },
- "ts": "2026-06-13T11:30:15.566872+00:00",
+ "ts": "2026-06-13T15:21:46.966399+00:00",
  "updated_rows": {
   "gpu": 0,
   "llm": 0
  },
  "warnings": [
   "gpu-prices returned 1000 rows (probable server cap) — supplementing with per-slug filtered calls",
-  "new provider(s) detected: impossiblecloud-com"
+  "new provider(s) detected: thundercompute-com"
  ]
 }

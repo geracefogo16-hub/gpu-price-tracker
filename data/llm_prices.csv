@@ -43,6 +43,8 @@ effective_date,provider_slug,model_slug,pricing_type,price_per_1m_input_usd,pric
 2026-06-12,openrouter,gpt-oss-120b,standard,0.039,0.18,,128000,OpenAI,OpenRouter,GPT-OSS-120B,https://openrouter.ai/pricing,2026-06-12T05:00:50.327338+00:00,
 2026-06-12,scaleway,gpt-oss-120b,standard,0.1731,0.6922,,128000,OpenAI,Scaleway,GPT-OSS-120B,https://www.scaleway.com/en/pricing/model-as-a-service/,2026-06-12T09:01:34.640328+00:00,
 2026-06-12,together-ai,gpt-oss-120b,standard,0.15,0.6,,128000,OpenAI,Together AI,GPT-OSS-120B,https://www.together.ai/pricing,2026-06-12T05:00:17.123970+00:00,
+2026-06-13,anthropic,claude-opus-4-5,batch,2.5,12.5,0.25,200000,Anthropic,Anthropic,Claude Opus 4.5,https://www.anthropic.com/pricing,2026-06-13T13:02:31.283928+00:00,
+2026-06-13,anthropic,claude-opus-4-5,standard,5,25,0.5,200000,Anthropic,Anthropic,Claude Opus 4.5,https://www.anthropic.com/pricing,2026-06-13T13:02:31.260096+00:00,
 2026-06-13,aws,claude-opus-4-5,batch,2.75,13.75,,200000,Anthropic,Amazon AWS,Claude Opus 4.5,https://aws.amazon.com/bedrock/pricing/,2026-06-13T05:00:30.682039+00:00,
 2026-06-13,aws,claude-opus-4-5,standard,5.5,27.5,,200000,Anthropic,Amazon AWS,Claude Opus 4.5,https://aws.amazon.com/bedrock/pricing/,2026-06-13T05:00:30.650536+00:00,
 2026-06-13,aws,gpt-oss-120b,batch,0.07,0.3,,128000,OpenAI,Amazon AWS,GPT-OSS-120B,https://aws.amazon.com/bedrock/pricing/,2026-06-13T05:00:29.941451+00:00,

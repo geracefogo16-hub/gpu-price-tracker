@@ -1542,8 +1542,8 @@ pull_date,kind,provider_slug,item_slug,gpu_count,pricing_type,commitment_months,
 2026-06-13,gpu,vultr,a100sxm,1,on_demand,,2026-06-13T00:00:11.039230+00:00
 2026-06-13,gpu,vultr,mi300x,1,on_demand,,2026-06-03T15:01:47.373572+00:00
 2026-06-13,gpu,vultr,mi300x,8,on_demand,,2026-05-24T03:01:14.257466+00:00
-2026-06-13,llm,anthropic,claude-opus-4-5,,batch,,2026-06-11T09:02:43.135370+00:00
-2026-06-13,llm,anthropic,claude-opus-4-5,,standard,,2026-06-11T09:02:43.016972+00:00
+2026-06-13,llm,anthropic,claude-opus-4-5,,batch,,2026-06-13T13:02:31.283928+00:00
+2026-06-13,llm,anthropic,claude-opus-4-5,,standard,,2026-06-13T13:02:31.260096+00:00
 2026-06-13,llm,aws,claude-opus-4-5,,batch,,2026-06-13T05:00:30.682039+00:00
 2026-06-13,llm,aws,claude-opus-4-5,,standard,,2026-06-13T05:00:30.650536+00:00
 2026-06-13,llm,aws,gpt-oss-120b,,batch,,2026-06-13T05:00:29.941451+00:00
