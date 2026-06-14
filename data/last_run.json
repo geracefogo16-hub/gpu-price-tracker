@@ -4,7 +4,7 @@
   "llm": 480
  },
  "gpu_rows_by_slug": {
-  "a100sxm": 111,
+  "a100sxm": 109,
   "b200": 44,
   "gb200": 5,
   "gb300": 7,
@@ -15,11 +15,11 @@
  },
  "new_providers": [],
  "new_rows": {
-  "gpu": 220,
-  "llm": 12
+  "gpu": 6,
+  "llm": 0
  },
  "pricing_type_combos": {
-  "on_demand|None": 265,
+  "on_demand|None": 263,
   "reserved|1": 4,
   "reserved|12": 21,
   "reserved|24": 9,
@@ -34,13 +34,13 @@
  "sanity_flagged": 1,
  "status": "ok",
  "tracked_rows": {
-  "gpu": 371,
+  "gpu": 369,
   "llm": 15
  },
- "ts": "2026-06-14T11:47:32.108649+00:00",
+ "ts": "2026-06-14T15:30:45.790483+00:00",
  "updated_rows": {
-  "gpu": 0,
-  "llm": 2
+  "gpu": 1,
+  "llm": 0
  },
  "warnings": [
   "gpu-prices returned 1000 rows (probable server cap) — supplementing with per-slug filtered calls"
