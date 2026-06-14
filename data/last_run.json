@@ -1,52 +1,48 @@
 {
  "api_rows_returned": {
-  "gpu": 1054,
-  "llm": 483
+  "gpu": 1038,
+  "llm": 480
  },
  "gpu_rows_by_slug": {
-  "a100sxm": 114,
+  "a100sxm": 111,
   "b200": 44,
   "gb200": 5,
   "gb300": 7,
-  "h100": 112,
+  "h100": 107,
   "h100nvl": 22,
-  "h200": 67,
+  "h200": 64,
   "mi300x": 11
  },
- "new_providers": [
-  "thundercompute-com"
- ],
+ "new_providers": [],
  "new_rows": {
-  "gpu": 0,
-  "llm": 2
+  "gpu": 220,
+  "llm": 12
  },
  "pricing_type_combos": {
-  "on_demand|None": 275,
+  "on_demand|None": 265,
   "reserved|1": 4,
   "reserved|12": 21,
   "reserved|24": 9,
   "reserved|3": 1,
   "reserved|36": 21,
   "reserved|6": 10,
-  "reserved|9": 1,
   "spot|None": 40
  },
- "pull_date": "2026-06-13",
+ "pull_date": "2026-06-14",
  "rejected": 0,
  "requests_used": 13,
  "sanity_flagged": 1,
  "status": "ok",
  "tracked_rows": {
-  "gpu": 382,
+  "gpu": 371,
   "llm": 15
  },
- "ts": "2026-06-13T15:21:46.966399+00:00",
+ "ts": "2026-06-14T11:47:32.108649+00:00",
  "updated_rows": {
   "gpu": 0,
-  "llm": 0
+  "llm": 2
  },
  "warnings": [
-  "gpu-prices returned 1000 rows (probable server cap) — supplementing with per-slug filtered calls",
-  "new provider(s) detected: thundercompute-com"
+  "gpu-prices returned 1000 rows (probable server cap) — supplementing with per-slug filtered calls"
  ]
 }
