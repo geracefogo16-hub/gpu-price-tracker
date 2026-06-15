@@ -2,11 +2,11 @@
  "fetched_at_date": "2026-06-15",
  "meta": {
   "count": 1000,
-  "generated_at": "2026-06-15T18:53:23.801Z",
+  "generated_at": "2026-06-15T20:32:07.640Z",
   "rate_limit": {
    "limit": 60,
-   "remaining": 51,
-   "reset": 1781550000000,
+   "remaining": 59,
+   "reset": 1781557200000,
    "window_seconds": 3600
   },
   "tier": "public",
