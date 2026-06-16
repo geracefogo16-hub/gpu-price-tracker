@@ -2550,10 +2550,10 @@ pull_date,kind,provider_slug,item_slug,gpu_count,pricing_type,commitment_months,
 2026-06-16,gpu,massedcompute,h200,4,spot,,2026-06-16T00:00:40.382060+00:00
 2026-06-16,gpu,massedcompute,h200,8,on_demand,,2026-06-16T00:00:40.360663+00:00
 2026-06-16,gpu,massedcompute,h200,8,spot,,2026-06-16T00:00:40.407198+00:00
-2026-06-16,gpu,nebius,b200,1,on_demand,,2026-06-12T21:01:06.526521+00:00
-2026-06-16,gpu,nebius,h100,1,on_demand,,2026-06-16T00:00:35.612284+00:00
+2026-06-16,gpu,nebius,b200,1,on_demand,,2026-06-16T15:01:03.225427+00:00
+2026-06-16,gpu,nebius,h100,1,on_demand,,2026-06-16T15:01:03.331221+00:00
 2026-06-16,gpu,nebius,h100,8,on_demand,,2026-06-16T00:00:35.577132+00:00
-2026-06-16,gpu,nebius,h200,1,on_demand,,2026-06-16T00:00:35.546050+00:00
+2026-06-16,gpu,nebius,h200,1,on_demand,,2026-06-16T15:01:03.272814+00:00
 2026-06-16,gpu,nebius,h200,8,on_demand,,2026-06-16T00:00:35.632554+00:00
 2026-06-16,gpu,oblivus,a100sxm,1,on_demand,,2026-06-12T23:01:21.613554+00:00
 2026-06-16,gpu,oblivus,h100,1,on_demand,,2026-06-12T23:01:21.570962+00:00
@@ -2705,7 +2705,7 @@ pull_date,kind,provider_slug,item_slug,gpu_count,pricing_type,commitment_months,
 2026-06-16,llm,deep-infra,gpt-oss-120b,,standard,,2026-06-16T05:00:36.523376+00:00
 2026-06-16,llm,fireworks-ai,gpt-oss-120b,,standard,,2026-06-16T13:00:59.455995+00:00
 2026-06-16,llm,groq,gpt-oss-120b,,standard,,2026-06-16T17:00:58.824033+00:00
-2026-06-16,llm,hyperstack,gpt-oss-120b,,standard,,2026-06-15T17:01:05.677198+00:00
+2026-06-16,llm,hyperstack,gpt-oss-120b,,standard,,2026-06-16T19:01:01.291033+00:00
 2026-06-16,llm,ionet,gpt-oss-120b,,standard,,2026-06-16T05:01:25.464259+00:00
 2026-06-16,llm,openrouter,claude-opus-4-5,,standard,,2026-06-16T05:00:09.021659+00:00
 2026-06-16,llm,openrouter,gpt-oss-120b,,standard,,2026-06-16T05:00:10.239693+00:00
