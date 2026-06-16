@@ -1,7 +1,7 @@
 {
  "api_rows_returned": {
   "gpu": 1038,
-  "llm": 477
+  "llm": 476
  },
  "gpu_rows_by_slug": {
   "a100sxm": 109,
@@ -15,8 +15,8 @@
  },
  "new_providers": [],
  "new_rows": {
-  "gpu": 0,
-  "llm": 0
+  "gpu": 187,
+  "llm": 12
  },
  "pricing_type_combos": {
   "on_demand|None": 263,
@@ -28,7 +28,7 @@
   "reserved|6": 10,
   "spot|None": 40
  },
- "pull_date": "2026-06-15",
+ "pull_date": "2026-06-16",
  "rejected": 0,
  "requests_used": 13,
  "sanity_flagged": 1,
@@ -37,7 +37,7 @@
   "gpu": 369,
   "llm": 15
  },
- "ts": "2026-06-15T20:40:10.688878+00:00",
+ "ts": "2026-06-16T18:58:32.956572+00:00",
  "updated_rows": {
   "gpu": 0,
   "llm": 0
