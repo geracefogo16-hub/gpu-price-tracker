@@ -10,22 +10,18 @@
   "gb300": 7,
   "h100": 108,
   "h100nvl": 19,
-  "h200": 69,
-  "mi300x": 12
+  "h200": 70,
+  "mi300x": 11
  },
- "new_providers": [
-  "1legion-com",
-  "atmoscompute-com",
-  "lyceum-technology"
- ],
+ "new_providers": [],
  "new_rows": {
-  "gpu": 318,
-  "llm": 15
+  "gpu": 6,
+  "llm": 0
  },
  "pricing_type_combos": {
-  "on_demand|None": 261,
+  "on_demand|None": 260,
   "reserved|1": 5,
-  "reserved|12": 25,
+  "reserved|12": 26,
   "reserved|24": 13,
   "reserved|3": 1,
   "reserved|36": 20,
@@ -34,20 +30,19 @@
  },
  "pull_date": "2026-06-25",
  "rejected": 0,
- "requests_used": 17,
+ "requests_used": 18,
  "sanity_flagged": 1,
  "status": "ok",
  "tracked_rows": {
   "gpu": 378,
   "llm": 15
  },
- "ts": "2026-06-25T07:55:37.539544+00:00",
+ "ts": "2026-06-25T11:49:57.663003+00:00",
  "updated_rows": {
-  "gpu": 0,
+  "gpu": 2,
   "llm": 0
  },
  "warnings": [
-  "gpu-prices returned 1000 rows (probable server cap) — supplementing with per-slug filtered calls",
-  "new provider(s) detected: 1legion-com, atmoscompute-com, lyceum-technology"
+  "gpu-prices returned 1000 rows (probable server cap) — supplementing with per-slug filtered calls"
  ]
 }
