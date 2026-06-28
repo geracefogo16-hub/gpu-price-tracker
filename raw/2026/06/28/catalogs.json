@@ -1,0 +1,7125 @@
+{
+ "fetched_at_date": "2026-06-28",
+ "gpus": [
+  {
+   "architecture": "Ampere",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "4f72c25a-0799-4d27-a2ac-8cdb828058fd",
+   "image_url": "",
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "A10",
+   "performance_tier": "high",
+   "release_date": "2021-01-01",
+   "server_gpu": false,
+   "slug": "a10",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 9216,
+    "fp16_tflops": 125,
+    "fp32_tflops": 31.2,
+    "fp64_tflops": null,
+    "int8_tops": 250,
+    "manufacturing_process_nm": 8,
+    "max_power_watt": 150,
+    "memory_bandwidth_gbps": 600,
+    "memory_interface_bit": 384,
+    "memory_type": null,
+    "rt_cores": 72,
+    "tdp_watt": 150,
+    "tensor_cores": 288
+   },
+   "vram_gb": 24
+  },
+  {
+   "architecture": "Ampere",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "0549ed49-7227-452e-a31d-a29941c5eac2",
+   "image_url": "",
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "A100 PCIE",
+   "performance_tier": "ultra",
+   "release_date": "2020-06-22",
+   "server_gpu": false,
+   "slug": "a100pcie",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 6912,
+    "fp16_tflops": 312,
+    "fp32_tflops": 19.5,
+    "fp64_tflops": 9.7,
+    "int8_tops": 624,
+    "manufacturing_process_nm": 7,
+    "max_power_watt": 250,
+    "memory_bandwidth_gbps": 1555,
+    "memory_interface_bit": 5120,
+    "memory_type": null,
+    "rt_cores": 0,
+    "tdp_watt": 250,
+    "tensor_cores": 432
+   },
+   "vram_gb": 40
+  },
+  {
+   "architecture": "Ampere",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "18ae1548-0a72-4e0c-82eb-8b90b4c841ad",
+   "image_url": "",
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "A100 SXM",
+   "performance_tier": "ultra",
+   "release_date": "2020-11-16",
+   "server_gpu": false,
+   "slug": "a100sxm",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 6912,
+    "fp16_tflops": 312,
+    "fp32_tflops": 19.5,
+    "fp64_tflops": 9.7,
+    "int8_tops": 624,
+    "manufacturing_process_nm": 7,
+    "max_power_watt": 400,
+    "memory_bandwidth_gbps": 2039,
+    "memory_interface_bit": 5120,
+    "memory_type": null,
+    "rt_cores": 0,
+    "tdp_watt": 400,
+    "tensor_cores": 432
+   },
+   "vram_gb": 80
+  },
+  {
+   "architecture": "Ampere",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "dfd9c43a-5884-48c2-804d-d1ca1b8070ee",
+   "image_url": null,
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "A16",
+   "performance_tier": "mid",
+   "release_date": "2021-04-12",
+   "server_gpu": true,
+   "slug": "a16",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 2560,
+    "fp16_tflops": 35,
+    "fp32_tflops": 17.5,
+    "fp64_tflops": null,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": 250,
+    "memory_bandwidth_gbps": 800,
+    "memory_interface_bit": null,
+    "memory_type": null,
+    "rt_cores": null,
+    "tdp_watt": 250,
+    "tensor_cores": null
+   },
+   "vram_gb": 64
+  },
+  {
+   "architecture": "Ampere",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "5c80a799-ded6-46f9-8649-e0a6517a2543",
+   "image_url": null,
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "A2",
+   "performance_tier": "entry",
+   "release_date": "2021-11-09",
+   "server_gpu": true,
+   "slug": "a2",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 1280,
+    "fp16_tflops": 36,
+    "fp32_tflops": 4.5,
+    "fp64_tflops": null,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": 60,
+    "memory_bandwidth_gbps": 200,
+    "memory_interface_bit": null,
+    "memory_type": null,
+    "rt_cores": null,
+    "tdp_watt": 60,
+    "tensor_cores": 40
+   },
+   "vram_gb": 16
+  },
+  {
+   "architecture": "Ampere",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "8b91b9fd-0066-408d-b8f8-8cc7157151f1",
+   "image_url": null,
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "A30",
+   "performance_tier": "high",
+   "release_date": "2021-04-12",
+   "server_gpu": true,
+   "slug": "a30",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 3584,
+    "fp16_tflops": 165,
+    "fp32_tflops": 10.3,
+    "fp64_tflops": 5.2,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": 165,
+    "memory_bandwidth_gbps": 933,
+    "memory_interface_bit": null,
+    "memory_type": null,
+    "rt_cores": null,
+    "tdp_watt": 165,
+    "tensor_cores": 224
+   },
+   "vram_gb": 24
+  },
+  {
+   "architecture": "Ampere",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "6cad9dd7-5e51-4b5c-ac10-835f8be14d83",
+   "image_url": "",
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "A40",
+   "performance_tier": "high",
+   "release_date": "2020-01-01",
+   "server_gpu": false,
+   "slug": "a40",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 10752,
+    "fp16_tflops": 149.7,
+    "fp32_tflops": 37.4,
+    "fp64_tflops": null,
+    "int8_tops": 299.3,
+    "manufacturing_process_nm": 8,
+    "max_power_watt": 300,
+    "memory_bandwidth_gbps": 696,
+    "memory_interface_bit": 384,
+    "memory_type": null,
+    "rt_cores": 84,
+    "tdp_watt": 300,
+    "tensor_cores": 336
+   },
+   "vram_gb": 48
+  },
+  {
+   "architecture": "Blackwell",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "25f15339-1d16-43c9-bae4-7991b8905ce5",
+   "image_url": null,
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "B100",
+   "performance_tier": "ultra",
+   "release_date": "2024-03-18",
+   "server_gpu": true,
+   "slug": "b100",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": null,
+    "fp16_tflops": 3500,
+    "fp32_tflops": 60,
+    "fp64_tflops": null,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": 700,
+    "memory_bandwidth_gbps": 8000,
+    "memory_interface_bit": null,
+    "memory_type": null,
+    "rt_cores": null,
+    "tdp_watt": 700,
+    "tensor_cores": null
+   },
+   "vram_gb": 192
+  },
+  {
+   "architecture": "Blackwell",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "cf874b6e-7f9c-4c06-9bf6-37be87eeac9a",
+   "image_url": "",
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "B200",
+   "performance_tier": "ultra",
+   "release_date": "2024-01-01",
+   "server_gpu": false,
+   "slug": "b200",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": null,
+    "fp16_tflops": 4500,
+    "fp32_tflops": 80,
+    "fp64_tflops": 40,
+    "int8_tops": 9000,
+    "manufacturing_process_nm": null,
+    "max_power_watt": 1000,
+    "memory_bandwidth_gbps": 8000,
+    "memory_interface_bit": null,
+    "memory_type": null,
+    "rt_cores": null,
+    "tdp_watt": 1000,
+    "tensor_cores": null
+   },
+   "vram_gb": 192
+  },
+  {
+   "architecture": "Gaudi",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "e1324c6a-10a3-407d-99a4-f11dce245195",
+   "image_url": null,
+   "manufacturer": "Intel",
+   "msrp_usd": null,
+   "name": "Gaudi 2",
+   "performance_tier": "high",
+   "release_date": "2022-05-10",
+   "server_gpu": true,
+   "slug": "gaudi2",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": null,
+    "fp16_tflops": 432,
+    "fp32_tflops": null,
+    "fp64_tflops": null,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": 600,
+    "memory_bandwidth_gbps": 2450,
+    "memory_interface_bit": null,
+    "memory_type": null,
+    "rt_cores": null,
+    "tdp_watt": 600,
+    "tensor_cores": null
+   },
+   "vram_gb": 96
+  },
+  {
+   "architecture": "Gaudi",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "3e5902db-9c76-47d6-9d3a-fad0d475f1d8",
+   "image_url": null,
+   "manufacturer": "Intel",
+   "msrp_usd": null,
+   "name": "Gaudi 3",
+   "performance_tier": "ultra",
+   "release_date": "2024-04-09",
+   "server_gpu": true,
+   "slug": "gaudi3",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": null,
+    "fp16_tflops": 1835,
+    "fp32_tflops": null,
+    "fp64_tflops": null,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": 900,
+    "memory_bandwidth_gbps": 3675,
+    "memory_interface_bit": null,
+    "memory_type": null,
+    "rt_cores": null,
+    "tdp_watt": 900,
+    "tensor_cores": null
+   },
+   "vram_gb": 128
+  },
+  {
+   "architecture": "Blackwell",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "2a6ef900-f3e2-4970-917c-dab310c6373f",
+   "image_url": null,
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "GB200",
+   "performance_tier": "ultra",
+   "release_date": "2024-03-18",
+   "server_gpu": true,
+   "slug": "gb200",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": null,
+    "fp16_tflops": 9000,
+    "fp32_tflops": 160,
+    "fp64_tflops": null,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": 2700,
+    "memory_bandwidth_gbps": 16000,
+    "memory_interface_bit": null,
+    "memory_type": null,
+    "rt_cores": null,
+    "tdp_watt": 2700,
+    "tensor_cores": null
+   },
+   "vram_gb": 384
+  },
+  {
+   "architecture": "Blackwell",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "968fe50a-8aef-4258-b3e9-d9ac6d1d20ff",
+   "image_url": null,
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "GB300",
+   "performance_tier": "ultra",
+   "release_date": "2025-03-18",
+   "server_gpu": true,
+   "slug": "gb300",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": null,
+    "fp16_tflops": 10000,
+    "fp32_tflops": 200,
+    "fp64_tflops": null,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": 2800,
+    "memory_bandwidth_gbps": 16000,
+    "memory_interface_bit": null,
+    "memory_type": null,
+    "rt_cores": null,
+    "tdp_watt": 2700,
+    "tensor_cores": null
+   },
+   "vram_gb": 576
+  },
+  {
+   "architecture": "Hopper",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "22218f48-44f7-4902-b1fe-560b09c9b8eb",
+   "image_url": "",
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "GH200",
+   "performance_tier": "ultra",
+   "release_date": "2023-01-01",
+   "server_gpu": false,
+   "slug": "gh200",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 16896,
+    "fp16_tflops": 990,
+    "fp32_tflops": 67,
+    "fp64_tflops": 34,
+    "int8_tops": 1979,
+    "manufacturing_process_nm": 4,
+    "max_power_watt": 1000,
+    "memory_bandwidth_gbps": 4000,
+    "memory_interface_bit": null,
+    "memory_type": null,
+    "rt_cores": null,
+    "tdp_watt": 700,
+    "tensor_cores": 528
+   },
+   "vram_gb": 96
+  },
+  {
+   "architecture": "Hopper",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "21fc2baf-99f0-43aa-9b90-b6e64b6f2ffb",
+   "image_url": "/images/gpus/h100.jpg",
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "H100 SXM",
+   "performance_tier": "ultra",
+   "release_date": "2022-03-22",
+   "server_gpu": true,
+   "slug": "h100",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 14592,
+    "fp16_tflops": 990,
+    "fp32_tflops": 67,
+    "fp64_tflops": 34,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": 700,
+    "memory_bandwidth_gbps": 3350,
+    "memory_interface_bit": null,
+    "memory_type": null,
+    "rt_cores": null,
+    "tdp_watt": 700,
+    "tensor_cores": 456
+   },
+   "vram_gb": 80
+  },
+  {
+   "architecture": "Hopper",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "2c15355b-6673-4a35-8c36-a61b5c1c045c",
+   "image_url": null,
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "H100 NVL",
+   "performance_tier": "ultra",
+   "release_date": "2023-03-21",
+   "server_gpu": true,
+   "slug": "h100nvl",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 14592,
+    "fp16_tflops": 835,
+    "fp32_tflops": 67,
+    "fp64_tflops": 34,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": 400,
+    "memory_bandwidth_gbps": 3958,
+    "memory_interface_bit": null,
+    "memory_type": null,
+    "rt_cores": null,
+    "tdp_watt": 400,
+    "tensor_cores": 456
+   },
+   "vram_gb": 94
+  },
+  {
+   "architecture": "Hopper",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "c0496b70-0204-413d-8ab8-f13043a6436e",
+   "image_url": null,
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "H100 PCIe",
+   "performance_tier": "ultra",
+   "release_date": "2022-09-20",
+   "server_gpu": true,
+   "slug": "h100pcie",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 14592,
+    "fp16_tflops": 756,
+    "fp32_tflops": 51,
+    "fp64_tflops": 26,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": 350,
+    "memory_bandwidth_gbps": 2000,
+    "memory_interface_bit": null,
+    "memory_type": null,
+    "rt_cores": null,
+    "tdp_watt": 350,
+    "tensor_cores": 456
+   },
+   "vram_gb": 80
+  },
+  {
+   "architecture": "Hopper",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "242d0457-c655-46c9-98cc-5406500ebcdb",
+   "image_url": "",
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "H200",
+   "performance_tier": "ultra",
+   "release_date": "2023-01-01",
+   "server_gpu": false,
+   "slug": "h200",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 16896,
+    "fp16_tflops": 990,
+    "fp32_tflops": 67,
+    "fp64_tflops": 34,
+    "int8_tops": 1979,
+    "manufacturing_process_nm": 4,
+    "max_power_watt": 700,
+    "memory_bandwidth_gbps": 4800,
+    "memory_interface_bit": null,
+    "memory_type": null,
+    "rt_cores": null,
+    "tdp_watt": 700,
+    "tensor_cores": 528
+   },
+   "vram_gb": 141
+  },
+  {
+   "architecture": "Blackwell",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "746e3acd-179b-4ac9-8725-76b22530325e",
+   "image_url": null,
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "HGX B300",
+   "performance_tier": "ultra",
+   "release_date": "2025-03-18",
+   "server_gpu": true,
+   "slug": "hgx-b300",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": null,
+    "fp16_tflops": 5000,
+    "fp32_tflops": 100,
+    "fp64_tflops": null,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": 1400,
+    "memory_bandwidth_gbps": 8000,
+    "memory_interface_bit": null,
+    "memory_type": null,
+    "rt_cores": null,
+    "tdp_watt": 1100,
+    "tensor_cores": null
+   },
+   "vram_gb": 288
+  },
+  {
+   "architecture": "Ada Lovelace",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "eb0a76e7-8128-4a69-923c-8af64e206ba7",
+   "image_url": null,
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "L4",
+   "performance_tier": "entry",
+   "release_date": "2023-03-21",
+   "server_gpu": true,
+   "slug": "l4",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 7424,
+    "fp16_tflops": 121,
+    "fp32_tflops": 30.29,
+    "fp64_tflops": null,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": 72,
+    "memory_bandwidth_gbps": 300,
+    "memory_interface_bit": null,
+    "memory_type": null,
+    "rt_cores": null,
+    "tdp_watt": 72,
+    "tensor_cores": 232
+   },
+   "vram_gb": 24
+  },
+  {
+   "architecture": "Ada Lovelace",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "35ea1053-61bd-4faa-96da-39fde253a040",
+   "image_url": "",
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "L40",
+   "performance_tier": "high",
+   "release_date": "2022-10-13",
+   "server_gpu": false,
+   "slug": "l40",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 18176,
+    "fp16_tflops": 181.05,
+    "fp32_tflops": 90.5,
+    "fp64_tflops": 1.41,
+    "int8_tops": 362,
+    "manufacturing_process_nm": 4,
+    "max_power_watt": 300,
+    "memory_bandwidth_gbps": 864,
+    "memory_interface_bit": 384,
+    "memory_type": null,
+    "rt_cores": 142,
+    "tdp_watt": 300,
+    "tensor_cores": 568
+   },
+   "vram_gb": 40
+  },
+  {
+   "architecture": "Ada Lovelace",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "b6bdde1e-9b0e-4a64-8579-ac34e7da1d6f",
+   "image_url": "",
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "L40S",
+   "performance_tier": "high",
+   "release_date": "2023-01-01",
+   "server_gpu": false,
+   "slug": "l40s",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 18176,
+    "fp16_tflops": 362.05,
+    "fp32_tflops": 91.6,
+    "fp64_tflops": null,
+    "int8_tops": 733,
+    "manufacturing_process_nm": 4,
+    "max_power_watt": 350,
+    "memory_bandwidth_gbps": 864,
+    "memory_interface_bit": 384,
+    "memory_type": null,
+    "rt_cores": 142,
+    "tdp_watt": 350,
+    "tensor_cores": 568
+   },
+   "vram_gb": 48
+  },
+  {
+   "architecture": "Xe HPC",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "d4416741-a4ce-4db4-84fc-b96cbda9c737",
+   "image_url": null,
+   "manufacturer": "Intel",
+   "msrp_usd": null,
+   "name": "Max 1100",
+   "performance_tier": "high",
+   "release_date": "2022-11-09",
+   "server_gpu": true,
+   "slug": "max1100",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": null,
+    "fp16_tflops": 419,
+    "fp32_tflops": null,
+    "fp64_tflops": 26,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": 300,
+    "memory_bandwidth_gbps": 1229,
+    "memory_interface_bit": null,
+    "memory_type": null,
+    "rt_cores": null,
+    "tdp_watt": 300,
+    "tensor_cores": null
+   },
+   "vram_gb": 48
+  },
+  {
+   "architecture": "Xe HPC",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "efca46e4-6fec-474c-b384-2b03b75148c2",
+   "image_url": null,
+   "manufacturer": "Intel",
+   "msrp_usd": null,
+   "name": "Max 1550",
+   "performance_tier": "ultra",
+   "release_date": "2022-11-09",
+   "server_gpu": true,
+   "slug": "max1550",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": null,
+    "fp16_tflops": 839,
+    "fp32_tflops": null,
+    "fp64_tflops": 52,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": 600,
+    "memory_bandwidth_gbps": 3276,
+    "memory_interface_bit": null,
+    "memory_type": null,
+    "rt_cores": null,
+    "tdp_watt": 600,
+    "tensor_cores": null
+   },
+   "vram_gb": 128
+  },
+  {
+   "architecture": "CDNA",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "2023764e-fba0-421d-a3d1-8a6471bb13fb",
+   "image_url": null,
+   "manufacturer": "AMD",
+   "msrp_usd": null,
+   "name": "MI100",
+   "performance_tier": "high",
+   "release_date": "2020-11-16",
+   "server_gpu": true,
+   "slug": "mi100",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": null,
+    "fp16_tflops": 184.6,
+    "fp32_tflops": null,
+    "fp64_tflops": 11.54,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": 300,
+    "memory_bandwidth_gbps": 1228,
+    "memory_interface_bit": null,
+    "memory_type": null,
+    "rt_cores": null,
+    "tdp_watt": 300,
+    "tensor_cores": null
+   },
+   "vram_gb": 32
+  },
+  {
+   "architecture": "CDNA 2",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "1180ce1e-1fff-4978-8610-8c45a478ba91",
+   "image_url": null,
+   "manufacturer": "AMD",
+   "msrp_usd": null,
+   "name": "MI210",
+   "performance_tier": "high",
+   "release_date": "2022-03-22",
+   "server_gpu": true,
+   "slug": "mi210",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": null,
+    "fp16_tflops": 181,
+    "fp32_tflops": null,
+    "fp64_tflops": 22.63,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": 300,
+    "memory_bandwidth_gbps": 1638,
+    "memory_interface_bit": null,
+    "memory_type": null,
+    "rt_cores": null,
+    "tdp_watt": 300,
+    "tensor_cores": null
+   },
+   "vram_gb": 64
+  },
+  {
+   "architecture": "CDNA 2",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "75f536e5-80bc-4d1b-93e5-2ee79480a08d",
+   "image_url": null,
+   "manufacturer": "AMD",
+   "msrp_usd": null,
+   "name": "MI250",
+   "performance_tier": "ultra",
+   "release_date": "2021-11-08",
+   "server_gpu": true,
+   "slug": "mi250",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": null,
+    "fp16_tflops": 362,
+    "fp32_tflops": null,
+    "fp64_tflops": 45.26,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": 500,
+    "memory_bandwidth_gbps": 3276,
+    "memory_interface_bit": null,
+    "memory_type": null,
+    "rt_cores": null,
+    "tdp_watt": 500,
+    "tensor_cores": null
+   },
+   "vram_gb": 128
+  },
+  {
+   "architecture": "CDNA 2",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "919eddf3-2c77-49bf-aaa4-3ea8e98e8e5a",
+   "image_url": null,
+   "manufacturer": "AMD",
+   "msrp_usd": null,
+   "name": "MI250X",
+   "performance_tier": "ultra",
+   "release_date": "2021-11-08",
+   "server_gpu": true,
+   "slug": "mi250x",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": null,
+    "fp16_tflops": 383,
+    "fp32_tflops": null,
+    "fp64_tflops": 47.87,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": 560,
+    "memory_bandwidth_gbps": 3276,
+    "memory_interface_bit": null,
+    "memory_type": null,
+    "rt_cores": null,
+    "tdp_watt": 560,
+    "tensor_cores": null
+   },
+   "vram_gb": 128
+  },
+  {
+   "architecture": "CDNA 3",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "9ee39dd0-5036-4f7f-85d1-a5d89ac8001e",
+   "image_url": null,
+   "manufacturer": "AMD",
+   "msrp_usd": null,
+   "name": "MI300A",
+   "performance_tier": "ultra",
+   "release_date": "2023-12-06",
+   "server_gpu": true,
+   "slug": "mi300a",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": null,
+    "fp16_tflops": 980,
+    "fp32_tflops": null,
+    "fp64_tflops": null,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": 760,
+    "memory_bandwidth_gbps": 5300,
+    "memory_interface_bit": null,
+    "memory_type": null,
+    "rt_cores": null,
+    "tdp_watt": 760,
+    "tensor_cores": null
+   },
+   "vram_gb": 128
+  },
+  {
+   "architecture": "CDNA 3",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "ea52929c-d3f4-4027-a97a-e174b294a784",
+   "image_url": "",
+   "manufacturer": "AMD",
+   "msrp_usd": null,
+   "name": "MI300X",
+   "performance_tier": "ultra",
+   "release_date": "2023-01-01",
+   "server_gpu": false,
+   "slug": "mi300x",
+   "specs": {
+    "compute_units": 304,
+    "cuda_cores": null,
+    "fp16_tflops": 1305,
+    "fp32_tflops": 163.4,
+    "fp64_tflops": 81.7,
+    "int8_tops": 2610,
+    "manufacturing_process_nm": 5,
+    "max_power_watt": 750,
+    "memory_bandwidth_gbps": 5300,
+    "memory_interface_bit": null,
+    "memory_type": null,
+    "rt_cores": null,
+    "tdp_watt": 750,
+    "tensor_cores": null
+   },
+   "vram_gb": 192
+  },
+  {
+   "architecture": "CDNA 3",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": 3,
+   "id": "74df356d-d0d4-4b45-babf-470cc2961f97",
+   "image_url": null,
+   "manufacturer": "AMD",
+   "msrp_usd": null,
+   "name": "MI325X",
+   "performance_tier": null,
+   "release_date": "2024-10-10",
+   "server_gpu": true,
+   "slug": "mi325x",
+   "specs": {
+    "compute_units": 304,
+    "cuda_cores": null,
+    "fp16_tflops": 1300,
+    "fp32_tflops": null,
+    "fp64_tflops": null,
+    "int8_tops": null,
+    "manufacturing_process_nm": 5,
+    "max_power_watt": 1000,
+    "memory_bandwidth_gbps": 6000,
+    "memory_interface_bit": 8192,
+    "memory_type": null,
+    "rt_cores": null,
+    "tdp_watt": null,
+    "tensor_cores": 1216
+   },
+   "vram_gb": 256
+  },
+  {
+   "architecture": "CDNA 4",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "208696eb-8766-4305-b452-d4fdd8ef4f07",
+   "image_url": null,
+   "manufacturer": "AMD",
+   "msrp_usd": null,
+   "name": "MI355X",
+   "performance_tier": "ultra",
+   "release_date": "2025-06-01",
+   "server_gpu": true,
+   "slug": "mi355x",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": null,
+    "fp16_tflops": 1800,
+    "fp32_tflops": null,
+    "fp64_tflops": null,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": 1000,
+    "memory_bandwidth_gbps": 8000,
+    "memory_interface_bit": null,
+    "memory_type": null,
+    "rt_cores": null,
+    "tdp_watt": 1000,
+    "tensor_cores": null
+   },
+   "vram_gb": 288
+  },
+  {
+   "architecture": "Blackwell",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "9806f429-e7ab-44d0-960e-d5d8fe262c28",
+   "image_url": null,
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "RTX 6000 Pro",
+   "performance_tier": null,
+   "release_date": null,
+   "server_gpu": false,
+   "slug": "rtx-6000-pro",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": null,
+    "fp16_tflops": null,
+    "fp32_tflops": null,
+    "fp64_tflops": null,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": null,
+    "memory_bandwidth_gbps": null,
+    "memory_interface_bit": null,
+    "memory_type": null,
+    "rt_cores": null,
+    "tdp_watt": null,
+    "tensor_cores": null
+   },
+   "vram_gb": 96
+  },
+  {
+   "architecture": "Blackwell",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "ecfae1a3-6906-4af2-a0cf-3d5642267424",
+   "image_url": null,
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "RTX PRO 6000",
+   "performance_tier": "ultra",
+   "release_date": null,
+   "server_gpu": true,
+   "slug": "rtx-pro-6000",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": null,
+    "fp16_tflops": null,
+    "fp32_tflops": null,
+    "fp64_tflops": null,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": null,
+    "memory_bandwidth_gbps": null,
+    "memory_interface_bit": null,
+    "memory_type": null,
+    "rt_cores": null,
+    "tdp_watt": null,
+    "tensor_cores": null
+   },
+   "vram_gb": 96
+  },
+  {
+   "architecture": "Ampere",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "69336766-cf4c-4633-a1c7-62c7f37a6922",
+   "image_url": null,
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "RTX 3070",
+   "performance_tier": "mid",
+   "release_date": "2020-10-29",
+   "server_gpu": false,
+   "slug": "rtx3070",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 5888,
+    "fp16_tflops": null,
+    "fp32_tflops": 20.31,
+    "fp64_tflops": null,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": 220,
+    "memory_bandwidth_gbps": 448,
+    "memory_interface_bit": 256,
+    "memory_type": null,
+    "rt_cores": 46,
+    "tdp_watt": 220,
+    "tensor_cores": 184
+   },
+   "vram_gb": 8
+  },
+  {
+   "architecture": "Ampere",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "6d9452fc-d4db-4f4c-9523-5fe513d73a02",
+   "image_url": null,
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "RTX 3070 Ti",
+   "performance_tier": "mid",
+   "release_date": "2021-06-10",
+   "server_gpu": false,
+   "slug": "rtx3070ti",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 6144,
+    "fp16_tflops": null,
+    "fp32_tflops": 21.75,
+    "fp64_tflops": null,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": 290,
+    "memory_bandwidth_gbps": 608,
+    "memory_interface_bit": 256,
+    "memory_type": null,
+    "rt_cores": 48,
+    "tdp_watt": 290,
+    "tensor_cores": 192
+   },
+   "vram_gb": 8
+  },
+  {
+   "architecture": "Ampere",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "59acd2d7-5e05-4503-8242-3df926354b88",
+   "image_url": null,
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "RTX 3080",
+   "performance_tier": "mid",
+   "release_date": "2020-09-17",
+   "server_gpu": false,
+   "slug": "rtx3080",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 8704,
+    "fp16_tflops": null,
+    "fp32_tflops": 29.77,
+    "fp64_tflops": null,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": 320,
+    "memory_bandwidth_gbps": 760,
+    "memory_interface_bit": 320,
+    "memory_type": null,
+    "rt_cores": 68,
+    "tdp_watt": 320,
+    "tensor_cores": 272
+   },
+   "vram_gb": 10
+  },
+  {
+   "architecture": "Ampere",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "93a330a0-a6d4-4da1-9cc4-eca87cf19270",
+   "image_url": null,
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "RTX 3080 Ti",
+   "performance_tier": "high",
+   "release_date": "2021-06-03",
+   "server_gpu": false,
+   "slug": "rtx3080ti",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 10240,
+    "fp16_tflops": null,
+    "fp32_tflops": 34.1,
+    "fp64_tflops": null,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": 350,
+    "memory_bandwidth_gbps": 912,
+    "memory_interface_bit": 384,
+    "memory_type": null,
+    "rt_cores": 80,
+    "tdp_watt": 350,
+    "tensor_cores": 320
+   },
+   "vram_gb": 12
+  },
+  {
+   "architecture": "Ampere",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "f82875ca-e3e8-4742-9233-82b1203b99a5",
+   "image_url": "",
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "RTX 3090",
+   "performance_tier": "mid",
+   "release_date": null,
+   "server_gpu": false,
+   "slug": "rtx3090",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 10496,
+    "fp16_tflops": null,
+    "fp32_tflops": 35.58,
+    "fp64_tflops": 0.56,
+    "int8_tops": null,
+    "manufacturing_process_nm": 8,
+    "max_power_watt": 350,
+    "memory_bandwidth_gbps": 936,
+    "memory_interface_bit": 384,
+    "memory_type": null,
+    "rt_cores": 82,
+    "tdp_watt": 350,
+    "tensor_cores": 328
+   },
+   "vram_gb": 24
+  },
+  {
+   "architecture": "Ampere",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "a45182d8-3b24-4262-8ee7-1de00d8b5cd1",
+   "image_url": null,
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "RTX 3090 Ti",
+   "performance_tier": "high",
+   "release_date": "2022-03-29",
+   "server_gpu": false,
+   "slug": "rtx3090ti",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 10752,
+    "fp16_tflops": null,
+    "fp32_tflops": 40,
+    "fp64_tflops": null,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": 450,
+    "memory_bandwidth_gbps": 1008,
+    "memory_interface_bit": 384,
+    "memory_type": null,
+    "rt_cores": 84,
+    "tdp_watt": 450,
+    "tensor_cores": 336
+   },
+   "vram_gb": 24
+  },
+  {
+   "architecture": "Ada Lovelace",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "6255a7e7-5870-403c-be5c-534630247270",
+   "image_url": null,
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "RTX 4000 Ada",
+   "performance_tier": "mid",
+   "release_date": "2023-08-08",
+   "server_gpu": false,
+   "slug": "rtx4000ada",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 6144,
+    "fp16_tflops": null,
+    "fp32_tflops": 26.73,
+    "fp64_tflops": null,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": 130,
+    "memory_bandwidth_gbps": 360,
+    "memory_interface_bit": null,
+    "memory_type": null,
+    "rt_cores": 48,
+    "tdp_watt": 130,
+    "tensor_cores": 192
+   },
+   "vram_gb": 20
+  },
+  {
+   "architecture": "Ada Lovelace",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "291cf04a-44f3-419f-bd62-8db40b7226ae",
+   "image_url": null,
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "RTX 4060",
+   "performance_tier": "entry",
+   "release_date": "2023-06-29",
+   "server_gpu": false,
+   "slug": "rtx4060",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 3072,
+    "fp16_tflops": null,
+    "fp32_tflops": 15.11,
+    "fp64_tflops": null,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": 115,
+    "memory_bandwidth_gbps": 272,
+    "memory_interface_bit": 128,
+    "memory_type": null,
+    "rt_cores": 24,
+    "tdp_watt": 115,
+    "tensor_cores": 96
+   },
+   "vram_gb": 8
+  },
+  {
+   "architecture": "Ada Lovelace",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "77e039ea-f007-46fd-8614-3c9b5a38b116",
+   "image_url": null,
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "RTX 4060 Ti",
+   "performance_tier": "mid",
+   "release_date": "2023-05-24",
+   "server_gpu": false,
+   "slug": "rtx4060ti",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 4352,
+    "fp16_tflops": null,
+    "fp32_tflops": 22.06,
+    "fp64_tflops": null,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": 160,
+    "memory_bandwidth_gbps": 288,
+    "memory_interface_bit": 128,
+    "memory_type": null,
+    "rt_cores": 34,
+    "tdp_watt": 160,
+    "tensor_cores": 136
+   },
+   "vram_gb": 8
+  },
+  {
+   "architecture": "Ada Lovelace",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "062eccef-ba4c-487d-b9e2-ebf97dbf47b5",
+   "image_url": null,
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "RTX 4070",
+   "performance_tier": "mid",
+   "release_date": "2023-04-13",
+   "server_gpu": false,
+   "slug": "rtx4070",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 5888,
+    "fp16_tflops": null,
+    "fp32_tflops": 29.15,
+    "fp64_tflops": null,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": 200,
+    "memory_bandwidth_gbps": 504,
+    "memory_interface_bit": 192,
+    "memory_type": null,
+    "rt_cores": 46,
+    "tdp_watt": 200,
+    "tensor_cores": 184
+   },
+   "vram_gb": 12
+  },
+  {
+   "architecture": "Ada Lovelace",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "8dcb92d3-a59a-4741-9850-aa2ec49a5799",
+   "image_url": null,
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "RTX 4070 SUPER",
+   "performance_tier": "mid",
+   "release_date": "2024-01-17",
+   "server_gpu": false,
+   "slug": "rtx4070super",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 7168,
+    "fp16_tflops": null,
+    "fp32_tflops": 35.48,
+    "fp64_tflops": null,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": 220,
+    "memory_bandwidth_gbps": 504,
+    "memory_interface_bit": 192,
+    "memory_type": null,
+    "rt_cores": 56,
+    "tdp_watt": 220,
+    "tensor_cores": 224
+   },
+   "vram_gb": 12
+  },
+  {
+   "architecture": "Ada Lovelace",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "c5a440fd-d3f3-4dfb-8c3b-d5955c563aa4",
+   "image_url": null,
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "RTX 4070 Ti",
+   "performance_tier": "high",
+   "release_date": "2023-01-05",
+   "server_gpu": false,
+   "slug": "rtx4070ti",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 7680,
+    "fp16_tflops": null,
+    "fp32_tflops": 40.09,
+    "fp64_tflops": null,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": 285,
+    "memory_bandwidth_gbps": 504,
+    "memory_interface_bit": 192,
+    "memory_type": null,
+    "rt_cores": 60,
+    "tdp_watt": 285,
+    "tensor_cores": 240
+   },
+   "vram_gb": 12
+  },
+  {
+   "architecture": "Ada Lovelace",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "6211ff80-23d5-4788-9e4a-493a2d53cf34",
+   "image_url": null,
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "RTX 4070 Ti SUPER",
+   "performance_tier": "high",
+   "release_date": "2024-01-24",
+   "server_gpu": false,
+   "slug": "rtx4070tisuper",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 8448,
+    "fp16_tflops": null,
+    "fp32_tflops": 44.1,
+    "fp64_tflops": null,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": 285,
+    "memory_bandwidth_gbps": 672,
+    "memory_interface_bit": 256,
+    "memory_type": null,
+    "rt_cores": 66,
+    "tdp_watt": 285,
+    "tensor_cores": 264
+   },
+   "vram_gb": 16
+  },
+  {
+   "architecture": "Ada Lovelace",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "65705086-e514-4584-95f6-39d2252455be",
+   "image_url": "",
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "RTX 4080",
+   "performance_tier": "mid",
+   "release_date": "2022-11-20",
+   "server_gpu": false,
+   "slug": "rtx4080",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 9728,
+    "fp16_tflops": null,
+    "fp32_tflops": 48.83,
+    "fp64_tflops": 0.76,
+    "int8_tops": null,
+    "manufacturing_process_nm": 5,
+    "max_power_watt": 320,
+    "memory_bandwidth_gbps": 717,
+    "memory_interface_bit": 256,
+    "memory_type": null,
+    "rt_cores": 76,
+    "tdp_watt": 320,
+    "tensor_cores": 304
+   },
+   "vram_gb": 16
+  },
+  {
+   "architecture": "Ada Lovelace",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "453ef1b8-d61b-4010-ab50-b41709f6112e",
+   "image_url": null,
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "RTX 4080 SUPER",
+   "performance_tier": "high",
+   "release_date": "2024-01-31",
+   "server_gpu": false,
+   "slug": "rtx4080super",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 10240,
+    "fp16_tflops": null,
+    "fp32_tflops": 52.22,
+    "fp64_tflops": null,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": 320,
+    "memory_bandwidth_gbps": 736,
+    "memory_interface_bit": 256,
+    "memory_type": null,
+    "rt_cores": 80,
+    "tdp_watt": 320,
+    "tensor_cores": 320
+   },
+   "vram_gb": 16
+  },
+  {
+   "architecture": "Ada Lovelace",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "689b878b-64ad-4cd3-8480-ef53ea39d665",
+   "image_url": "",
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "RTX 4090",
+   "performance_tier": "high",
+   "release_date": "2022-10-12",
+   "server_gpu": false,
+   "slug": "rtx4090",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 16384,
+    "fp16_tflops": null,
+    "fp32_tflops": 82.6,
+    "fp64_tflops": 1.29,
+    "int8_tops": null,
+    "manufacturing_process_nm": 5,
+    "max_power_watt": 450,
+    "memory_bandwidth_gbps": 1008,
+    "memory_interface_bit": 384,
+    "memory_type": null,
+    "rt_cores": 128,
+    "tdp_watt": 450,
+    "tensor_cores": 512
+   },
+   "vram_gb": 24
+  },
+  {
+   "architecture": "Ada Lovelace",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "5655a384-599f-4656-ba6e-9da220d13f13",
+   "image_url": null,
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "RTX 4500 Ada",
+   "performance_tier": "mid",
+   "release_date": "2023-08-08",
+   "server_gpu": false,
+   "slug": "rtx4500ada",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 7680,
+    "fp16_tflops": null,
+    "fp32_tflops": 39.63,
+    "fp64_tflops": null,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": 210,
+    "memory_bandwidth_gbps": 432,
+    "memory_interface_bit": null,
+    "memory_type": null,
+    "rt_cores": 60,
+    "tdp_watt": 210,
+    "tensor_cores": 240
+   },
+   "vram_gb": 24
+  },
+  {
+   "architecture": "Ada Lovelace",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "1dc0d3dd-c4e8-4f6e-ae76-4dde1efae4bd",
+   "image_url": null,
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "RTX 5000",
+   "performance_tier": "high",
+   "release_date": "2023-08-08",
+   "server_gpu": false,
+   "slug": "rtx5000ada",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 12800,
+    "fp16_tflops": null,
+    "fp32_tflops": 65.28,
+    "fp64_tflops": null,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": 250,
+    "memory_bandwidth_gbps": 576,
+    "memory_interface_bit": null,
+    "memory_type": null,
+    "rt_cores": 100,
+    "tdp_watt": 250,
+    "tensor_cores": 400
+   },
+   "vram_gb": 32
+  },
+  {
+   "architecture": "Blackwell",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "28f09864-de8e-498f-8c3d-a7f3484c504a",
+   "image_url": null,
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "RTX 5060",
+   "performance_tier": "entry",
+   "release_date": null,
+   "server_gpu": false,
+   "slug": "rtx5060",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": null,
+    "fp16_tflops": null,
+    "fp32_tflops": null,
+    "fp64_tflops": null,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": null,
+    "memory_bandwidth_gbps": null,
+    "memory_interface_bit": null,
+    "memory_type": null,
+    "rt_cores": null,
+    "tdp_watt": null,
+    "tensor_cores": null
+   },
+   "vram_gb": 12
+  },
+  {
+   "architecture": "Blackwell",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "9c6e13c7-3100-4f8c-bd6b-1f2df9e2de99",
+   "image_url": null,
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "RTX 5060 Ti",
+   "performance_tier": "mid",
+   "release_date": null,
+   "server_gpu": false,
+   "slug": "rtx5060ti",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": null,
+    "fp16_tflops": null,
+    "fp32_tflops": null,
+    "fp64_tflops": null,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": null,
+    "memory_bandwidth_gbps": null,
+    "memory_interface_bit": null,
+    "memory_type": null,
+    "rt_cores": null,
+    "tdp_watt": null,
+    "tensor_cores": null
+   },
+   "vram_gb": 16
+  },
+  {
+   "architecture": "Blackwell",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "ba22c000-6ffd-4198-a9a2-46f8302869a4",
+   "image_url": null,
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "RTX 5070",
+   "performance_tier": "mid",
+   "release_date": null,
+   "server_gpu": false,
+   "slug": "rtx5070",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": null,
+    "fp16_tflops": null,
+    "fp32_tflops": null,
+    "fp64_tflops": null,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": null,
+    "memory_bandwidth_gbps": null,
+    "memory_interface_bit": null,
+    "memory_type": null,
+    "rt_cores": null,
+    "tdp_watt": null,
+    "tensor_cores": null
+   },
+   "vram_gb": 12
+  },
+  {
+   "architecture": "Blackwell",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "acdc2ba2-691f-48ce-99ee-778d3d86abff",
+   "image_url": null,
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "RTX 5070 Ti",
+   "performance_tier": "high",
+   "release_date": null,
+   "server_gpu": false,
+   "slug": "rtx5070ti",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": null,
+    "fp16_tflops": null,
+    "fp32_tflops": null,
+    "fp64_tflops": null,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": null,
+    "memory_bandwidth_gbps": null,
+    "memory_interface_bit": null,
+    "memory_type": null,
+    "rt_cores": null,
+    "tdp_watt": null,
+    "tensor_cores": null
+   },
+   "vram_gb": 16
+  },
+  {
+   "architecture": "Blackwell",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "3ec30b43-cf84-4de5-b4b7-b864f1f87b3b",
+   "image_url": null,
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "RTX 5080",
+   "performance_tier": "high",
+   "release_date": null,
+   "server_gpu": false,
+   "slug": "rtx5080",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": null,
+    "fp16_tflops": null,
+    "fp32_tflops": null,
+    "fp64_tflops": null,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": null,
+    "memory_bandwidth_gbps": null,
+    "memory_interface_bit": null,
+    "memory_type": null,
+    "rt_cores": null,
+    "tdp_watt": null,
+    "tensor_cores": null
+   },
+   "vram_gb": 16
+  },
+  {
+   "architecture": "Blackwell",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "cb5c7edf-0786-4bf4-8cfb-180af99f0ebf",
+   "image_url": null,
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "RTX 5090",
+   "performance_tier": "ultra",
+   "release_date": null,
+   "server_gpu": false,
+   "slug": "rtx5090",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": null,
+    "fp16_tflops": null,
+    "fp32_tflops": null,
+    "fp64_tflops": null,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": null,
+    "memory_bandwidth_gbps": null,
+    "memory_interface_bit": null,
+    "memory_type": null,
+    "rt_cores": null,
+    "tdp_watt": null,
+    "tensor_cores": null
+   },
+   "vram_gb": 32
+  },
+  {
+   "architecture": "Ada Lovelace",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "72fd4577-5489-424d-8a88-25b867b83fc2",
+   "image_url": "",
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "RTX 6000 Ada",
+   "performance_tier": "high",
+   "release_date": "2022-01-01",
+   "server_gpu": false,
+   "slug": "rtx6000ada",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 18176,
+    "fp16_tflops": 728.5,
+    "fp32_tflops": 91.1,
+    "fp64_tflops": 1.42,
+    "int8_tops": 728.5,
+    "manufacturing_process_nm": 4,
+    "max_power_watt": 300,
+    "memory_bandwidth_gbps": 960,
+    "memory_interface_bit": 384,
+    "memory_type": null,
+    "rt_cores": 142,
+    "tdp_watt": 300,
+    "tensor_cores": 568
+   },
+   "vram_gb": 48
+  },
+  {
+   "architecture": "Ampere",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "5f5113c7-993b-4b65-9a01-51bf9e1c8c91",
+   "image_url": null,
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "RTX A2000",
+   "performance_tier": "entry",
+   "release_date": "2021-08-10",
+   "server_gpu": false,
+   "slug": "rtxa2000",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 3328,
+    "fp16_tflops": null,
+    "fp32_tflops": 7.99,
+    "fp64_tflops": null,
+    "int8_tops": null,
+    "manufacturing_process_nm": 6,
+    "max_power_watt": 70,
+    "memory_bandwidth_gbps": 288,
+    "memory_interface_bit": 192,
+    "memory_type": null,
+    "rt_cores": 26,
+    "tdp_watt": 70,
+    "tensor_cores": 104
+   },
+   "vram_gb": 6
+  },
+  {
+   "architecture": "Ampere",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "8a657d8d-720b-4532-8422-30cc9ac6e588",
+   "image_url": "",
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "RTX A4000",
+   "performance_tier": "high",
+   "release_date": "2021-08-15",
+   "server_gpu": false,
+   "slug": "rtxa4000",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 6144,
+    "fp16_tflops": 76.7,
+    "fp32_tflops": 19.2,
+    "fp64_tflops": 0.3,
+    "int8_tops": 153.4,
+    "manufacturing_process_nm": 8,
+    "max_power_watt": 140,
+    "memory_bandwidth_gbps": 448,
+    "memory_interface_bit": 256,
+    "memory_type": null,
+    "rt_cores": 48,
+    "tdp_watt": 140,
+    "tensor_cores": 192
+   },
+   "vram_gb": 16
+  },
+  {
+   "architecture": "Ampere",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "ad4f235f-9eb2-45d4-8593-a4723d2ccfcd",
+   "image_url": null,
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "RTX A4500",
+   "performance_tier": "mid",
+   "release_date": null,
+   "server_gpu": true,
+   "slug": "rtxa4500",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": null,
+    "fp16_tflops": null,
+    "fp32_tflops": null,
+    "fp64_tflops": null,
+    "int8_tops": null,
+    "manufacturing_process_nm": null,
+    "max_power_watt": null,
+    "memory_bandwidth_gbps": null,
+    "memory_interface_bit": null,
+    "memory_type": null,
+    "rt_cores": null,
+    "tdp_watt": null,
+    "tensor_cores": null
+   },
+   "vram_gb": 20
+  },
+  {
+   "architecture": "Ampere",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "05333202-7123-48b9-a58f-8c41446e390b",
+   "image_url": "",
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "RTX A5000",
+   "performance_tier": "mid",
+   "release_date": "2021-04-12",
+   "server_gpu": false,
+   "slug": "rtxa5000",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 8192,
+    "fp16_tflops": 111.1,
+    "fp32_tflops": 27.8,
+    "fp64_tflops": 0.43,
+    "int8_tops": 222.2,
+    "manufacturing_process_nm": 8,
+    "max_power_watt": 230,
+    "memory_bandwidth_gbps": 768,
+    "memory_interface_bit": 384,
+    "memory_type": null,
+    "rt_cores": 64,
+    "tdp_watt": 230,
+    "tensor_cores": 256
+   },
+   "vram_gb": 24
+  },
+  {
+   "architecture": "Ampere",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "1149ba7f-4499-4abc-ade8-bdcbe4ba386c",
+   "image_url": "",
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "RTX A6000",
+   "performance_tier": "high",
+   "release_date": "2020-01-01",
+   "server_gpu": false,
+   "slug": "rtxa6000",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 10752,
+    "fp16_tflops": 154.85,
+    "fp32_tflops": 38.7,
+    "fp64_tflops": 0.6,
+    "int8_tops": 309.7,
+    "manufacturing_process_nm": 8,
+    "max_power_watt": 300,
+    "memory_bandwidth_gbps": 768,
+    "memory_interface_bit": 384,
+    "memory_type": null,
+    "rt_cores": 84,
+    "tdp_watt": 300,
+    "tensor_cores": 336
+   },
+   "vram_gb": 48
+  },
+  {
+   "architecture": "Turing",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "0930daf2-de70-4494-8beb-1933377652b4",
+   "image_url": "",
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "Tesla T4",
+   "performance_tier": "entry",
+   "release_date": "2018-09-13",
+   "server_gpu": false,
+   "slug": "t4",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 2560,
+    "fp16_tflops": 65,
+    "fp32_tflops": 8.1,
+    "fp64_tflops": 0.25,
+    "int8_tops": 130,
+    "manufacturing_process_nm": 12,
+    "max_power_watt": 70,
+    "memory_bandwidth_gbps": 320,
+    "memory_interface_bit": 256,
+    "memory_type": null,
+    "rt_cores": 40,
+    "tdp_watt": 70,
+    "tensor_cores": 320
+   },
+   "vram_gb": 16
+  },
+  {
+   "architecture": "Volta",
+   "cloud_compatible": true,
+   "end_of_life_date": null,
+   "generation": null,
+   "id": "dfa19b27-8663-43ad-8d35-8ed5a2569ae3",
+   "image_url": "",
+   "manufacturer": "NVIDIA",
+   "msrp_usd": null,
+   "name": "Tesla V100",
+   "performance_tier": "entry",
+   "release_date": "2017-01-01",
+   "server_gpu": false,
+   "slug": "v100",
+   "specs": {
+    "compute_units": null,
+    "cuda_cores": 5120,
+    "fp16_tflops": 112,
+    "fp32_tflops": 14,
+    "fp64_tflops": 7,
+    "int8_tops": null,
+    "manufacturing_process_nm": 12,
+    "max_power_watt": 250,
+    "memory_bandwidth_gbps": 900,
+    "memory_interface_bit": 4096,
+    "memory_type": null,
+    "rt_cores": null,
+    "tdp_watt": 250,
+    "tensor_cores": 640
+   },
+   "vram_gb": 32
+  }
+ ],
+ "llm_models": [
+  {
+   "context_window": null,
+   "creator": "BAAI",
+   "family": null,
+   "id": "33148bf7-cfad-4c9c-b313-ff668bf75e88",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "BAAI bge-large-en-v1.5",
+   "slug": "bge-large-en-v1-5"
+  },
+  {
+   "context_window": null,
+   "creator": "BAAI",
+   "family": null,
+   "id": "0345bb85-0ab3-4f45-a7a4-b77a1cfdac94",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "BAAI bge-m3",
+   "slug": "bge-m3"
+  },
+  {
+   "context_window": null,
+   "creator": "Anthropic",
+   "family": null,
+   "id": "1b275962-6d1c-4f78-85a5-e890f5b73fe7",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Claude 2.1",
+   "slug": "claude-2-1"
+  },
+  {
+   "context_window": 200000,
+   "creator": "Anthropic",
+   "family": "Haiku",
+   "id": "da122a86-0e13-40fd-994e-45a96d939e5a",
+   "knowledge_cutoff": "2024-04-01",
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Claude 3.5 Haiku",
+   "slug": "claude-3-5-haiku"
+  },
+  {
+   "context_window": 200000,
+   "creator": "Anthropic",
+   "family": "Sonnet",
+   "id": "471d547a-9a55-4237-96d7-e657f56dd6b8",
+   "knowledge_cutoff": "2024-04-01",
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Claude 3.5 Sonnet",
+   "slug": "claude-3-5-sonnet"
+  },
+  {
+   "context_window": 200000,
+   "creator": "Anthropic",
+   "family": "Sonnet",
+   "id": "70a08c22-f890-46de-8417-eafbed491cf1",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Claude 3.7 Sonnet",
+   "slug": "claude-3-7-sonnet"
+  },
+  {
+   "context_window": 200000,
+   "creator": "Anthropic",
+   "family": "Haiku",
+   "id": "21a8e738-256f-45e0-8efa-1ab68419a648",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Claude 3 Haiku",
+   "slug": "claude-3-haiku"
+  },
+  {
+   "context_window": 200000,
+   "creator": "Anthropic",
+   "family": "Opus",
+   "id": "ef26711c-d763-4771-a533-e4a2152972da",
+   "knowledge_cutoff": "2023-08-01",
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Claude 3 Opus",
+   "slug": "claude-3-opus"
+  },
+  {
+   "context_window": null,
+   "creator": "Anthropic",
+   "family": null,
+   "id": "b6ad4242-3cc8-4cf2-820e-e8a1fc082a49",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Claude 4 Opus (Non-reasoning)",
+   "slug": "claude-4-opus"
+  },
+  {
+   "context_window": null,
+   "creator": "Anthropic",
+   "family": null,
+   "id": "7ce21094-17a4-4b72-b192-9c92c15c073b",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Claude 4 Sonnet (Non-reasoning)",
+   "slug": "claude-4-sonnet"
+  },
+  {
+   "context_window": 1000000,
+   "creator": "Anthropic",
+   "family": "Fable",
+   "id": "254ccf31-e185-4b99-8382-9aa5fae4361c",
+   "knowledge_cutoff": "2026-01-01",
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Claude Fable 5",
+   "slug": "claude-fable-5"
+  },
+  {
+   "context_window": 200000,
+   "creator": "Anthropic",
+   "family": "Haiku",
+   "id": "39bd2d42-5044-4dcf-a6cd-533eed9ac28f",
+   "knowledge_cutoff": "2025-02-01",
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Claude Haiku 4.5",
+   "slug": "claude-haiku-4-5"
+  },
+  {
+   "context_window": null,
+   "creator": "Anthropic",
+   "family": null,
+   "id": "3c553183-9a64-4a36-861a-b0152affa22f",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Claude Instant",
+   "slug": "claude-instant"
+  },
+  {
+   "context_window": 1000000,
+   "creator": "Anthropic",
+   "family": "Mythos",
+   "id": "fd359441-186a-404c-9e39-260e3608de20",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Claude Mythos 5",
+   "slug": "claude-mythos-5"
+  },
+  {
+   "context_window": 200000,
+   "creator": "Anthropic",
+   "family": "Opus",
+   "id": "7c5a53dc-da5a-41cd-8a86-25c801ae6c52",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Claude Opus 4.1",
+   "slug": "claude-opus-4-1"
+  },
+  {
+   "context_window": 200000,
+   "creator": "Anthropic",
+   "family": "Opus",
+   "id": "9d83598f-d4ab-408d-9c4c-7159337a3a72",
+   "knowledge_cutoff": "2025-05-20",
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Claude Opus 4.5",
+   "slug": "claude-opus-4-5"
+  },
+  {
+   "context_window": 200000,
+   "creator": "Anthropic",
+   "family": "Opus",
+   "id": "8feda6d7-c6bf-4b87-90ae-863d1df09cc8",
+   "knowledge_cutoff": "2025-05-20",
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Claude Opus 4.6",
+   "slug": "claude-opus-4-6"
+  },
+  {
+   "context_window": 1000000,
+   "creator": "Anthropic",
+   "family": "Opus",
+   "id": "499366d9-e27d-4b5b-9d23-9ad1ad4bd803",
+   "knowledge_cutoff": "2026-01-01",
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Claude Opus 4.7",
+   "slug": "claude-opus-4-7"
+  },
+  {
+   "context_window": 1000000,
+   "creator": "Anthropic",
+   "family": "Opus",
+   "id": "87d412f3-e4ae-4591-b8e6-225b2810a903",
+   "knowledge_cutoff": "2026-01-01",
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Claude Opus 4.8",
+   "slug": "claude-opus-4-8"
+  },
+  {
+   "context_window": 200000,
+   "creator": "Anthropic",
+   "family": "Sonnet",
+   "id": "7b82ffca-e354-47c4-a4ed-7d4cfc4217be",
+   "knowledge_cutoff": "2025-01-01",
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Claude Sonnet 4.5",
+   "slug": "claude-sonnet-4-5"
+  },
+  {
+   "context_window": 1000000,
+   "creator": "Anthropic",
+   "family": "Sonnet",
+   "id": "7e425a85-4ee8-4d59-b8f3-fcdc290a5de5",
+   "knowledge_cutoff": "2025-08-01",
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Claude Sonnet 4.6",
+   "slug": "claude-sonnet-4-6"
+  },
+  {
+   "context_window": 256000,
+   "creator": "Mistral",
+   "family": "Codestral",
+   "id": "5b225456-eee5-4dee-9be0-5955ea03e09d",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Codestral 25.08",
+   "slug": "codestral-2508"
+  },
+  {
+   "context_window": null,
+   "creator": "Cohere",
+   "family": null,
+   "id": "b9ce8df0-8ab7-4e83-91f9-f6b51e7c397f",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Cohere Embed v3",
+   "slug": "cohere-embed-v3"
+  },
+  {
+   "context_window": null,
+   "creator": "Cohere",
+   "family": null,
+   "id": "45acd165-bc6c-4a66-a003-9cf8a4c033ef",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Cohere Rerank v3",
+   "slug": "cohere-rerank-v3"
+  },
+  {
+   "context_window": 256000,
+   "creator": "Cohere",
+   "family": "Command",
+   "id": "1c46aecb-0dbc-4b20-a320-37659adff289",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Command A",
+   "slug": "command-a"
+  },
+  {
+   "context_window": 128000,
+   "creator": "Cohere",
+   "family": "Command",
+   "id": "4164e83f-2bf7-4202-96b0-f8677ba59693",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Command R",
+   "slug": "command-r"
+  },
+  {
+   "context_window": 128000,
+   "creator": "Cohere",
+   "family": "Command",
+   "id": "046924f9-9127-4b49-bb84-e93f682427de",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Command R7B",
+   "slug": "command-r7b"
+  },
+  {
+   "context_window": 16000,
+   "creator": "DeepSeek",
+   "family": "DeepSeek",
+   "id": "7119ee6c-c9b4-4e79-a9fc-df63927c57f0",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "DeepSeek Coder 33B",
+   "slug": "deepseek-coder-33b"
+  },
+  {
+   "context_window": null,
+   "creator": "DeepSeek",
+   "family": null,
+   "id": "6592b64a-2be3-43af-8931-63f22e59650a",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "DeepSeek Coder V2 Lite Instruct",
+   "slug": "deepseek-coder-v2-lite"
+  },
+  {
+   "context_window": null,
+   "creator": "DeepSeek",
+   "family": null,
+   "id": "1c36fdd3-93d5-4ac9-9aa3-96093f6950fd",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "DeepSeek LLM 67B Chat",
+   "slug": "deepseek-llm-67b-chat"
+  },
+  {
+   "context_window": 64000,
+   "creator": "DeepSeek",
+   "family": "DeepSeek",
+   "id": "48402b07-8512-40db-9fff-2d370c72a1d4",
+   "knowledge_cutoff": "2024-11-01",
+   "modalities": [
+    "text"
+   ],
+   "name": "DeepSeek R1",
+   "slug": "deepseek-r1"
+  },
+  {
+   "context_window": null,
+   "creator": "DeepSeek",
+   "family": null,
+   "id": "30ef3561-4594-4662-a649-13b04cbeb957",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "DeepSeek-V2.5",
+   "slug": "deepseek-v2-5"
+  },
+  {
+   "context_window": 64000,
+   "creator": "DeepSeek",
+   "family": "DeepSeek",
+   "id": "83b208b8-5dbf-4f90-a1f5-830a115ab704",
+   "knowledge_cutoff": "2024-06-01",
+   "modalities": [
+    "text"
+   ],
+   "name": "DeepSeek V3",
+   "slug": "deepseek-v3"
+  },
+  {
+   "context_window": 32768,
+   "creator": "DeepSeek",
+   "family": "DeepSeek",
+   "id": "509944cc-f64e-491c-8dc4-63b211cb100c",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "DeepSeek V3.1",
+   "slug": "deepseek-v3-1"
+  },
+  {
+   "context_window": 1000000,
+   "creator": "DeepSeek",
+   "family": "DeepSeek V4",
+   "id": "2687a7b7-ee13-4214-8639-927e5dcc5f70",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "DeepSeek V4 Flash",
+   "slug": "deepseek-v4-flash"
+  },
+  {
+   "context_window": 1000000,
+   "creator": "DeepSeek",
+   "family": "DeepSeek V4",
+   "id": "16a9cbcc-0dc0-493b-a2dd-61d954a05882",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "DeepSeek V4 Pro",
+   "slug": "deepseek-v4-pro"
+  },
+  {
+   "context_window": 128000,
+   "creator": "Mistral",
+   "family": "Devstral",
+   "id": "c5be7a31-15d7-4281-b54c-40e6fd508029",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Devstral 2 123B",
+   "slug": "devstral-2-123b"
+  },
+  {
+   "context_window": 131072,
+   "creator": "Mistral",
+   "family": "Devstral",
+   "id": "7ee776c0-680a-4178-8e03-2b67deb7d4fc",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Devstral Medium",
+   "slug": "devstral-medium"
+  },
+  {
+   "context_window": 131072,
+   "creator": "Mistral",
+   "family": "Devstral",
+   "id": "f50b3e67-12eb-4059-84f4-8b433705d21d",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Devstral Small",
+   "slug": "devstral-small"
+  },
+  {
+   "context_window": null,
+   "creator": "ByteDance Seed",
+   "family": null,
+   "id": "e395e592-b7d2-48bf-9b26-a7d5780dfdf7",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Doubao Seed Code",
+   "slug": "doubao-seed-code"
+  },
+  {
+   "context_window": null,
+   "creator": "ElevenLabs",
+   "family": null,
+   "id": "3fd9589c-f9f0-453c-a2c6-130e3ab65a80",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "ElevenLabs Multilingual v2",
+   "slug": "eleven-multilingual-v2"
+  },
+  {
+   "context_window": 120000,
+   "creator": "Baidu",
+   "family": "ERNIE",
+   "id": "96ed0a67-8831-45b6-906c-ef43a6bc699f",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "ERNIE 4.5 21B",
+   "slug": "ernie-4-5-21b-a3b"
+  },
+  {
+   "context_window": 123000,
+   "creator": "Baidu",
+   "family": "ERNIE",
+   "id": "ad68b04b-98b8-4bcf-a7f8-0c973ade9245",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "ERNIE 4.5 300B",
+   "slug": "ernie-4-5-300b-a47b"
+  },
+  {
+   "context_window": 30000,
+   "creator": "Baidu",
+   "family": "ERNIE",
+   "id": "8e759596-ed63-497f-84f6-999cf4192f2f",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "ERNIE 4.5 VL 28B",
+   "slug": "ernie-4-5-vl-28b-a3b"
+  },
+  {
+   "context_window": 123000,
+   "creator": "Baidu",
+   "family": "ERNIE",
+   "id": "43a3e789-6ae5-49cb-a876-73fe8cdd3537",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "ERNIE 4.5 VL 424B",
+   "slug": "ernie-4-5-vl-424b-a47b"
+  },
+  {
+   "context_window": null,
+   "creator": "Baidu",
+   "family": null,
+   "id": "03bb9fd6-fc02-4c58-9087-c12856e96997",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "ERNIE 5.0 Thinking Preview",
+   "slug": "ernie-5-thinking"
+  },
+  {
+   "context_window": null,
+   "creator": "Black Forest Labs",
+   "family": null,
+   "id": "96cb573c-a87b-4fc6-91ff-511916de2360",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "FLUX 1.1 Pro",
+   "slug": "flux-1-1-pro"
+  },
+  {
+   "context_window": null,
+   "creator": "Black Forest Labs",
+   "family": null,
+   "id": "5871254f-c047-42aa-9923-7fb453c9f7d2",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "FLUX 1 Dev",
+   "slug": "flux-1-dev"
+  },
+  {
+   "context_window": null,
+   "creator": "Black Forest Labs",
+   "family": null,
+   "id": "f55776d7-4055-4a1a-9103-cd7c9cfe8766",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "FLUX 1 Kontext Max",
+   "slug": "flux-1-kontext-max"
+  },
+  {
+   "context_window": null,
+   "creator": "Black Forest Labs",
+   "family": null,
+   "id": "ef64c5dc-853a-4533-8d7f-270cdeb6fb5e",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "FLUX 1 Kontext Pro",
+   "slug": "flux-1-kontext-pro"
+  },
+  {
+   "context_window": null,
+   "creator": "Black Forest Labs",
+   "family": null,
+   "id": "9744db3b-70a4-4f88-99ed-9d8a449277e6",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "FLUX 1 Pro",
+   "slug": "flux-1-pro"
+  },
+  {
+   "context_window": null,
+   "creator": "Black Forest Labs",
+   "family": null,
+   "id": "694b2d21-1883-4ef6-a13e-19e7f584a4d7",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "FLUX 1 Schnell",
+   "slug": "flux-1-schnell"
+  },
+  {
+   "context_window": null,
+   "creator": "Google",
+   "family": null,
+   "id": "f1ba3672-4edf-46bf-97b5-b825b728f397",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Gemini 1.5 Flash-8B",
+   "slug": "gemini-1-5-flash-8b"
+  },
+  {
+   "context_window": null,
+   "creator": "Google",
+   "family": null,
+   "id": "33a6463b-64dc-4c6f-8f8d-5a1e0e7921d4",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Gemini 1.5 Pro",
+   "slug": "gemini-1-5-pro"
+  },
+  {
+   "context_window": null,
+   "creator": "Google",
+   "family": null,
+   "id": "7d47fb58-7e4a-4fa2-b434-1f2e3090d5df",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Gemini 1.0 Pro",
+   "slug": "gemini-1-pro"
+  },
+  {
+   "context_window": null,
+   "creator": "Google",
+   "family": null,
+   "id": "d18bbcf1-0597-409d-89f2-ab911205cb65",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Gemini 1.0 Ultra",
+   "slug": "gemini-1-ultra"
+  },
+  {
+   "context_window": 1000000,
+   "creator": "Google",
+   "family": "Gemini",
+   "id": "a58c9187-6491-46b2-9325-00e4a5134506",
+   "knowledge_cutoff": "2024-08-01",
+   "modalities": [
+    "text",
+    "image",
+    "video",
+    "audio"
+   ],
+   "name": "Gemini 2.0 Flash",
+   "slug": "gemini-2-0-flash"
+  },
+  {
+   "context_window": null,
+   "creator": "Google",
+   "family": null,
+   "id": "b68d838f-f93e-4ac0-afe0-1e9ce57172ac",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Gemini 2.0 Flash-Lite",
+   "slug": "gemini-2-0-flash-lite"
+  },
+  {
+   "context_window": null,
+   "creator": "Google",
+   "family": null,
+   "id": "3c851068-2337-4678-a7de-88adc7e0aea3",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Gemini 2.0 Flash Thinking Experimental",
+   "slug": "gemini-2-0-flash-thinking-experimental"
+  },
+  {
+   "context_window": null,
+   "creator": "Google",
+   "family": null,
+   "id": "dfdfd58c-989e-4af0-86ce-1019be0616e9",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Gemini 2.0 Pro Experimental",
+   "slug": "gemini-2-0-pro-experimental"
+  },
+  {
+   "context_window": 1000000,
+   "creator": "Google",
+   "family": "Gemini",
+   "id": "f8709ce3-fa7a-4057-80c0-1b23d46d7957",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image",
+    "video",
+    "audio"
+   ],
+   "name": "Gemini 2.5 Flash",
+   "slug": "gemini-2-5-flash"
+  },
+  {
+   "context_window": 1000000,
+   "creator": "Google",
+   "family": "Gemini",
+   "id": "75312355-d5a2-497a-8bc2-67b98ead1611",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Gemini 2.5 Flash Lite",
+   "slug": "gemini-2-5-flash-lite"
+  },
+  {
+   "context_window": 1000000,
+   "creator": "Google",
+   "family": "Gemini",
+   "id": "ecc0c696-bb6c-40ba-8d21-21588f40e5e5",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image",
+    "video",
+    "audio"
+   ],
+   "name": "Gemini 2.5 Pro",
+   "slug": "gemini-2-5-pro"
+  },
+  {
+   "context_window": 65536,
+   "creator": "Google",
+   "family": "Gemini",
+   "id": "3ea0c3a4-02b7-4b96-b3bb-9d5b8746a233",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Gemini 3.1 Flash Image",
+   "slug": "gemini-3-1-flash-image"
+  },
+  {
+   "context_window": 1048576,
+   "creator": "Google",
+   "family": "Gemini",
+   "id": "60e8eecf-0a4f-4005-9f92-426038980129",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image",
+    "audio",
+    "video"
+   ],
+   "name": "Gemini 3.1 Flash Lite",
+   "slug": "gemini-3-1-flash-lite"
+  },
+  {
+   "context_window": 1000000,
+   "creator": "Google",
+   "family": "Gemini",
+   "id": "310505ce-9eab-40ed-a482-68f6b46b3c3c",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image",
+    "video",
+    "audio"
+   ],
+   "name": "Gemini 3.1 Pro",
+   "slug": "gemini-3-1-pro"
+  },
+  {
+   "context_window": null,
+   "creator": "Google",
+   "family": null,
+   "id": "21755c46-3efb-43e5-94ce-7afbd24c4e58",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Gemini 3.5 Flash",
+   "slug": "gemini-3-5-flash"
+  },
+  {
+   "context_window": 1000000,
+   "creator": "Google",
+   "family": "Gemini",
+   "id": "a13de0e1-f2a4-4bab-9006-1a7d6a975cd7",
+   "knowledge_cutoff": "2025-06-01",
+   "modalities": [
+    "text",
+    "image",
+    "video",
+    "audio"
+   ],
+   "name": "Gemini 3 Flash",
+   "slug": "gemini-3-flash"
+  },
+  {
+   "context_window": 1000000,
+   "creator": "Google",
+   "family": "Gemini",
+   "id": "d8d659cf-f779-4b6a-95c1-733ac1447274",
+   "knowledge_cutoff": "2025-06-01",
+   "modalities": [
+    "text",
+    "image",
+    "video",
+    "audio"
+   ],
+   "name": "Gemini 3 Pro",
+   "slug": "gemini-3-pro"
+  },
+  {
+   "context_window": 8192,
+   "creator": "Google",
+   "family": "Gemma",
+   "id": "8ded559a-6b7b-437c-afb3-bb9c5663c6ef",
+   "knowledge_cutoff": "2024-02-01",
+   "modalities": [
+    "text"
+   ],
+   "name": "Gemma 2 27B",
+   "slug": "gemma-2-27b"
+  },
+  {
+   "context_window": 8192,
+   "creator": "Google",
+   "family": "Gemma",
+   "id": "2713f89d-1f48-4ca6-92d9-ec8391a023bd",
+   "knowledge_cutoff": "2024-02-01",
+   "modalities": [
+    "text"
+   ],
+   "name": "Gemma 2 9B",
+   "slug": "gemma-2-9b"
+  },
+  {
+   "context_window": 131072,
+   "creator": "Google",
+   "family": "Gemma",
+   "id": "ea5b831e-543a-4809-81ea-0cfd28cdae66",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Gemma 3 12B",
+   "slug": "gemma-3-12b-it"
+  },
+  {
+   "context_window": 128000,
+   "creator": "Google",
+   "family": "Gemma",
+   "id": "98eab273-a1be-438d-85ea-52443c88a9e9",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Gemma 3 27B",
+   "slug": "gemma-3-27b"
+  },
+  {
+   "context_window": 131072,
+   "creator": "Google",
+   "family": "Gemma",
+   "id": "5e8d2ede-1c3e-4c49-8650-9dc50761322f",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Gemma 3 4B",
+   "slug": "gemma-3-4b-it"
+  },
+  {
+   "context_window": null,
+   "creator": "Google",
+   "family": null,
+   "id": "3c298c04-1608-43de-ac17-dd7a93e57152",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Gemma 3n E4B Instruct Preview",
+   "slug": "gemma-3n-e4b-instruct-preview"
+  },
+  {
+   "context_window": null,
+   "creator": "Google",
+   "family": null,
+   "id": "2245367e-9bf6-4546-8cc6-5b2e0618065a",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Gemma 4 12B",
+   "slug": "gemma-4-12b"
+  },
+  {
+   "context_window": 262144,
+   "creator": "Google",
+   "family": "Gemma",
+   "id": "5a604a40-8ab5-4ac6-b5fd-65931a238e00",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image",
+    "video"
+   ],
+   "name": "Gemma 4 26B",
+   "slug": "gemma-4-26b-a4b-it"
+  },
+  {
+   "context_window": 262144,
+   "creator": "Google",
+   "family": "Gemma",
+   "id": "3bce81c7-82ed-4ad9-9011-600b5bd66a3d",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image",
+    "video"
+   ],
+   "name": "Gemma 4 31B",
+   "slug": "gemma-4-31b-it"
+  },
+  {
+   "context_window": 128000,
+   "creator": "Zhipu",
+   "family": "GLM",
+   "id": "09d5080e-f478-41d9-9ce8-609823a020e6",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "GLM-4.5 Air",
+   "slug": "glm-4-5-air"
+  },
+  {
+   "context_window": 128000,
+   "creator": "Zhipu",
+   "family": "GLM",
+   "id": "a75e237d-e000-448d-97c1-dbc0c0396cca",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "GLM-4.6",
+   "slug": "glm-4-6"
+  },
+  {
+   "context_window": 128000,
+   "creator": "Zhipu",
+   "family": "GLM",
+   "id": "a5387bf7-ee68-44f1-b9d3-aee69adcc513",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "GLM-4.7",
+   "slug": "glm-4-7"
+  },
+  {
+   "context_window": 128000,
+   "creator": "Zhipu",
+   "family": "GLM",
+   "id": "5dd5ff64-a6e1-42a9-a9c6-c8e58f9c7518",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "GLM-5",
+   "slug": "glm-5"
+  },
+  {
+   "context_window": 200000,
+   "creator": "Zhipu",
+   "family": "GLM-5",
+   "id": "d7303925-e692-48f6-a6ac-0fc939f3519d",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "GLM-5.1",
+   "slug": "glm-5-1"
+  },
+  {
+   "context_window": null,
+   "creator": "OpenAI",
+   "family": null,
+   "id": "489fe777-6097-4dd4-ab67-f5ebfaea9aa1",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "GPT-3.5 Turbo",
+   "slug": "gpt-3-5"
+  },
+  {
+   "context_window": 1000000,
+   "creator": "OpenAI",
+   "family": "GPT",
+   "id": "ded12509-033a-43f0-9391-1947dc4e0367",
+   "knowledge_cutoff": "2024-06-01",
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "GPT-4.1",
+   "slug": "gpt-4-1"
+  },
+  {
+   "context_window": 1000000,
+   "creator": "OpenAI",
+   "family": "GPT",
+   "id": "6124a5a1-f1d4-409d-b5dc-4c40b882c92b",
+   "knowledge_cutoff": "2024-06-01",
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "GPT-4.1 mini",
+   "slug": "gpt-4-1-mini"
+  },
+  {
+   "context_window": 1000000,
+   "creator": "OpenAI",
+   "family": "GPT",
+   "id": "1b40094d-787d-430e-92ef-e293b5d26a91",
+   "knowledge_cutoff": "2024-06-01",
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "GPT-4.1 nano",
+   "slug": "gpt-4-1-nano"
+  },
+  {
+   "context_window": null,
+   "creator": "OpenAI",
+   "family": null,
+   "id": "d0899bfa-8ddd-4452-bf75-501dcb1cb299",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "GPT-4.5",
+   "slug": "gpt-4-5"
+  },
+  {
+   "context_window": 128000,
+   "creator": "OpenAI",
+   "family": "GPT",
+   "id": "903733a6-6700-45ea-9fbf-38f12c2b9542",
+   "knowledge_cutoff": "2023-10-01",
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "GPT-4o",
+   "slug": "gpt-4o"
+  },
+  {
+   "context_window": 128000,
+   "creator": "OpenAI",
+   "family": "GPT",
+   "id": "1a410d52-5d37-4efa-9697-18511efd7d2d",
+   "knowledge_cutoff": "2023-10-01",
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "GPT-4o mini",
+   "slug": "gpt-4o-mini"
+  },
+  {
+   "context_window": null,
+   "creator": "OpenAI",
+   "family": null,
+   "id": "6a386506-3b15-4531-9605-70f1dac5bc6b",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "GPT-4o Mini Realtime",
+   "slug": "gpt-4o-mini-realtime"
+  },
+  {
+   "context_window": null,
+   "creator": "OpenAI",
+   "family": null,
+   "id": "94b663a8-0997-42a4-b339-62d3acf5e7df",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "GPT-4o Realtime",
+   "slug": "gpt-4o-realtime"
+  },
+  {
+   "context_window": 200000,
+   "creator": "OpenAI",
+   "family": "GPT",
+   "id": "544f2b74-5c04-4771-99d2-efc70bd5af4b",
+   "knowledge_cutoff": "2024-12-01",
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "GPT-5",
+   "slug": "gpt-5"
+  },
+  {
+   "context_window": 256000,
+   "creator": "OpenAI",
+   "family": "GPT",
+   "id": "27d56546-d5c8-4a9a-b1c2-6e09d8753e7d",
+   "knowledge_cutoff": "2025-03-01",
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "GPT-5.1",
+   "slug": "gpt-5-1"
+  },
+  {
+   "context_window": 400000,
+   "creator": "OpenAI",
+   "family": "GPT",
+   "id": "0c9bfd29-e6c2-4533-9b0e-14bf5427e73d",
+   "knowledge_cutoff": "2025-06-01",
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "GPT-5.2",
+   "slug": "gpt-5-2"
+  },
+  {
+   "context_window": 400000,
+   "creator": "OpenAI",
+   "family": "GPT",
+   "id": "ef622f0a-e822-4c5a-a521-a952f16086e5",
+   "knowledge_cutoff": "2025-06-01",
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "GPT-5.2 Pro",
+   "slug": "gpt-5-2-pro"
+  },
+  {
+   "context_window": 128000,
+   "creator": "OpenAI",
+   "family": "GPT",
+   "id": "12d67786-60cd-4743-8713-57af79976edf",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "GPT-5.4",
+   "slug": "gpt-5-4"
+  },
+  {
+   "context_window": 128000,
+   "creator": "OpenAI",
+   "family": "GPT",
+   "id": "e7a36c8a-a754-4d2d-b8cc-cfb05d491f1a",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "GPT-5.4 Mini",
+   "slug": "gpt-5-4-mini"
+  },
+  {
+   "context_window": 128000,
+   "creator": "OpenAI",
+   "family": "GPT",
+   "id": "bf99ebf8-44ef-4ae4-b724-ce38d5af75bd",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "GPT-5.4 Nano",
+   "slug": "gpt-5-4-nano"
+  },
+  {
+   "context_window": 128000,
+   "creator": "OpenAI",
+   "family": "GPT",
+   "id": "921ce934-98e9-4879-842c-17055cfbcabe",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "GPT-5.4 Pro",
+   "slug": "gpt-5-4-pro"
+  },
+  {
+   "context_window": 200000,
+   "creator": "OpenAI",
+   "family": "GPT",
+   "id": "183b9a98-2705-41bf-ae7c-0d77bfcc4cf2",
+   "knowledge_cutoff": "2024-12-01",
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "GPT-5 mini",
+   "slug": "gpt-5-mini"
+  },
+  {
+   "context_window": 128000,
+   "creator": "OpenAI",
+   "family": "GPT",
+   "id": "42c95593-639a-4883-a5c1-fe91325ca7ee",
+   "knowledge_cutoff": "2024-12-01",
+   "modalities": [
+    "text"
+   ],
+   "name": "GPT-5 Nano",
+   "slug": "gpt-5-nano"
+  },
+  {
+   "context_window": 128000,
+   "creator": "OpenAI",
+   "family": "GPT-OSS",
+   "id": "d86c1b1d-b7ee-4bb4-9ab5-690d8440c5f4",
+   "knowledge_cutoff": "2025-01-01",
+   "modalities": [
+    "text"
+   ],
+   "name": "GPT-OSS-120B",
+   "slug": "gpt-oss-120b"
+  },
+  {
+   "context_window": 128000,
+   "creator": "OpenAI",
+   "family": "GPT-OSS",
+   "id": "8ad524b9-9001-43ef-a5b9-35c0f5f71c09",
+   "knowledge_cutoff": "2025-01-01",
+   "modalities": [
+    "text"
+   ],
+   "name": "GPT-OSS-20B",
+   "slug": "gpt-oss-20b"
+  },
+  {
+   "context_window": 128000,
+   "creator": "OpenAI",
+   "family": "GPT Realtime",
+   "id": "e1a7e495-f1c8-4dc5-8101-231c38e7f7dd",
+   "knowledge_cutoff": "2024-10-01",
+   "modalities": [
+    "text",
+    "audio"
+   ],
+   "name": "GPT Realtime",
+   "slug": "gpt-realtime"
+  },
+  {
+   "context_window": 128000,
+   "creator": "OpenAI",
+   "family": "GPT Realtime",
+   "id": "46bc8a27-77ba-4cde-b804-142c7dc0fb55",
+   "knowledge_cutoff": "2024-10-01",
+   "modalities": [
+    "text",
+    "audio"
+   ],
+   "name": "GPT Realtime mini",
+   "slug": "gpt-realtime-mini"
+  },
+  {
+   "context_window": null,
+   "creator": "IBM",
+   "family": null,
+   "id": "9f516170-fb33-45ff-9001-916b1e2b4606",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Granite 3.3 8B",
+   "slug": "granite-3-3-8b"
+  },
+  {
+   "context_window": 131000,
+   "creator": "IBM",
+   "family": "Granite",
+   "id": "5fc3c137-e14e-44f3-8f8c-160210e69888",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Granite 4.0 H Micro",
+   "slug": "granite-4-0-h-micro"
+  },
+  {
+   "context_window": null,
+   "creator": "IBM",
+   "family": null,
+   "id": "c96df3b0-637a-4f6c-9fb7-7add090182eb",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Granite 4.1 8B",
+   "slug": "granite-4-1-8b"
+  },
+  {
+   "context_window": null,
+   "creator": "IBM",
+   "family": null,
+   "id": "4cf4c429-9d2e-44b2-8450-eaefb9306403",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Granite 4.0 H 350M",
+   "slug": "granite-4-h-350m"
+  },
+  {
+   "context_window": null,
+   "creator": "IBM",
+   "family": null,
+   "id": "ff734961-534c-49c2-8b1e-c182c92bbda8",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Granite 4.0 H Small",
+   "slug": "granite-4-h-small"
+  },
+  {
+   "context_window": null,
+   "creator": "xAI",
+   "family": null,
+   "id": "e89e5457-4017-4bf4-971c-972ee48e5ac7",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Grok-1",
+   "slug": "grok-1"
+  },
+  {
+   "context_window": null,
+   "creator": "xAI",
+   "family": null,
+   "id": "73e7dcfa-93ca-4ac3-a5ca-6d8870e3e7dc",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Grok 2",
+   "slug": "grok-2"
+  },
+  {
+   "context_window": 131072,
+   "creator": "xAI",
+   "family": "Grok",
+   "id": "f4578bdc-50ba-4308-af7b-cab7e9feb08e",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Grok 3",
+   "slug": "grok-3"
+  },
+  {
+   "context_window": 131072,
+   "creator": "xAI",
+   "family": "Grok",
+   "id": "00dcec33-85a6-4ce0-b291-8e1a81273d49",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Grok 3 Mini",
+   "slug": "grok-3-mini"
+  },
+  {
+   "context_window": 256000,
+   "creator": "xAI",
+   "family": "Grok",
+   "id": "3ab5ab07-b72f-4a33-8333-3af6f639aaf2",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Grok 4",
+   "slug": "grok-4"
+  },
+  {
+   "context_window": 2000000,
+   "creator": "xAI",
+   "family": "Grok",
+   "id": "5edf2493-e981-463a-b087-101d7b829e1a",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Grok 4.20",
+   "slug": "grok-4-20"
+  },
+  {
+   "context_window": 2000000,
+   "creator": "xAI",
+   "family": "Grok",
+   "id": "f24d07d1-bce0-4a40-b723-bc96cba0a128",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Grok 4 Fast",
+   "slug": "grok-4-fast"
+  },
+  {
+   "context_window": null,
+   "creator": "xAI",
+   "family": null,
+   "id": "6828f05f-e0dd-4cf8-956e-34332717eb23",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Grok Beta",
+   "slug": "grok-beta"
+  },
+  {
+   "context_window": null,
+   "creator": "xAI",
+   "family": null,
+   "id": "51b9ef8a-c261-4336-b08d-34337532a8c1",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Grok Build 0.1 0616",
+   "slug": "grok-build-0-1-0616"
+  },
+  {
+   "context_window": 131072,
+   "creator": "Tencent",
+   "family": "Hunyuan",
+   "id": "783f0b56-164f-47e5-85a9-111dc1401e8d",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Hunyuan A13B",
+   "slug": "hunyuan-a13b"
+  },
+  {
+   "context_window": null,
+   "creator": "Tencent",
+   "family": null,
+   "id": "93602208-db87-4886-b4e9-d83190e64956",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Hy3-preview",
+   "slug": "hy3-preview"
+  },
+  {
+   "context_window": null,
+   "creator": "Ideogram",
+   "family": null,
+   "id": "ea0af065-4c48-4376-9951-46f9bc0d8de4",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Ideogram v3 Quality",
+   "slug": "ideogram-v3-quality"
+  },
+  {
+   "context_window": null,
+   "creator": "Ideogram",
+   "family": null,
+   "id": "f7b7468a-2855-4c7e-99fc-3cc85208ba06",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Ideogram v3 Turbo",
+   "slug": "ideogram-v3-turbo"
+  },
+  {
+   "context_window": null,
+   "creator": "AI21 Labs",
+   "family": null,
+   "id": "00155d82-f5b2-4374-ab04-e839ea4fd022",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Jamba 1.5 Large",
+   "slug": "jamba-1-5-large"
+  },
+  {
+   "context_window": null,
+   "creator": "AI21 Labs",
+   "family": null,
+   "id": "48659701-3228-40b1-a3e2-43faf3386481",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Jamba 1.5 Mini",
+   "slug": "jamba-1-5-mini"
+  },
+  {
+   "context_window": null,
+   "creator": "AI21 Labs",
+   "family": null,
+   "id": "04e5adfa-80ee-49ab-aff4-224087ac042c",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Jamba 1.6 Large",
+   "slug": "jamba-1-6-large"
+  },
+  {
+   "context_window": null,
+   "creator": "AI21 Labs",
+   "family": null,
+   "id": "4a107b2b-1e7d-4fee-b431-758c9f073c23",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Jamba 1.6 Mini",
+   "slug": "jamba-1-6-mini"
+  },
+  {
+   "context_window": null,
+   "creator": "AI21 Labs",
+   "family": null,
+   "id": "1e9c9918-9a6f-4b0a-bf1b-6c9fc364ac34",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Jamba 1.7 Mini",
+   "slug": "jamba-1-7-mini"
+  },
+  {
+   "context_window": 256000,
+   "creator": "AI21",
+   "family": "Jamba",
+   "id": "c2b1a74c-6b6d-44c3-a0b9-777c74f72d0a",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Jamba Large 1.7",
+   "slug": "jamba-large-1-7"
+  },
+  {
+   "context_window": null,
+   "creator": "AI21 Labs",
+   "family": null,
+   "id": "36472819-e4d7-4562-8b9f-ba0b20b59403",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Jamba Reasoning 3B",
+   "slug": "jamba-reasoning-3b"
+  },
+  {
+   "context_window": 128000,
+   "creator": "Moonshot",
+   "family": "Kimi",
+   "id": "d7025e8d-dd2f-409d-9d14-7e8c35f9e78e",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Kimi K2",
+   "slug": "kimi-k2"
+  },
+  {
+   "context_window": 128000,
+   "creator": "Moonshot",
+   "family": "Kimi",
+   "id": "942a5201-612c-4b0c-b9ef-db854e697957",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Kimi K2.5",
+   "slug": "kimi-k2-5"
+  },
+  {
+   "context_window": null,
+   "creator": "Meta",
+   "family": null,
+   "id": "5950f34d-c57e-43a8-a390-c7dc7afbff9f",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Llama 2 Chat 7B",
+   "slug": "llama-2-chat-7b"
+  },
+  {
+   "context_window": 128000,
+   "creator": "Meta",
+   "family": "Llama",
+   "id": "9741095b-4fc8-4c19-9182-b5bbc461f850",
+   "knowledge_cutoff": "2023-12-01",
+   "modalities": [
+    "text"
+   ],
+   "name": "Llama 3.1 405B",
+   "slug": "llama-3-1-405b"
+  },
+  {
+   "context_window": 128000,
+   "creator": "Meta",
+   "family": "Llama",
+   "id": "14355f7a-50b7-4d2d-8773-dc6c91d3f968",
+   "knowledge_cutoff": "2023-12-01",
+   "modalities": [
+    "text"
+   ],
+   "name": "Llama 3.1 70B",
+   "slug": "llama-3-1-70b"
+  },
+  {
+   "context_window": 128000,
+   "creator": "Meta",
+   "family": "Llama",
+   "id": "c9386311-7e5e-4fd5-8189-4a04df1b2be7",
+   "knowledge_cutoff": "2023-12-01",
+   "modalities": [
+    "text"
+   ],
+   "name": "Llama 3.1 8B",
+   "slug": "llama-3-1-8b"
+  },
+  {
+   "context_window": 131072,
+   "creator": "NVIDIA",
+   "family": "Nemotron",
+   "id": "fb725912-9111-4e4b-8ccc-93e48df888ec",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Llama 3.1 Nemotron 70B",
+   "slug": "llama-3-1-nemotron-70b"
+  },
+  {
+   "context_window": 131072,
+   "creator": "NVIDIA",
+   "family": "Nemotron",
+   "id": "1e932bf4-e7f1-4eeb-8a09-aa402155cd88",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Llama 3.1 Nemotron Ultra 253B",
+   "slug": "llama-3-1-nemotron-ultra-253b-v1"
+  },
+  {
+   "context_window": 131072,
+   "creator": "Meta",
+   "family": "Llama",
+   "id": "113cf49b-0174-4a59-b24d-fa1c49d33d38",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Llama 3.2 11B Vision",
+   "slug": "llama-3-2-11b-vision"
+  },
+  {
+   "context_window": 128000,
+   "creator": "Meta",
+   "family": "Llama",
+   "id": "6c2336e2-3a4a-40ad-9122-43c4ab889a4e",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Llama 3.2 1B",
+   "slug": "llama-3-2-1b"
+  },
+  {
+   "context_window": 128000,
+   "creator": "Meta",
+   "family": "Llama",
+   "id": "9e078e45-b8c6-4fe2-ab05-201e8a1fed66",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Llama 3.2 3B",
+   "slug": "llama-3-2-3b"
+  },
+  {
+   "context_window": null,
+   "creator": "Meta",
+   "family": null,
+   "id": "bbbac667-98ef-4051-b211-238b468d1ee6",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Llama 3.2 Instruct 90B",
+   "slug": "llama-3-2-instruct-90b"
+  },
+  {
+   "context_window": 128000,
+   "creator": "Meta",
+   "family": "Llama",
+   "id": "16638a9c-641a-4602-9874-45e18d8b635c",
+   "knowledge_cutoff": "2024-03-01",
+   "modalities": [
+    "text"
+   ],
+   "name": "Llama 3.3 70B",
+   "slug": "llama-3-3-70b"
+  },
+  {
+   "context_window": 131072,
+   "creator": "NVIDIA",
+   "family": "Nemotron",
+   "id": "d326d8da-7177-4b2e-bcea-e74606fa1c83",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Llama 3.3 Nemotron Super 49B",
+   "slug": "llama-3-3-nemotron-super-49b-v1-5"
+  },
+  {
+   "context_window": 8000,
+   "creator": "Meta",
+   "family": "Llama",
+   "id": "3bbbed53-e78d-4cec-b85e-9dd336c01e65",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Llama 3 70B",
+   "slug": "llama-3-70b"
+  },
+  {
+   "context_window": 8000,
+   "creator": "Meta",
+   "family": "Llama",
+   "id": "4dbeda91-1afb-4410-8ec4-15bb6f934384",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Llama 3 8B",
+   "slug": "llama-3-8b"
+  },
+  {
+   "context_window": 128000,
+   "creator": "Meta",
+   "family": "Llama",
+   "id": "8272295e-4f52-40b0-8618-546fd01ff669",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Llama 4 Maverick 17B",
+   "slug": "llama-4-maverick-17b"
+  },
+  {
+   "context_window": 327680,
+   "creator": "Meta",
+   "family": "Llama",
+   "id": "aa5e8c99-6fc0-4e0f-81ac-55827c8793ae",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Llama 4 Scout",
+   "slug": "llama-4-scout"
+  },
+  {
+   "context_window": null,
+   "creator": "Meta",
+   "family": null,
+   "id": "dbe3803c-f85d-4503-add8-8b0ff3d15119",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Llama 65B",
+   "slug": "llama-65b"
+  },
+  {
+   "context_window": null,
+   "creator": "Meta",
+   "family": null,
+   "id": "3a5e6fe1-a2f1-4951-ad21-62e06f08be64",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Llama Guard 3",
+   "slug": "llama-guard-3"
+  },
+  {
+   "context_window": null,
+   "creator": "NVIDIA",
+   "family": null,
+   "id": "fd3beae4-a1d0-4f3d-a210-6f7a09eb3551",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Llama Nemotron Super 49B v1.5",
+   "slug": "llama-nemotron-super-49b-v1-5"
+  },
+  {
+   "context_window": null,
+   "creator": "Mistral",
+   "family": null,
+   "id": "4817154a-504e-4bdf-9efe-d6ea31ff07dc",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Magistral Medium 1.2",
+   "slug": "magistral-medium-1-2"
+  },
+  {
+   "context_window": null,
+   "creator": "Mistral",
+   "family": null,
+   "id": "0a786fa1-2bc5-4e6c-bbf1-7d5ab75eadcd",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Magistral Small 1.2",
+   "slug": "magistral-small-1-2"
+  },
+  {
+   "context_window": 128000,
+   "creator": "Inception",
+   "family": "Mercury",
+   "id": "333da718-2c93-429f-a674-92d6dacad0c6",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Mercury",
+   "slug": "mercury"
+  },
+  {
+   "context_window": 128000,
+   "creator": "Inception",
+   "family": "Mercury",
+   "id": "f4940133-4548-496b-b158-f6a643778277",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Mercury 2",
+   "slug": "mercury-2"
+  },
+  {
+   "context_window": 128000,
+   "creator": "Inception",
+   "family": "Mercury",
+   "id": "485468f1-27da-423d-8e47-6cddb194e9e9",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Mercury Coder",
+   "slug": "mercury-coder"
+  },
+  {
+   "context_window": null,
+   "creator": "Xiaomi",
+   "family": null,
+   "id": "0bd6d8d3-604d-4cfa-85ba-2df8823b8bb3",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "MiMo-V2.5",
+   "slug": "mimo-v2-5"
+  },
+  {
+   "context_window": 262144,
+   "creator": "Xiaomi",
+   "family": "MiMo",
+   "id": "7a48c017-ac9b-4287-8bf2-24676b75c915",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "MiMo v2 Flash",
+   "slug": "mimo-v2-flash"
+  },
+  {
+   "context_window": 262144,
+   "creator": "Xiaomi",
+   "family": "MiMo",
+   "id": "452b236d-08f4-42b2-937e-8845c5f1db19",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image",
+    "audio",
+    "video"
+   ],
+   "name": "MiMo v2 Omni",
+   "slug": "mimo-v2-omni"
+  },
+  {
+   "context_window": 1048576,
+   "creator": "Xiaomi",
+   "family": "MiMo",
+   "id": "f3c1aa9d-3036-450f-b54d-5181c070f73c",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "MiMo v2 Pro",
+   "slug": "mimo-v2-pro"
+  },
+  {
+   "context_window": 1000192,
+   "creator": "MiniMax",
+   "family": "MiniMax",
+   "id": "0dd5f2c6-faba-4139-940e-3299affbd2f3",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "MiniMax 01",
+   "slug": "minimax-01"
+  },
+  {
+   "context_window": 1000000,
+   "creator": "MiniMax",
+   "family": "MiniMax",
+   "id": "51e65940-dda3-43d1-8f99-6f7b9288ab9c",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "MiniMax M1",
+   "slug": "minimax-m1"
+  },
+  {
+   "context_window": 196608,
+   "creator": "MiniMax",
+   "family": "MiniMax",
+   "id": "b9df442e-f3dd-4cb5-89ac-a60c5f3cc3b7",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "MiniMax M2.1",
+   "slug": "minimax-m2-1"
+  },
+  {
+   "context_window": 128000,
+   "creator": "MiniMax",
+   "family": "MiniMax",
+   "id": "f3ec1f99-cdc4-4c1d-b835-2e58d4eb4c5d",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "MiniMax M2.5",
+   "slug": "minimax-m2-5"
+  },
+  {
+   "context_window": 204800,
+   "creator": "MiniMax",
+   "family": "MiniMax",
+   "id": "e68a4f70-077e-4b88-9655-f9492f077940",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "MiniMax M2.7",
+   "slug": "minimax-m2-7"
+  },
+  {
+   "context_window": 128000,
+   "creator": "Mistral",
+   "family": "Ministral",
+   "id": "0d0c20cf-2322-4935-858f-24ca672e511d",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Ministral 3 14B",
+   "slug": "ministral-3-14b"
+  },
+  {
+   "context_window": 131072,
+   "creator": "Mistral",
+   "family": "Ministral",
+   "id": "94eaf468-c0ea-49ca-ba82-323376d393b4",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Ministral 3B",
+   "slug": "ministral-3b-2512"
+  },
+  {
+   "context_window": 262144,
+   "creator": "Mistral",
+   "family": "Ministral",
+   "id": "c4874eef-cef4-4eb0-b3bb-bf0efbd70478",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Ministral 8B",
+   "slug": "ministral-8b-2512"
+  },
+  {
+   "context_window": 32000,
+   "creator": "Mistral",
+   "family": "Mistral",
+   "id": "d41c30e4-df14-4e41-97a7-7dd9ef2dbfaa",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Mistral 7B",
+   "slug": "mistral-7b"
+  },
+  {
+   "context_window": 128000,
+   "creator": "Mistral",
+   "family": "Mistral",
+   "id": "97a6e82f-7b8a-4574-b619-cf8dc55b11f0",
+   "knowledge_cutoff": "2024-01-01",
+   "modalities": [
+    "text"
+   ],
+   "name": "Mistral Large",
+   "slug": "mistral-large"
+  },
+  {
+   "context_window": 256000,
+   "creator": "Mistral",
+   "family": "Mistral Large",
+   "id": "7ef089af-c2c1-4be9-bafa-680d02adabbd",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Mistral Large 3",
+   "slug": "mistral-large-3"
+  },
+  {
+   "context_window": 131072,
+   "creator": "Mistral",
+   "family": "Mistral",
+   "id": "4cd2acf7-f02f-4396-8771-d77add62d0d0",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Mistral Medium 3",
+   "slug": "mistral-medium-3"
+  },
+  {
+   "context_window": 131072,
+   "creator": "Mistral",
+   "family": "Mistral",
+   "id": "4b8d2eb9-6174-4350-bfc4-36c9376410d9",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Mistral Medium 3.1",
+   "slug": "mistral-medium-3-1"
+  },
+  {
+   "context_window": 131072,
+   "creator": "Mistral",
+   "family": "Mistral",
+   "id": "00717d25-cefe-4eba-8137-9f5e84e14795",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Mistral Nemo",
+   "slug": "mistral-nemo"
+  },
+  {
+   "context_window": 32768,
+   "creator": "Mistral",
+   "family": "Mistral",
+   "id": "1595a15d-3c5d-4f89-bcf2-9688bc73a511",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Mistral Saba",
+   "slug": "mistral-saba"
+  },
+  {
+   "context_window": 32000,
+   "creator": "Mistral",
+   "family": "Mistral",
+   "id": "30aa858e-fa63-42ba-a4e9-674a2e589809",
+   "knowledge_cutoff": "2023-09-01",
+   "modalities": [
+    "text"
+   ],
+   "name": "Mistral Small",
+   "slug": "mistral-small"
+  },
+  {
+   "context_window": 64000,
+   "creator": "Mistral",
+   "family": "Mixtral",
+   "id": "5be3a2b8-eb53-43c9-b251-3896873fefbf",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Mixtral 8x22B",
+   "slug": "mixtral-8x22b"
+  },
+  {
+   "context_window": 32000,
+   "creator": "Mistral",
+   "family": "Mixtral",
+   "id": "a0ff832f-a506-4b4a-a86f-789384a95b3c",
+   "knowledge_cutoff": "2023-09-01",
+   "modalities": [
+    "text"
+   ],
+   "name": "Mixtral 8x7B",
+   "slug": "mixtral-8x7b"
+  },
+  {
+   "context_window": null,
+   "creator": "Meta",
+   "family": null,
+   "id": "c7430c42-fa5b-4811-99a6-43b5fd6335f1",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Muse Spark",
+   "slug": "muse-spark"
+  },
+  {
+   "context_window": 262144,
+   "creator": "NVIDIA",
+   "family": "Nemotron",
+   "id": "a9642658-d6ef-4a0c-9333-5b2fd2695716",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Nemotron 3 Nano 30B",
+   "slug": "nemotron-3-nano-30b-a3b"
+  },
+  {
+   "context_window": null,
+   "creator": "NVIDIA",
+   "family": null,
+   "id": "2305fbf3-1fb2-4bca-8429-a64bc0eed957",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Nemotron 3 Nano Omni 30B A3B Reasoning",
+   "slug": "nemotron-3-nano-omni-30b-a3b-reasoning"
+  },
+  {
+   "context_window": 262144,
+   "creator": "NVIDIA",
+   "family": "Nemotron",
+   "id": "fa982b7b-1d12-4a79-81f8-adfc6ab81e95",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Nemotron 3 Super 120B",
+   "slug": "nemotron-3-super-120b-a12b"
+  },
+  {
+   "context_window": null,
+   "creator": "NVIDIA",
+   "family": null,
+   "id": "808fad71-e4ce-48c7-99c9-2bad1e86caa1",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Nemotron 3 Ultra 550B A55B",
+   "slug": "nemotron-3-ultra-550b-a55b"
+  },
+  {
+   "context_window": null,
+   "creator": "NVIDIA",
+   "family": null,
+   "id": "b8156252-015f-4437-a738-5732fffc8f43",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Nemotron Cascade 2 30B A3B",
+   "slug": "nemotron-cascade-2-30b-a3b"
+  },
+  {
+   "context_window": 131072,
+   "creator": "NVIDIA",
+   "family": "Nemotron",
+   "id": "48de93a8-ce47-41dc-8c30-d2c1b3231000",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image",
+    "video"
+   ],
+   "name": "Nemotron Nano 12B v2 VL",
+   "slug": "nemotron-nano-12b-v2-vl"
+  },
+  {
+   "context_window": 131072,
+   "creator": "NVIDIA",
+   "family": "Nemotron",
+   "id": "16f834ed-a40d-45ba-8e62-67e64a84cbc6",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Nemotron Nano 9B v2",
+   "slug": "nemotron-nano-9b-v2"
+  },
+  {
+   "context_window": null,
+   "creator": "Cohere",
+   "family": null,
+   "id": "d57836db-a4cc-4216-a0d0-6a48c8b91513",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "North Mini Code",
+   "slug": "north-mini-code"
+  },
+  {
+   "context_window": null,
+   "creator": "Amazon",
+   "family": null,
+   "id": "8166bcb6-87f9-4b5a-b254-762a44c8422f",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Nova 2.0 Lite",
+   "slug": "nova-2-0-lite"
+  },
+  {
+   "context_window": null,
+   "creator": "Amazon",
+   "family": null,
+   "id": "b53d4284-e2c7-4ded-b2d7-d1012a52506c",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Nova 2.0 Omni",
+   "slug": "nova-2-0-omni"
+  },
+  {
+   "context_window": null,
+   "creator": "Amazon",
+   "family": null,
+   "id": "798cc4a0-8801-48d9-b283-5f928e6ae106",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Nova 2.0 Pro Preview",
+   "slug": "nova-2-0-pro-preview"
+  },
+  {
+   "context_window": 1000000,
+   "creator": "Amazon",
+   "family": "Nova",
+   "id": "510f3039-3178-4348-b922-280fa146987b",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image",
+    "video"
+   ],
+   "name": "Nova 2 Lite",
+   "slug": "nova-2-lite-v1"
+  },
+  {
+   "context_window": null,
+   "creator": "Amazon",
+   "family": null,
+   "id": "c4990731-6efb-4d88-b1cd-a25707ff70bd",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Nova 2.0 Pro Preview (low)",
+   "slug": "nova-2-pro"
+  },
+  {
+   "context_window": 300000,
+   "creator": "Amazon",
+   "family": "Nova",
+   "id": "b5e5ede8-d644-4a9d-852d-2e9fe83f7df8",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Nova Lite",
+   "slug": "nova-lite-v1"
+  },
+  {
+   "context_window": 128000,
+   "creator": "Amazon",
+   "family": "Nova",
+   "id": "b357f40e-5676-4b92-8c22-e293c83a3f0c",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Nova Micro",
+   "slug": "nova-micro-v1"
+  },
+  {
+   "context_window": 1000000,
+   "creator": "Amazon",
+   "family": "Nova",
+   "id": "ada8eec5-5cd7-4a5d-b862-59b0e2d569c7",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Nova Premier",
+   "slug": "nova-premier-v1"
+  },
+  {
+   "context_window": 300000,
+   "creator": "Amazon",
+   "family": "Nova",
+   "id": "3fe37954-3073-46a9-bad3-a0b7083079a7",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Nova Pro",
+   "slug": "nova-pro-v1"
+  },
+  {
+   "context_window": null,
+   "creator": "NVIDIA",
+   "family": null,
+   "id": "0e292250-8240-4c2f-9f88-a2d7d3d8c5bc",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "NVIDIA Nemotron 3 Nano 4B",
+   "slug": "nvidia-nemotron-3-nano-4b"
+  },
+  {
+   "context_window": 200000,
+   "creator": "OpenAI",
+   "family": "o-series",
+   "id": "c40d74d0-13a0-4a2a-84b1-33508a3db29b",
+   "knowledge_cutoff": "2024-06-01",
+   "modalities": [
+    "text"
+   ],
+   "name": "o1",
+   "slug": "o1"
+  },
+  {
+   "context_window": 128000,
+   "creator": "OpenAI",
+   "family": "o-series",
+   "id": "0e43107f-a2e1-4ba4-9f5e-748cb11c8ff4",
+   "knowledge_cutoff": "2024-06-01",
+   "modalities": [
+    "text"
+   ],
+   "name": "o1-mini",
+   "slug": "o1-mini"
+  },
+  {
+   "context_window": 200000,
+   "creator": "OpenAI",
+   "family": "o-series",
+   "id": "540a1c9d-7f30-49a0-b36e-6f1ca790f72a",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "o3 Deep Research",
+   "slug": "o3-deep-research"
+  },
+  {
+   "context_window": 200000,
+   "creator": "OpenAI",
+   "family": "o-series",
+   "id": "0d14806e-b358-4974-b5d5-17b7adf52589",
+   "knowledge_cutoff": "2024-10-01",
+   "modalities": [
+    "text"
+   ],
+   "name": "o3-mini",
+   "slug": "o3-mini"
+  },
+  {
+   "context_window": 200000,
+   "creator": "OpenAI",
+   "family": "o-series",
+   "id": "030218f2-078b-43f7-a0e7-0b3018e9722a",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "o3 Pro",
+   "slug": "o3-pro"
+  },
+  {
+   "context_window": 200000,
+   "creator": "OpenAI",
+   "family": "o-series",
+   "id": "9566d08b-6a9e-41b2-9c51-0e1d98816d52",
+   "knowledge_cutoff": "2025-06-01",
+   "modalities": [
+    "text"
+   ],
+   "name": "o4-mini",
+   "slug": "o4-mini"
+  },
+  {
+   "context_window": null,
+   "creator": "OpenAI",
+   "family": null,
+   "id": "f61f1299-5f0c-4033-8af0-a2062518538a",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "OpenAI Omni Moderation",
+   "slug": "omni-moderation"
+  },
+  {
+   "context_window": null,
+   "creator": "Google",
+   "family": null,
+   "id": "45215281-d74d-420b-a426-341bb2412558",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "PALM-2",
+   "slug": "palm-2"
+  },
+  {
+   "context_window": 1040000,
+   "creator": "Writer",
+   "family": "Palmyra",
+   "id": "e352e1e5-2121-4361-914c-20a2f7ca732a",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Palmyra X5",
+   "slug": "palmyra-x5"
+  },
+  {
+   "context_window": null,
+   "creator": "Microsoft",
+   "family": null,
+   "id": "64a7517f-c8f5-4cb2-92de-a64a0836297d",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Phi-3 Mini Instruct 3.8B",
+   "slug": "phi-3-mini-instruct-3-8b"
+  },
+  {
+   "context_window": 16384,
+   "creator": "Microsoft",
+   "family": "Phi",
+   "id": "f5d93096-ca64-47a6-8025-c42fa8f16b50",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Phi-4",
+   "slug": "phi-4"
+  },
+  {
+   "context_window": 131072,
+   "creator": "Mistral",
+   "family": "Pixtral",
+   "id": "1cebf90f-1dd3-4c1e-bc85-514ba05467a9",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Pixtral Large",
+   "slug": "pixtral-large-2411"
+  },
+  {
+   "context_window": null,
+   "creator": "Playground",
+   "family": null,
+   "id": "8a0a4408-7bac-441e-ace5-a1785599b9d2",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Playground v2 1024",
+   "slug": "playground-v2-1024"
+  },
+  {
+   "context_window": null,
+   "creator": "Playground",
+   "family": null,
+   "id": "4c6571dd-5eec-4fff-a50c-08198c3ac910",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Playground v2.5 1024",
+   "slug": "playground-v2-5-1024"
+  },
+  {
+   "context_window": 128000,
+   "creator": "Alibaba",
+   "family": "Qwen",
+   "id": "d888d3e0-ba89-41b2-8343-716445950ba5",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Qwen 2.5 14B",
+   "slug": "qwen-2-5-14b"
+  },
+  {
+   "context_window": 128000,
+   "creator": "Alibaba",
+   "family": "Qwen",
+   "id": "4912eb4b-6e7c-4d19-ab4e-1a0907334bf6",
+   "knowledge_cutoff": "2024-03-01",
+   "modalities": [
+    "text"
+   ],
+   "name": "Qwen 2.5 72B",
+   "slug": "qwen-2-5-72b"
+  },
+  {
+   "context_window": 128000,
+   "creator": "Alibaba",
+   "family": "Qwen",
+   "id": "4c63674e-bf0a-4e9f-8fe4-19ce8453942b",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Qwen 2.5 7B",
+   "slug": "qwen-2-5-7b"
+  },
+  {
+   "context_window": 128000,
+   "creator": "Alibaba",
+   "family": "Qwen",
+   "id": "d5287dd2-7f11-4a8f-a158-4c445ffe56fe",
+   "knowledge_cutoff": "2024-03-01",
+   "modalities": [
+    "text"
+   ],
+   "name": "Qwen 2.5 Coder 32B",
+   "slug": "qwen-2-5-coder-32b"
+  },
+  {
+   "context_window": 128000,
+   "creator": "Alibaba",
+   "family": "Qwen",
+   "id": "29516368-331a-403b-bb52-3d0a5027d767",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Qwen 2.5 VL 72B",
+   "slug": "qwen-2-5-vl-72b"
+  },
+  {
+   "context_window": 128000,
+   "creator": "Alibaba",
+   "family": "Qwen",
+   "id": "0897d22d-2a86-42ba-a8d9-68f5c57af1b1",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Qwen 3 235B",
+   "slug": "qwen-3-235b"
+  },
+  {
+   "context_window": 128000,
+   "creator": "Alibaba",
+   "family": "Qwen",
+   "id": "408ff428-e1f6-4d02-a09d-2c5b01814d66",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Qwen 3.5 397B",
+   "slug": "qwen-3-5-397b"
+  },
+  {
+   "context_window": 262144,
+   "creator": "Alibaba",
+   "family": "Qwen 3.6",
+   "id": "1e31e865-b1f8-474d-bc05-c4621eb625a7",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image",
+    "video"
+   ],
+   "name": "Qwen 3.6 27B",
+   "slug": "qwen-3-6-27b"
+  },
+  {
+   "context_window": 1000000,
+   "creator": "Alibaba",
+   "family": "Qwen 3.6",
+   "id": "559d7b72-a8c0-45a2-a1ad-4b16e9b0cc3c",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Qwen 3.6 Plus",
+   "slug": "qwen-3-6-plus"
+  },
+  {
+   "context_window": 128000,
+   "creator": "Alibaba",
+   "family": "Qwen",
+   "id": "76f447d4-dc51-440b-8ef3-4bf46c06103f",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Qwen 3 Coder 30B",
+   "slug": "qwen-3-coder-30b"
+  },
+  {
+   "context_window": 128000,
+   "creator": "Alibaba",
+   "family": "Qwen",
+   "id": "23f67825-5320-43f2-91f6-3bb301c99c70",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Qwen 3 VL 32B",
+   "slug": "qwen-3-vl-32b"
+  },
+  {
+   "context_window": null,
+   "creator": "Alibaba",
+   "family": null,
+   "id": "7e436687-fe02-4658-aab8-60d96fe35c9d",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Qwen Chat 14B",
+   "slug": "qwen-chat-14b"
+  },
+  {
+   "context_window": 32768,
+   "creator": "Alibaba",
+   "family": "Qwen",
+   "id": "a55f1aa8-2437-459a-9707-6bd9c92dcfce",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Qwen Max",
+   "slug": "qwen-max"
+  },
+  {
+   "context_window": 1000000,
+   "creator": "Alibaba",
+   "family": "Qwen",
+   "id": "c76663fc-f184-4a80-9a0b-856b28d0f39f",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Qwen Plus",
+   "slug": "qwen-plus"
+  },
+  {
+   "context_window": 131072,
+   "creator": "Alibaba",
+   "family": "Qwen",
+   "id": "670cab2d-afda-4bd0-8d34-81a187ef6231",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Qwen VL Max",
+   "slug": "qwen-vl-max"
+  },
+  {
+   "context_window": 131072,
+   "creator": "Alibaba",
+   "family": "Qwen",
+   "id": "75e6c9d4-c7a7-4e8a-be13-2848070b3382",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Qwen VL Plus",
+   "slug": "qwen-vl-plus"
+  },
+  {
+   "context_window": null,
+   "creator": "Alibaba",
+   "family": null,
+   "id": "b31971d5-30b2-44da-a53b-b0bc1642d845",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Qwen1.5 Chat 110B",
+   "slug": "qwen1-5-chat-110b"
+  },
+  {
+   "context_window": 32768,
+   "creator": "Alibaba",
+   "family": "Qwen",
+   "id": "b3b2d367-83e2-4581-aaa4-515648f3f06e",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Qwen 2.5 Coder 7B",
+   "slug": "qwen2-5-coder-7b"
+  },
+  {
+   "context_window": null,
+   "creator": "Alibaba",
+   "family": null,
+   "id": "6a6cd34d-2d6c-42fa-87f3-bc230d6219ef",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Qwen2.5 Max",
+   "slug": "qwen2-5-max"
+  },
+  {
+   "context_window": 128000,
+   "creator": "Alibaba",
+   "family": "Qwen",
+   "id": "9e3c5580-f2a3-49ef-938d-954768ccf8c9",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Qwen 2.5 VL 32B",
+   "slug": "qwen2-5-vl-32b"
+  },
+  {
+   "context_window": null,
+   "creator": "Alibaba",
+   "family": null,
+   "id": "129aa5aa-f754-48e1-a3ed-4d6d5611f271",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Qwen2 Instruct 72B",
+   "slug": "qwen2-instruct-72b"
+  },
+  {
+   "context_window": null,
+   "creator": "Alibaba",
+   "family": null,
+   "id": "bf3412b6-0ff0-4d0c-bd43-09719df48c55",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Qwen3 0.6B",
+   "slug": "qwen3-0-6b"
+  },
+  {
+   "context_window": null,
+   "creator": "Alibaba",
+   "family": null,
+   "id": "55f5f29f-cda9-42dd-bc9c-f15d0847891d",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Qwen3 1.7B",
+   "slug": "qwen3-1-7b"
+  },
+  {
+   "context_window": 40960,
+   "creator": "Alibaba",
+   "family": "Qwen",
+   "id": "663cafbb-a5e9-451f-ba8c-f2c58f3e42a8",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Qwen 3 14B",
+   "slug": "qwen3-14b"
+  },
+  {
+   "context_window": null,
+   "creator": "Alibaba",
+   "family": null,
+   "id": "06661107-5d04-4c82-b206-0a3d652cb054",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Qwen3 235B A22B 2507",
+   "slug": "qwen3-235b-a22b-2507"
+  },
+  {
+   "context_window": 262144,
+   "creator": "Alibaba",
+   "family": "Qwen",
+   "id": "e43870d6-9d4b-49d8-ad22-2bb152e24891",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Qwen 3 30B",
+   "slug": "qwen3-30b-a3b"
+  },
+  {
+   "context_window": 40960,
+   "creator": "Alibaba",
+   "family": "Qwen",
+   "id": "edf8948a-c765-4256-b2b0-6447a1f36456",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Qwen 3 32B",
+   "slug": "qwen3-32b"
+  },
+  {
+   "context_window": null,
+   "creator": "Alibaba",
+   "family": null,
+   "id": "43781ce0-9188-4e22-891a-80ed6ce640f4",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Qwen3 4B",
+   "slug": "qwen3-4b"
+  },
+  {
+   "context_window": null,
+   "creator": "Alibaba",
+   "family": null,
+   "id": "0d9eb42f-6701-491e-ac64-4f70008cee8a",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Qwen3 4B 2507 Instruct",
+   "slug": "qwen3-4b-2507"
+  },
+  {
+   "context_window": 262144,
+   "creator": "Alibaba",
+   "family": "Qwen",
+   "id": "f0958518-288d-4be8-82c9-fbfd13a19d09",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image",
+    "video"
+   ],
+   "name": "Qwen 3.5 122B",
+   "slug": "qwen3-5-122b-a10b"
+  },
+  {
+   "context_window": 262144,
+   "creator": "Alibaba",
+   "family": "Qwen",
+   "id": "17f3f098-494d-4ace-8cef-acc107194091",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image",
+    "video"
+   ],
+   "name": "Qwen 3.5 27B",
+   "slug": "qwen3-5-27b"
+  },
+  {
+   "context_window": null,
+   "creator": "Alibaba",
+   "family": null,
+   "id": "10084358-9b01-4cee-8beb-0afff43c74fb",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Qwen3.5 2B",
+   "slug": "qwen3-5-2b"
+  },
+  {
+   "context_window": 262144,
+   "creator": "Alibaba",
+   "family": "Qwen",
+   "id": "304eb31d-0bf2-4f1f-9975-66464a8a26f7",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image",
+    "video"
+   ],
+   "name": "Qwen 3.5 35B",
+   "slug": "qwen3-5-35b-a3b"
+  },
+  {
+   "context_window": null,
+   "creator": "Alibaba",
+   "family": null,
+   "id": "9a2813f7-171f-4f38-b6f4-34ce146fb46c",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Qwen3.5 397B A17B",
+   "slug": "qwen3-5-397b-a17b"
+  },
+  {
+   "context_window": 256000,
+   "creator": "Alibaba",
+   "family": "Qwen",
+   "id": "1e62a280-d84d-4214-97a6-77da3469b7a1",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image",
+    "video"
+   ],
+   "name": "Qwen 3.5 9B",
+   "slug": "qwen3-5-9b"
+  },
+  {
+   "context_window": null,
+   "creator": "Alibaba",
+   "family": null,
+   "id": "469b07e7-32d4-4411-bb8e-4322b1c482f7",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Qwen3.5 Omni Plus",
+   "slug": "qwen3-5-omni-plus"
+  },
+  {
+   "context_window": null,
+   "creator": "Alibaba",
+   "family": null,
+   "id": "8a7e76e8-369b-4869-af41-31e80e3cc0cd",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Qwen3.6 35B A3B",
+   "slug": "qwen3-6-35b-a3b"
+  },
+  {
+   "context_window": 40960,
+   "creator": "Alibaba",
+   "family": "Qwen",
+   "id": "6f684f14-7dd0-43b3-b13d-622273504c2e",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Qwen 3 8B",
+   "slug": "qwen3-8b"
+  },
+  {
+   "context_window": 1000000,
+   "creator": "Alibaba",
+   "family": "Qwen",
+   "id": "23333a32-193f-49f6-82fc-0706c240f6af",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Qwen 3 Coder Flash",
+   "slug": "qwen3-coder-flash"
+  },
+  {
+   "context_window": 1000000,
+   "creator": "Alibaba",
+   "family": "Qwen",
+   "id": "499ea9cf-53cd-4d59-828d-96c1ac187707",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Qwen 3 Coder Plus",
+   "slug": "qwen3-coder-plus"
+  },
+  {
+   "context_window": 262144,
+   "creator": "Alibaba",
+   "family": "Qwen",
+   "id": "772615e8-456c-4da1-8cd0-00bae0ab1ea0",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Qwen 3 Max",
+   "slug": "qwen3-max"
+  },
+  {
+   "context_window": null,
+   "creator": "Alibaba",
+   "family": null,
+   "id": "7076f7a4-5225-4cd1-b026-3de61f47d10e",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Qwen3 Next 80B A3B",
+   "slug": "qwen3-next-80b-a3b"
+  },
+  {
+   "context_window": null,
+   "creator": "Alibaba",
+   "family": null,
+   "id": "1f91a9e8-bf71-448f-a1fc-6d4e525d587c",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Qwen3 Reranker 4B",
+   "slug": "qwen3-reranker-4b"
+  },
+  {
+   "context_window": null,
+   "creator": "Alibaba",
+   "family": null,
+   "id": "eb3ad97c-87a2-4365-a6e5-9c58110d9a9d",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Qwen3 Reranker 8B",
+   "slug": "qwen3-reranker-8b"
+  },
+  {
+   "context_window": 262144,
+   "creator": "Alibaba",
+   "family": "Qwen",
+   "id": "538b405f-c3ab-4194-ae8a-0ce92e4cf041",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Qwen 3 VL 235B",
+   "slug": "qwen3-vl-235b-a22b"
+  },
+  {
+   "context_window": 131072,
+   "creator": "Alibaba",
+   "family": "Qwen",
+   "id": "d99c17aa-c972-4983-8e9c-973eeb9e0e1c",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Qwen 3 VL 30B",
+   "slug": "qwen3-vl-30b-a3b"
+  },
+  {
+   "context_window": 32000,
+   "creator": "Alibaba",
+   "family": "QwQ",
+   "id": "365179c3-3a02-4157-88f6-0f8202f03b82",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "QwQ 32B",
+   "slug": "qwq-32b"
+  },
+  {
+   "context_window": null,
+   "creator": "Perplexity",
+   "family": null,
+   "id": "edf5f407-0ce7-4a55-9f80-8bf1fbe44fd2",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "R1 1776",
+   "slug": "r1-1776"
+  },
+  {
+   "context_window": null,
+   "creator": "Recraft",
+   "family": null,
+   "id": "8ad00fc3-288e-45b0-a089-5b5eb6ce0ed7",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Recraft v3",
+   "slug": "recraft-v3"
+  },
+  {
+   "context_window": 16384,
+   "creator": "Reka",
+   "family": "Reka",
+   "id": "2acacead-2d05-4571-9a75-4f30f00de8c4",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image",
+    "video"
+   ],
+   "name": "Reka Edge",
+   "slug": "reka-edge"
+  },
+  {
+   "context_window": null,
+   "creator": "Reka AI",
+   "family": null,
+   "id": "a3dc16e2-5958-466b-ace2-6df3d9bd1f8b",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Reka Flash",
+   "slug": "reka-flash"
+  },
+  {
+   "context_window": 65536,
+   "creator": "Reka",
+   "family": "Reka",
+   "id": "2c0e2228-c84e-49b0-8989-e88b43989f8d",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Reka Flash 3",
+   "slug": "reka-flash-3"
+  },
+  {
+   "context_window": 262144,
+   "creator": "ByteDance",
+   "family": "Seed",
+   "id": "94038a8c-b815-4043-9e9e-44d97a3ce06c",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image",
+    "video"
+   ],
+   "name": "Seed 1.6",
+   "slug": "seed-1-6"
+  },
+  {
+   "context_window": 262144,
+   "creator": "ByteDance",
+   "family": "Seed",
+   "id": "b9e5cff1-a079-4080-9bc0-1929c4073418",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image",
+    "video"
+   ],
+   "name": "Seed 1.6 Flash",
+   "slug": "seed-1-6-flash"
+  },
+  {
+   "context_window": 262144,
+   "creator": "ByteDance",
+   "family": "Seed",
+   "id": "3daf9b7d-b3ab-48e2-9d0e-b303818c3df9",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image",
+    "video"
+   ],
+   "name": "Seed 2.0 Lite",
+   "slug": "seed-2-0"
+  },
+  {
+   "context_window": 262144,
+   "creator": "ByteDance",
+   "family": "Seed",
+   "id": "ffdb230a-7662-4084-9079-b1008c4e5749",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image",
+    "video"
+   ],
+   "name": "Seed 2.0 Mini",
+   "slug": "seed-2-0-mini"
+  },
+  {
+   "context_window": null,
+   "creator": "ByteDance Seed",
+   "family": null,
+   "id": "0351c5a0-03d1-4f60-9115-bae23dcf583f",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Seed-OSS-36B-Instruct",
+   "slug": "seed-oss-36b"
+  },
+  {
+   "context_window": null,
+   "creator": "Segmind",
+   "family": null,
+   "id": "0763867c-d4c6-4f53-9f24-603d9ff2b275",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Segmind SSD-1B",
+   "slug": "segmind-ssd-1b"
+  },
+  {
+   "context_window": 127072,
+   "creator": "Perplexity",
+   "family": "Sonar",
+   "id": "27cb5c10-a692-4147-a45b-a1f6c0592e36",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Sonar",
+   "slug": "sonar"
+  },
+  {
+   "context_window": 128000,
+   "creator": "Perplexity",
+   "family": "Sonar",
+   "id": "206117a4-d7a1-48ca-8e63-f1bf87b9ca2d",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Sonar Deep Research",
+   "slug": "sonar-deep-research"
+  },
+  {
+   "context_window": 200000,
+   "creator": "Perplexity",
+   "family": "Sonar",
+   "id": "759324a9-da3c-4ad0-b64d-eb9e8749c580",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Sonar Pro",
+   "slug": "sonar-pro"
+  },
+  {
+   "context_window": 200000,
+   "creator": "Perplexity",
+   "family": "Sonar",
+   "id": "1451597e-1fd6-4958-adcc-b05649dc1ab2",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Sonar Pro Search",
+   "slug": "sonar-pro-search"
+  },
+  {
+   "context_window": 128000,
+   "creator": "Perplexity",
+   "family": "Sonar",
+   "id": "07bbeb85-36b9-4c72-b587-7f2ca2cd908b",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "name": "Sonar Reasoning Pro",
+   "slug": "sonar-reasoning-pro"
+  },
+  {
+   "context_window": null,
+   "creator": "Stability AI",
+   "family": null,
+   "id": "26b18aa1-671b-4a83-ac26-385f7fa2b27b",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Stable Diffusion 3.5 Large",
+   "slug": "stable-diffusion-3-5-large"
+  },
+  {
+   "context_window": null,
+   "creator": "Stability AI",
+   "family": null,
+   "id": "80a0f4d5-b70d-4c3f-b2b7-cb400561df9b",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Stable Diffusion 3.5 Medium",
+   "slug": "stable-diffusion-3-5-medium"
+  },
+  {
+   "context_window": null,
+   "creator": "Stability AI",
+   "family": null,
+   "id": "5050b806-e27e-4cc2-83f4-96298cc81c85",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Stable Diffusion XL",
+   "slug": "stable-diffusion-xl"
+  },
+  {
+   "context_window": 262144,
+   "creator": "Stepfun",
+   "family": "Step",
+   "id": "d44a2a00-729c-4b4a-a8e7-853756cb90b4",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Step 3.5 Flash",
+   "slug": "step-3-5-flash"
+  },
+  {
+   "context_window": null,
+   "creator": "StepFun",
+   "family": null,
+   "id": "54d4578e-6c2c-432c-956b-4ec9b06b827e",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Step 3.7 Flash",
+   "slug": "step-3-7-flash"
+  },
+  {
+   "context_window": null,
+   "creator": "StepFun",
+   "family": null,
+   "id": "1ac20a08-69ba-446b-b067-5c24fe2db6cf",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Step3 VL 10B",
+   "slug": "step3-vl-10b"
+  },
+  {
+   "context_window": null,
+   "creator": "OpenAI",
+   "family": null,
+   "id": "53d91a82-a94f-4f1b-8ecf-7fb3041d15cf",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "text-embedding-3-large",
+   "slug": "text-embedding-3-large"
+  },
+  {
+   "context_window": null,
+   "creator": "OpenAI",
+   "family": null,
+   "id": "b111c893-e138-4461-845a-52be3b49aeb4",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "text-embedding-3-small",
+   "slug": "text-embedding-3-small"
+  },
+  {
+   "context_window": null,
+   "creator": "Cohere",
+   "family": null,
+   "id": "fcfe6d39-a208-45f7-acd3-2a9a9ed96d47",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Tiny Aya Global",
+   "slug": "tiny-aya-global"
+  },
+  {
+   "context_window": null,
+   "creator": "OpenAI",
+   "family": null,
+   "id": "97d244f4-abbd-4db8-8166-2760fa0b172b",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "OpenAI TTS-1",
+   "slug": "tts-1"
+  },
+  {
+   "context_window": 32000,
+   "creator": "Mistral",
+   "family": "Voxtral",
+   "id": "b4399656-f3de-4b36-bc0a-5fb42d53537e",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text",
+    "audio"
+   ],
+   "name": "Voxtral Small 24B",
+   "slug": "voxtral-small-24b-2507"
+  },
+  {
+   "context_window": null,
+   "creator": "Voyage AI",
+   "family": null,
+   "id": "d52bc9b5-4de6-402f-accf-4f79aa8ff5fd",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Voyage 3",
+   "slug": "voyage-3"
+  },
+  {
+   "context_window": null,
+   "creator": "WaveSpeed",
+   "family": null,
+   "id": "6f0068d4-c699-425a-93c1-5d835f40be36",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Wan 2.1 Image-to-Video 480p",
+   "slug": "wan-2-1-i2v-480p"
+  },
+  {
+   "context_window": null,
+   "creator": "WaveSpeed",
+   "family": null,
+   "id": "cc85313b-00af-448f-ab88-c9968a5253f7",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Wan 2.1 Image-to-Video 720p",
+   "slug": "wan-2-1-i2v-720p"
+  },
+  {
+   "context_window": null,
+   "creator": "WaveSpeed",
+   "family": null,
+   "id": "6ef307dc-46ca-4997-a3c1-b61fe49609b8",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Wan 2.1 Text-to-Video",
+   "slug": "wan-2-1-t2v"
+  },
+  {
+   "context_window": null,
+   "creator": "OpenAI",
+   "family": null,
+   "id": "64ef2f01-e57e-4683-9b17-ea40e778422b",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Whisper V3 Large",
+   "slug": "whisper-v3-large"
+  },
+  {
+   "context_window": null,
+   "creator": "OpenAI",
+   "family": null,
+   "id": "918dcfb6-ef93-4bd9-9ad7-a7b46b254054",
+   "knowledge_cutoff": null,
+   "modalities": [
+    "text"
+   ],
+   "name": "Whisper V3 Turbo",
+   "slug": "whisper-v3-turbo"
+  }
+ ],
+ "providers": [
+  {
+   "category": "GPU-focused",
+   "description": "1Legion provides dedicated bare metal GPU servers optimized for AI and media workloads, ensuring predictable performance without virtualization.",
+   "docs_url": null,
+   "hq_country": null,
+   "id": "c2a4cecd-4f35-4fe1-a189-33ea99314672",
+   "name": "1Legion",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://1legion.com/gpu-instances",
+   "slug": "1legion-com",
+   "tagline": "Dedicated bare metal GPU servers for AI",
+   "tags": [
+    "gpu",
+    "dedicated",
+    "bare metal"
+   ],
+   "website": "https://1legion.com"
+  },
+  {
+   "category": "GPU-focused",
+   "description": "AceCloud is a cloud infrastructure provider offering GPU, compute, Kubernetes, storage, managed databases, and networking services. Headquartered in Gurugram, India, it runs an India-first infrastructure with data centers in India (Mumbai, Noida) and the USA, providing on-demand NVIDIA GPUs for AI training, inference, HPC, rendering, and GenAI workloads with pay-as-you-go and monthly pricing, INR billing, and 24/7 human support.",
+   "docs_url": "https://acecloud.ai/docs/",
+   "hq_country": "IN",
+   "id": "a7f1587f-b17d-4ca9-acad-4da79a3f59d0",
+   "name": "AceCloud",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://acecloud.ai/pricing/",
+   "slug": "acecloud",
+   "tagline": "Affordable cloud GPUs for AI workloads",
+   "tags": [
+    "enterprise",
+    "budget",
+    "kubernetes"
+   ],
+   "website": "https://acecloud.ai/"
+  },
+  {
+   "category": "Classical hyperscaler",
+   "description": "Akamai Cloud (formerly Linode) is a global cloud platform offering GPU Linodes built around NVIDIA RTX PRO 6000 Blackwell, Quadro RTX 6000 and RTX 4000 Ada cards for inference and graphics workloads.",
+   "docs_url": "https://techdocs.akamai.com/cloud-computing/docs/gpu-compute-instances",
+   "hq_country": "US",
+   "id": "071bafa1-dd31-4ce6-b399-28c31b829f1d",
+   "name": "Akamai Cloud",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://www.akamai.com/cloud/pricing",
+   "slug": "akamai-cloud",
+   "tagline": "Global cloud with predictable RTX-class GPU Linodes",
+   "tags": [],
+   "website": "https://www.akamai.com/products/gpu"
+  },
+  {
+   "category": "Inference specialist",
+   "description": "Anthropic is an AI safety company that builds reliable, interpretable, and steerable AI systems. Operating as a public benefit corporation, Anthropic offers the Claude family of large language models via API, emphasizing responsible AI development through Constitutional AI.",
+   "docs_url": "https://docs.anthropic.com",
+   "hq_country": "US",
+   "id": "e980ad6b-8aca-41cd-a4d3-6c6ad79af153",
+   "name": "Anthropic",
+   "offerings": {
+    "gpu": false,
+    "llm": true
+   },
+   "pricing_url": "https://www.anthropic.com/pricing",
+   "slug": "anthropic",
+   "tagline": "AI research and products that put safety at the frontier",
+   "tags": [
+    "inference",
+    "safety",
+    "enterprise"
+   ],
+   "website": "https://www.anthropic.com"
+  },
+  {
+   "category": "AI API Platform",
+   "description": "Atlas Cloud is an AI API aggregation platform that provides unified access to 300+ AI models through a single API. From large language models and image generation to video creation, Atlas Cloud connects you to leading AI models with one API key and endpoint. Also offers GPU cloud services for custom model deployment.",
+   "docs_url": "https://www.atlascloud.ai/docs",
+   "hq_country": "US",
+   "id": "9b82496a-2614-461e-a6a1-c3d9c1d9fcbe",
+   "name": "Atlas Cloud",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://www.atlascloud.ai/pricing/gpu",
+   "slug": "atlas-cloud",
+   "tagline": "AI API aggregation platform with unified access to 300+ models",
+   "tags": [],
+   "website": "https://www.atlascloud.ai"
+  },
+  {
+   "category": "GPU-focused",
+   "description": "AtmosCompute offers GPU rentals focusing on various applications including AI, gaming, and scientific computing.",
+   "docs_url": null,
+   "hq_country": null,
+   "id": "66343ff8-d000-43f3-a695-91afd6df95a0",
+   "name": "AtmosCompute",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://atmoscompute.com/prices",
+   "slug": "atmoscompute-com",
+   "tagline": "Cloud GPU servers in minutes",
+   "tags": [
+    "gpu",
+    "rental",
+    "ai"
+   ],
+   "website": "https://atmoscompute.com"
+  },
+  {
+   "category": "Classical hyperscaler",
+   "description": "AWS provides a comprehensive suite of cloud computing services, including compute, storage, and GPU solutions for diverse workloads.",
+   "docs_url": "https://docs.aws.amazon.com",
+   "hq_country": "US",
+   "id": "3bb5a379-472f-4c84-9ba4-3337f3922582",
+   "name": "Amazon AWS",
+   "offerings": {
+    "gpu": true,
+    "llm": true
+   },
+   "pricing_url": "https://aws.amazon.com/ec2/capacityblocks/pricing/",
+   "slug": "aws",
+   "tagline": "Comprehensive cloud platform with global reach",
+   "tags": [
+    "inference",
+    "enterprise",
+    "multi-provider"
+   ],
+   "website": "https://aws.amazon.com"
+  },
+  {
+   "category": "Classical hyperscaler",
+   "description": "Azure provides comprehensive cloud computing services with strong enterprise integration, advanced AI capabilities, and a wide range of GPU options for machine learning, visualization, and high-performance computing workloads.",
+   "docs_url": "https://learn.microsoft.com/en-us/azure/",
+   "hq_country": "US",
+   "id": "11f663cd-d914-4863-9094-f293ee6421e0",
+   "name": "Microsoft Azure",
+   "offerings": {
+    "gpu": true,
+    "llm": true
+   },
+   "pricing_url": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/linux/",
+   "slug": "azure",
+   "tagline": "Enterprise cloud integrated with Microsoft ecosystem",
+   "tags": [
+    "inference",
+    "enterprise"
+   ],
+   "website": "https://azure.microsoft.com/en-us/solutions/ai/"
+  },
+  {
+   "category": "Niche neocloud",
+   "description": "Beam is an open-source serverless cloud platform for AI workloads, offering secure sandbox environments, ultrafast boot times, and pay-per-millisecond billing with automatic scaling.",
+   "docs_url": "https://docs.beam.cloud/",
+   "hq_country": "US",
+   "id": "44c61a91-aaa8-43d4-b330-ce3df1067e9a",
+   "name": "Beam",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://www.beam.cloud/pricing",
+   "slug": "beam",
+   "tagline": "Serverless sandbox environments for AI agents",
+   "tags": [
+    "serverless",
+    "open-source"
+   ],
+   "website": "https://www.beam.cloud/"
+  },
+  {
+   "category": "Regional neocloud",
+   "description": "Beyond.pl is a Central and Eastern European cloud provider offering NVIDIA DGX-based GPU infrastructure for AI training and inference workloads.",
+   "docs_url": "https://www.beyond.pl/en/services/gpu-as-a-service-gpuaas/",
+   "hq_country": "PL",
+   "id": "7d72057d-2f90-4993-9dc3-a508598c0607",
+   "name": "Beyond.pl",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://www.beyond.pl/en/services/gpu-as-a-service-gpuaas/",
+   "slug": "beyond-pl",
+   "tagline": "First CEE provider with NVIDIA DGX B200 infrastructure",
+   "tags": [
+    "bare-metal",
+    "enterprise"
+   ],
+   "website": "https://www.beyond.pl/en/"
+  },
+  {
+   "category": "Classical hyperscaler",
+   "description": "Civo is a developer-first cloud and AI platform built on managed Kubernetes, with sub-90-second cluster launches, transparent pricing, and a growing NVIDIA GPU lineup for AI workloads.",
+   "docs_url": "https://www.civo.com/docs",
+   "hq_country": "GB",
+   "id": "c9c2d2ee-002b-4549-a94d-61514bf93ab9",
+   "name": "Civo",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://www.civo.com/pricing",
+   "slug": "civo",
+   "tagline": "Built for more",
+   "tags": [
+    "budget"
+   ],
+   "website": "https://civo.com"
+  },
+  {
+   "category": "Inference specialist",
+   "description": "Cohere is an enterprise AI company founded in 2019 that provides private, secure, and customizable AI solutions for businesses. The company offers the Command family of language models, Aya multilingual models, and enterprise retrieval tools like Embed and Rerank via API, with flexible deployment options including cloud, VPC, and on-premises.",
+   "docs_url": "https://docs.cohere.com",
+   "hq_country": "CA",
+   "id": "86a80a0c-ce03-4c00-93ae-a42a8a77c2ae",
+   "name": "Cohere",
+   "offerings": {
+    "gpu": false,
+    "llm": true
+   },
+   "pricing_url": "https://cohere.com/pricing",
+   "slug": "cohere",
+   "tagline": "Enterprise AI: Private, Secure, Customizable",
+   "tags": [
+    "inference",
+    "enterprise",
+    "multilingual",
+    "retrieval"
+   ],
+   "website": "https://cohere.com"
+  },
+  {
+   "category": "GPU-focused",
+   "description": "CoreWeave is a specialized cloud provider offering GPU‑accelerated infrastructure for AI/ML, VFX, and batch compute, with Kubernetes‑native orchestration and rapid scale.",
+   "docs_url": "https://docs.coreweave.com/",
+   "hq_country": "US",
+   "id": "1d434a66-bf40-40a8-8e80-d5ab48b6d27f",
+   "name": "CoreWeave",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://coreweave.com/gpu-cloud-pricing",
+   "slug": "coreweave",
+   "tagline": "The Essential Cloud for AI",
+   "tags": [
+    "enterprise"
+   ],
+   "website": "https://www.coreweave.com/"
+  },
+  {
+   "category": "Massive neocloud",
+   "description": "Crusoe Cloud offers sustainable, high‑performance GPU compute (A100, L40S, H200, B200, GB200, and AMD MI300X/MI355X) powered by stranded energy and Tier III facilities.",
+   "docs_url": "https://docs.crusoecloud.com/",
+   "hq_country": "US",
+   "id": "c45c33ad-24c9-4ad7-ac37-ca0e30e63434",
+   "name": "Crusoe",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://www.crusoe.ai/cloud/pricing",
+   "slug": "crusoe",
+   "tagline": "Climate-friendly cloud using stranded energy",
+   "tags": [
+    "green"
+   ],
+   "website": "https://www.crusoe.ai/"
+  },
+  {
+   "category": "Cloud marketplace",
+   "description": "Cudo Compute designs, deploys and operates production AI infrastructure for enterprise and regulated workloads, offering on-demand and reserved access to enterprise GPUs, clusters, and AI factories across multiple global data centers.",
+   "docs_url": "https://www.cudocompute.com/docs",
+   "hq_country": "GB",
+   "id": "cdc63645-2c62-46d7-8e2a-5e1a77ff4d86",
+   "name": "Cudo Compute",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://www.cudocompute.com/pricing",
+   "slug": "cudo-compute",
+   "tagline": "Sustainable distributed cloud computing",
+   "tags": [
+    "green",
+    "decentralized"
+   ],
+   "website": "https://www.cudocompute.com"
+  },
+  {
+   "category": "Rapidly-catching neocloud",
+   "description": "Deep Infra is an AI inference cloud that provides serverless APIs for 100+ models and dedicated GPU rentals. Features OpenAI-compatible endpoints, custom model deployments, and infrastructure optimized for scale.",
+   "docs_url": "https://docs.deepinfra.com",
+   "hq_country": "US",
+   "id": "0075753d-ed17-4904-b7e4-4e61849b252c",
+   "name": "Deep Infra",
+   "offerings": {
+    "gpu": true,
+    "llm": true
+   },
+   "pricing_url": "https://deepinfra.com/pricing",
+   "slug": "deep-infra",
+   "tagline": "Optimized inference for open-source models",
+   "tags": [
+    "inference",
+    "open-source",
+    "budget"
+   ],
+   "website": "https://deepinfra.com"
+  },
+  {
+   "category": "Rapidly-catching neocloud",
+   "description": "Denvr Dataworks is a Canadian AI cloud platform offering NVIDIA H100, H200, A100, GH200, B200, GB200 and Intel Gaudi 2/3 accelerators with per-minute billing and sovereign Canadian infrastructure.",
+   "docs_url": "https://docs.denvrdata.com",
+   "hq_country": "CA",
+   "id": "c8da0665-5e9e-477d-92f4-56ae2f395fd2",
+   "name": "Denvr Dataworks",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://www.denvr.com/pricing",
+   "slug": "denvr-dataworks",
+   "tagline": "AI cloud with NVIDIA and Intel Gaudi accelerators and per-minute billing",
+   "tags": [],
+   "website": "https://www.denvr.com"
+  },
+  {
+   "category": "Classical hyperscaler",
+   "description": "DigitalOcean offers GPU Droplets powered by NVIDIA H100, H200, L40s, and AMD MI300X GPUs with simple per-hour pricing and no long-term commitments.",
+   "docs_url": "https://docs.digitalocean.com/products/droplets/how-to/gpu/",
+   "hq_country": "US",
+   "id": "8179167e-122b-4ef3-a328-6d15de9ab277",
+   "name": "DigitalOcean",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://www.digitalocean.com/pricing/gpu-droplets",
+   "slug": "digitalocean",
+   "tagline": "Simple, scalable GPU cloud for AI and ML",
+   "tags": [
+    "budget"
+   ],
+   "website": "https://www.digitalocean.com/"
+  },
+  {
+   "category": "Inference specialist",
+   "description": "fal.ai is a serverless inference platform focused on generative media (image, video, audio) with a hosted model catalog and on-demand GPU runtimes for custom deployments.",
+   "docs_url": "https://docs.fal.ai",
+   "hq_country": "US",
+   "id": "cd137e58-ff24-4d30-9086-0c5ad26c1a21",
+   "name": "fal.ai",
+   "offerings": {
+    "gpu": true,
+    "llm": true
+   },
+   "pricing_url": "https://fal.ai/pricing",
+   "slug": "fal-ai",
+   "tagline": "Serverless inference platform optimized for generative media",
+   "tags": [],
+   "website": "https://fal.ai"
+  },
+  {
+   "category": "Inference specialist",
+   "description": "Fireworks AI is a high-performance inference platform specializing in open-source generative AI models. Founded by former Meta PyTorch team members, they provide the fastest inference engine for LLMs, vision, and audio models with enterprise-grade reliability.",
+   "docs_url": "https://docs.fireworks.ai",
+   "hq_country": "US",
+   "id": "c289f4ba-8da4-4c07-a241-d523fd0e0f7e",
+   "name": "Fireworks AI",
+   "offerings": {
+    "gpu": false,
+    "llm": true
+   },
+   "pricing_url": "https://fireworks.ai/pricing",
+   "slug": "fireworks-ai",
+   "tagline": "The fastest platform for open-source AI",
+   "tags": [
+    "inference",
+    "open-source",
+    "fast"
+   ],
+   "website": "https://fireworks.ai"
+  },
+  {
+   "category": "Rapidly-catching neocloud",
+   "description": "Leading AI cloud platform providing purpose-built infrastructure for training and inference, partnering with top AI labs, governments, and enterprises.",
+   "docs_url": "https://docs.fluidstack.io/",
+   "hq_country": "GB",
+   "id": "a4c4b4ea-4de7-4e04-8d40-d4c4fc1d8182",
+   "name": "Fluidstack",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://www.fluidstack.io/resources/pricing",
+   "slug": "fluidstack",
+   "tagline": "Infrastructure for Abundant Intelligence",
+   "tags": [
+    "budget"
+   ],
+   "website": "https://www.fluidstack.io/"
+  },
+  {
+   "category": "Rapidly-catching neocloud",
+   "description": "Gcore is a global edge cloud provider offering NVIDIA GPU instances and bare-metal clusters, including GB200 capacity, alongside an inference platform that runs models close to end users across its CDN footprint.",
+   "docs_url": "https://gcore.com/docs",
+   "hq_country": "LU",
+   "id": "e826de19-55c3-495d-9388-81aa3706ac7a",
+   "name": "Gcore",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://gcore.com/pricing",
+   "slug": "gcore",
+   "tagline": "Global edge cloud with NVIDIA GPUs and inference at the edge",
+   "tags": [],
+   "website": "https://gcore.com"
+  },
+  {
+   "category": "Rapidly-catching neocloud",
+   "description": "Genesis Cloud offers HGX H100/H200 and B200 clusters with 3.2 Tbps InfiniBand, plus RTX options for cost‑sensitive workloads.",
+   "docs_url": "https://developers.genesiscloud.com/",
+   "hq_country": "DE",
+   "id": "8b1f3feb-2c2f-4983-a451-2564dccc8917",
+   "name": "Genesis Cloud",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://www.genesiscloud.com/pricing",
+   "slug": "genesis",
+   "tagline": "European GPU cloud for AI workloads",
+   "tags": [
+    "green",
+    "eu-sovereign"
+   ],
+   "website": "https://www.genesiscloud.com/"
+  },
+  {
+   "category": "Rapidly-catching neocloud",
+   "description": "GMI Cloud is a GPU-focused neocloud offering NVIDIA H100, H200, B200 and GB200 systems with on-demand and reserved pricing, targeted at AI training and production inference customers.",
+   "docs_url": "https://docs.gmicloud.ai",
+   "hq_country": "US",
+   "id": "3d2b6562-8783-4e68-a820-70244db7190b",
+   "name": "GMI Cloud",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://www.gmicloud.ai/en/pricing",
+   "slug": "gmi-cloud",
+   "tagline": "Blackwell-ready GPU cloud with transparent per-GPU pricing",
+   "tags": [
+    "budget"
+   ],
+   "website": "https://www.gmicloud.ai"
+  },
+  {
+   "category": "GPU-focused",
+   "description": "A cloud compute provider with AI-focused services.",
+   "docs_url": null,
+   "hq_country": null,
+   "id": "1185607b-596c-47af-bda3-e9ff36f3c28b",
+   "name": "Gonka",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": null,
+   "slug": "gonka-ai",
+   "tagline": "AI compute services for buying and selling.",
+   "tags": [
+    "ai",
+    "compute",
+    "token"
+   ],
+   "website": "https://gonka.ai"
+  },
+  {
+   "category": "Classical hyperscaler",
+   "description": "GCP provides powerful GPU instances with flexible pricing and integration with Google's AI and machine learning tools. It's a major cloud provider known for its innovation in Kubernetes, AI/ML, and data analytics.",
+   "docs_url": "https://cloud.google.com/compute/docs",
+   "hq_country": "US",
+   "id": "d122f315-b060-4924-8726-788c28ed3905",
+   "name": "Google Cloud",
+   "offerings": {
+    "gpu": true,
+    "llm": true
+   },
+   "pricing_url": "https://cloud.google.com/compute/gpus-pricing",
+   "slug": "google",
+   "tagline": "Enterprise cloud with advanced AI/ML services",
+   "tags": [
+    "inference",
+    "enterprise",
+    "multimodal"
+   ],
+   "website": "https://cloud.google.com/gpu"
+  },
+  {
+   "category": "Inference specialist",
+   "description": "Groq provides ultra-fast LLM inference powered by their custom LPU (Language Processing Unit) hardware, offering the fastest token generation speeds in the industry.",
+   "docs_url": "https://console.groq.com/docs",
+   "hq_country": "US",
+   "id": "66ff23f7-31b6-4baa-8d11-c1f5e4e02421",
+   "name": "Groq",
+   "offerings": {
+    "gpu": false,
+    "llm": true
+   },
+   "pricing_url": "https://groq.com/pricing",
+   "slug": "groq",
+   "tagline": "The fastest AI inference",
+   "tags": [
+    "inference",
+    "llm",
+    "fast"
+   ],
+   "website": "https://groq.com"
+  },
+  {
+   "category": "Rapidly-catching neocloud",
+   "description": "Hot Aisle is an AMD-exclusive AI cloud providing on-demand AMD Instinct MI300X virtual machines and bare metal nodes in a secure Michigan data center with 8x400G RoCE networking and minute-level pricing.",
+   "docs_url": "https://admin.hotaisle.app/api/docs/",
+   "hq_country": "US",
+   "id": "6e62d7f4-b22d-44fe-8ff8-412f4045074f",
+   "name": "Hot Aisle",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://hotaisle.xyz/pricing/",
+   "slug": "hotaisle",
+   "tagline": "Large-scale compute for AI workloads",
+   "tags": [
+    "enterprise"
+   ],
+   "website": "https://hotaisle.xyz"
+  },
+  {
+   "category": "Cloud marketplace",
+   "description": "Hyperbolic is an open-access AI cloud offering a decentralized GPU marketplace and inference API, aggregating underutilized GPUs from data centers worldwide at up to 75% lower cost than hyperscalers.",
+   "docs_url": "https://docs.hyperbolic.ai/",
+   "hq_country": "US",
+   "id": "a768a82e-d664-478d-ace2-df59b0d1bd65",
+   "name": "Hyperbolic",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://www.hyperbolic.ai/marketplace",
+   "slug": "hyperbolic",
+   "tagline": "Open-access AI cloud for GPU compute and inference",
+   "tags": [
+    "inference",
+    "open-source",
+    "decentralized",
+    "budget"
+   ],
+   "website": "https://www.hyperbolic.ai/"
+  },
+  {
+   "category": "Rapidly-catching neocloud",
+   "description": "Hyperstack offers on‑demand H200/H100/A100/L40 with clear per‑GPU hourly pricing and reservation discounts.",
+   "docs_url": "https://docs.hyperstack.cloud/docs/intro/",
+   "hq_country": "GB",
+   "id": "54cc0c05-b0e6-49b3-95fb-831b36dd7efd",
+   "name": "Hyperstack",
+   "offerings": {
+    "gpu": true,
+    "llm": true
+   },
+   "pricing_url": "https://www.hyperstack.cloud/gpu-pricing",
+   "slug": "hyperstack",
+   "tagline": "Global cloud GPUs with AI and HPC focus",
+   "tags": [
+    "budget"
+   ],
+   "website": "https://www.hyperstack.cloud/"
+  },
+  {
+   "category": "Classical hyperscaler",
+   "description": "IBM Cloud provides NVIDIA GPU instances (including H200 and L40S) for training, fine‑tuning, and inference, with enterprise networking and support.",
+   "docs_url": "https://cloud.ibm.com/docs",
+   "hq_country": "US",
+   "id": "8b627aa8-dfbb-40c2-9291-a23eab57b098",
+   "name": "IBM Cloud",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://www.ibm.com/cloud/compute/pricing/",
+   "slug": "ibm",
+   "tagline": "Enterprise-grade hybrid cloud solutions",
+   "tags": [
+    "enterprise"
+   ],
+   "website": "https://www.ibm.com/cloud/gpu"
+  },
+  {
+   "category": "GPU-focused",
+   "description": "Impossible Cloud offers S3-compatible object storage and dedicated bare metal GPU servers. It focuses on high performance and regulatory compliance for data storage and processing needs.",
+   "docs_url": "https://docs.impossiblecloud.com/impossible-cloud-help/",
+   "hq_country": "DE",
+   "id": "7727a2eb-ca34-4fe3-902c-bc95fed41763",
+   "name": "Impossible Cloud",
+   "offerings": {
+    "gpu": true,
+    "llm": true
+   },
+   "pricing_url": "https://www.impossiblecloud.com/en-us/pricing",
+   "slug": "impossiblecloud-com",
+   "tagline": "S3 object storage with dedicated GPU servers",
+   "tags": [
+    "ai",
+    "storage",
+    "gpu"
+   ],
+   "website": "https://impossiblecloud.com"
+  },
+  {
+   "category": "Cloud marketplace",
+   "description": "io.net is a decentralized GPU network offering H100 (PCIe/SXM) and other GPUs via marketplace pricing, with significant cost differences vs hyperscalers.",
+   "docs_url": "https://docs.io.net/",
+   "hq_country": "US",
+   "id": "94678cad-14ab-4bd7-9fcb-72d15ee11ce7",
+   "name": "IO.NET",
+   "offerings": {
+    "gpu": true,
+    "llm": true
+   },
+   "pricing_url": "https://io.net/",
+   "slug": "ionet",
+   "tagline": "Decentralized GPU network for AI development",
+   "tags": [
+    "decentralized"
+   ],
+   "website": "https://io.net/"
+  },
+  {
+   "category": "Rapidly-catching neocloud",
+   "description": "JarvisLabs offers managed Jupyter/VMs with per‑minute billing on H200/H100/A100; strong India presence and pause/resume.",
+   "docs_url": "https://docs.jarvislabs.ai/",
+   "hq_country": "IN",
+   "id": "973ad9bb-3d03-4c5f-b407-d90911f786bf",
+   "name": "Jarvis Labs",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://jarvislabs.ai/pricing",
+   "slug": "jarvis",
+   "tagline": "Cost-effective GPU cloud for ML practitioners",
+   "tags": [
+    "budget"
+   ],
+   "website": "https://jarvislabs.ai/"
+  },
+  {
+   "category": "Inference specialist",
+   "description": "Koyeb is a serverless platform offering on-demand NVIDIA GPUs from RTX-class up through B200 with per-second billing, scale-to-zero and global edge deployment. Koyeb is joining Mistral AI to build the future of AI infrastructure.",
+   "docs_url": "https://www.koyeb.com/docs",
+   "hq_country": "FR",
+   "id": "4dd08c03-a6a7-4ce3-a7f8-7a72c535f267",
+   "name": "Koyeb",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://www.koyeb.com/pricing",
+   "slug": "koyeb",
+   "tagline": "Serverless GPUs with per-second billing and global deployment",
+   "tags": [],
+   "website": "https://www.koyeb.com"
+  },
+  {
+   "category": "Massive neocloud",
+   "description": "Lambda is an AI compute platform offering on‑demand NVIDIA GPUs, including H100 and Blackwell B200, plus private clusters with Quantum‑2 InfiniBand.",
+   "docs_url": null,
+   "hq_country": "US",
+   "id": "825cef3b-54f5-426e-aa29-c05fe3070833",
+   "name": "Lambda Labs",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://lambdalabs.com/service/gpu-cloud#pricing",
+   "slug": "lambda",
+   "tagline": "Cloud GPUs purpose-built for deep learning",
+   "tags": [
+    "enterprise"
+   ],
+   "website": "https://lambdalabs.com/"
+  },
+  {
+   "category": "Classical hyperscaler",
+   "description": "Latitude.sh provides API-first bare metal and GPU infrastructure across 25 global locations, including strong coverage in the Americas plus Europe and APAC.",
+   "docs_url": "https://www.latitude.sh/docs/api-reference/summary",
+   "hq_country": "BR",
+   "id": "e2d056a3-139e-4a9b-9651-d6677bf6932c",
+   "name": "Latitude.sh",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://www.latitude.sh/pricing",
+   "slug": "latitude",
+   "tagline": "Global bare metal cloud infrastructure",
+   "tags": [
+    "bare-metal"
+   ],
+   "website": "https://www.latitude.sh/"
+  },
+  {
+   "category": "GPU-focused",
+   "description": "Lyceum offers serverless inference, dedicated endpoints, GPU VMs, and large-scale clusters for AI workloads. The platform is designed to facilitate the deployment and management of AI solutions without the complexity of traditional infrastructure.",
+   "docs_url": null,
+   "hq_country": "EU",
+   "id": "048037cc-71e6-427b-8095-3ccd75a8424b",
+   "name": "Lyceum",
+   "offerings": {
+    "gpu": true,
+    "llm": true
+   },
+   "pricing_url": null,
+   "slug": "lyceum-technology",
+   "tagline": "Accessible GPUs for training and inference",
+   "tags": [
+    "gpu",
+    "inference",
+    "training"
+   ],
+   "website": "https://lyceum.technology"
+  },
+  {
+   "category": "Rapidly-catching neocloud",
+   "description": "Massed Compute provides affordable on‑demand GPUs including H100 (SXM/NVL/PCIe) with owned hardware and transparent specs.",
+   "docs_url": "https://vm-docs.massedcompute.com/docs/intro",
+   "hq_country": "US",
+   "id": "d3a46a10-53b1-4778-8995-1971f554f342",
+   "name": "Massed Compute",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://vm.massedcompute.com/pricing",
+   "slug": "massedcompute",
+   "tagline": "High-density GPU clusters for AI",
+   "tags": [
+    "budget"
+   ],
+   "website": "https://massedcompute.com/"
+  },
+  {
+   "category": "Inference specialist",
+   "description": "Mistral AI is a Paris-based AI company building frontier open and commercial language models. They offer comprehensive AI solutions including inference APIs, developer tools (Studio), AI agents (Vibe), model training (Forge), and compute infrastructure, combining open-source leadership with commercial-grade enterprise solutions.",
+   "docs_url": "https://docs.mistral.ai",
+   "hq_country": "FR",
+   "id": "bf36548e-bf51-40dc-a6c8-174ba60b354f",
+   "name": "Mistral AI",
+   "offerings": {
+    "gpu": false,
+    "llm": true
+   },
+   "pricing_url": "https://mistral.ai/pricing",
+   "slug": "mistral",
+   "tagline": "Open and portable generative AI for devs and businesses",
+   "tags": [
+    "inference",
+    "open-source",
+    "european"
+   ],
+   "website": "https://mistral.ai"
+  },
+  {
+   "category": "Inference specialist",
+   "description": "Modal is a serverless GPU platform that lets developers run Python functions, jobs and inference endpoints on NVIDIA GPUs with per-second billing and scale-to-zero.",
+   "docs_url": "https://modal.com/docs",
+   "hq_country": "US",
+   "id": "3d5b1150-8962-4eb9-8daf-fdf8b44353ed",
+   "name": "Modal",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://modal.com/pricing",
+   "slug": "modal",
+   "tagline": "Serverless GPUs for AI workloads with per-second billing",
+   "tags": [],
+   "website": "https://modal.com"
+  },
+  {
+   "category": "Massive neocloud",
+   "description": "Nebius AI Cloud is a vertically integrated GPU cloud with published H100/H200/L40S rates, HGX cluster SKUs, and commitment discounts up to 35%.",
+   "docs_url": "https://docs.nebius.com",
+   "hq_country": "NL",
+   "id": "1d03e458-c92b-42fc-bcc1-0093f4c62b58",
+   "name": "Nebius",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://nebius.com/prices",
+   "slug": "nebius",
+   "tagline": "Full-stack AI infrastructure platform",
+   "tags": [
+    "enterprise",
+    "eu-sovereign"
+   ],
+   "website": "https://www.nebius.com"
+  },
+  {
+   "category": "Massive neocloud",
+   "description": "Nscale is a vertically integrated AI hyperscaler offering GPU clusters and managed AI services from sovereign UK and European data centers, with a focus on Blackwell-generation reservations and large-scale training capacity.",
+   "docs_url": "https://docs.nscale.com",
+   "hq_country": "GB",
+   "id": "1d0ef35d-cc6e-4e37-924e-edbcbe322051",
+   "name": "Nscale",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": null,
+   "slug": "nscale",
+   "tagline": "Vertically integrated AI hyperscaler with sovereign European capacity",
+   "tags": [],
+   "website": "https://www.nscale.com"
+  },
+  {
+   "category": "Rapidly-catching neocloud",
+   "description": "Oblivus is a GPU cloud offering NVIDIA H200, H100, A100, L40 and RTX-class GPUs as on-demand instances with reservation discounts.",
+   "docs_url": "https://docs.oblivus.com",
+   "hq_country": "GB",
+   "id": "0f331f0c-221e-4c15-b311-30a2bde0541a",
+   "name": "Oblivus",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://www.oblivus.com/pricing/",
+   "slug": "oblivus",
+   "tagline": "GPU cloud with transparent per-GPU on-demand pricing",
+   "tags": [
+    "budget"
+   ],
+   "website": "https://www.oblivus.com"
+  },
+  {
+   "category": "Inference specialist",
+   "description": "OpenAI is the leading AI research organization providing state-of-the-art language models including GPT-4o, o1 reasoning models, and multimodal capabilities through their API platform. They enable developers to build intelligent applications with pay-per-token pricing and extensive documentation.",
+   "docs_url": "https://platform.openai.com/docs",
+   "hq_country": "US",
+   "id": "745ce2f7-8fc4-43cb-b34f-e916f2fd39a7",
+   "name": "OpenAI",
+   "offerings": {
+    "gpu": false,
+    "llm": true
+   },
+   "pricing_url": "https://openai.com/api/pricing",
+   "slug": "openai",
+   "tagline": "State-of-the-art AI models for every application",
+   "tags": [
+    "inference",
+    "multimodal",
+    "enterprise"
+   ],
+   "website": "https://openai.com"
+  },
+  {
+   "category": "Inference specialist",
+   "description": "OpenRouter provides a unified API for accessing hundreds of AI models from multiple providers. It aggregates models from OpenAI, Anthropic, Google, Meta, Mistral, and many others, offering a single endpoint with automatic fallback routing and provider optimization.",
+   "docs_url": "https://openrouter.ai/docs",
+   "hq_country": "US",
+   "id": "fd0b03df-b312-4285-830d-ec056bd78da4",
+   "name": "OpenRouter",
+   "offerings": {
+    "gpu": false,
+    "llm": true
+   },
+   "pricing_url": "https://openrouter.ai/pricing",
+   "slug": "openrouter",
+   "tagline": "A unified interface for LLMs",
+   "tags": [
+    "inference",
+    "aggregator",
+    "open-source"
+   ],
+   "website": "https://openrouter.ai"
+  },
+  {
+   "category": "Classical hyperscaler",
+   "description": "Oracle Cloud Infrastructure (OCI) offers bare‑metal and VM GPU shapes including H100, H200, L40S and A10, with Supercluster networking and large local NVMe.",
+   "docs_url": null,
+   "hq_country": "US",
+   "id": "c53a1b15-f227-4ca5-be92-68e24a7643d9",
+   "name": "Oracle Cloud",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://www.oracle.com/cloud/compute/pricing/",
+   "slug": "oracle",
+   "tagline": "High-performance cloud for enterprise workloads",
+   "tags": [
+    "enterprise"
+   ],
+   "website": "https://www.oracle.com/cloud/compute/gpu.html"
+  },
+  {
+   "category": "GPU-focused",
+   "description": "Packet AI is a GPU cloud platform by hosted.ai offering fast GPU deployments with pay-per-use billing, free unlimited data egress, and OpenAI-compatible APIs for inference.",
+   "docs_url": "https://packet.ai/docs",
+   "hq_country": "US",
+   "id": "f89385ec-4d46-49d2-876d-362a148e4b61",
+   "name": "Packet AI",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://packet.ai/#pricing",
+   "slug": "packet-ai",
+   "tagline": "Fast GPU deployments with pay-per-use billing",
+   "tags": [
+    "inference-api",
+    "jupyter",
+    "vscode"
+   ],
+   "website": "https://packet.ai/"
+  },
+  {
+   "category": "Rapidly-catching neocloud",
+   "description": "Paperspace (by DigitalOcean) offers dedicated GPUs including H100/HGX H100 and A100 with managed notebooks and workflows.",
+   "docs_url": "https://docs.digitalocean.com/products/paperspace/",
+   "hq_country": "US",
+   "id": "c58cd5f6-4bbc-454a-abbf-fad2b94180c6",
+   "name": "Paperspace",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://www.paperspace.com/pricing",
+   "slug": "paperspace",
+   "tagline": "Developer-friendly GPU cloud platform",
+   "tags": [
+    "budget"
+   ],
+   "website": "https://www.paperspace.com/"
+  },
+  {
+   "category": "Inference specialist",
+   "description": "Perplexity is an AI company offering inference APIs powered by their Sonar models, which combine large language models with real-time web search. Their API provides grounded, citation-backed responses alongside standard chat completion capabilities using popular open-source models.",
+   "docs_url": "https://docs.perplexity.ai",
+   "hq_country": "US",
+   "id": "244d9df7-321f-4d1d-a65e-7f6162ba4a37",
+   "name": "Perplexity",
+   "offerings": {
+    "gpu": false,
+    "llm": true
+   },
+   "pricing_url": "https://docs.perplexity.ai/docs/getting-started/pricing",
+   "slug": "perplexity",
+   "tagline": "Search-augmented AI models with real-time web grounding",
+   "tags": [
+    "inference",
+    "search",
+    "grounding"
+   ],
+   "website": "https://www.perplexity.ai"
+  },
+  {
+   "category": "Model marketplace",
+   "description": "Replicate is a platform for running machine learning models in the cloud, offering thousands of open-source models with simple API access and pay-per-use pricing.",
+   "docs_url": "https://replicate.com/docs",
+   "hq_country": "US",
+   "id": "cf6e8f26-9319-4401-b8b9-4afa1c464bba",
+   "name": "Replicate",
+   "offerings": {
+    "gpu": false,
+    "llm": true
+   },
+   "pricing_url": "https://replicate.com/pricing",
+   "slug": "replicate",
+   "tagline": "Run open-source models at scale",
+   "tags": [
+    "inference",
+    "models",
+    "marketplace"
+   ],
+   "website": "https://replicate.com"
+  },
+  {
+   "category": "Rapidly-catching neocloud",
+   "description": "RunPod offers on‑demand GPUs and instant multi‑node clusters across 30+ regions, with H100/H200 alongside A100, L40S, and RTX classes.",
+   "docs_url": "https://docs.runpod.io",
+   "hq_country": "US",
+   "id": "30a69dae-5939-499a-a4f5-5114797dcdb3",
+   "name": "RunPod",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://www.runpod.io/pricing",
+   "slug": "runpod",
+   "tagline": "Affordable GPU cloud for AI and ML workloads",
+   "tags": [
+    "budget"
+   ],
+   "website": "https://runpod.io"
+  },
+  {
+   "category": "DC aggregator",
+   "description": "Salad Cloud is a distributed GPU platform that runs containers across community-powered GPUs and secure data center clusters, offering competitive pricing for both consumer and data center GPUs.",
+   "docs_url": "https://docs.salad.com",
+   "hq_country": "US",
+   "id": "46f0b708-7a4b-453b-8c0e-d57f9f304265",
+   "name": "Salad Cloud",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://salad.com/pricing",
+   "slug": "salad",
+   "tagline": "Distributed cloud powered by consumer GPUs",
+   "tags": [
+    "budget",
+    "decentralized"
+   ],
+   "website": "https://salad.com"
+  },
+  {
+   "category": "Rapidly-catching neocloud",
+   "description": "Scaleway is a European cloud provider offering GPU instances, bare-metal servers, and managed Kubernetes with carbon-neutral data centers and a strong focus on EU data sovereignty.",
+   "docs_url": "https://www.scaleway.com/en/docs/",
+   "hq_country": "FR",
+   "id": "ac50553e-b011-4eea-84a0-e9bd7389055a",
+   "name": "Scaleway",
+   "offerings": {
+    "gpu": true,
+    "llm": true
+   },
+   "pricing_url": "https://www.scaleway.com/en/pricing/gpu/",
+   "slug": "scaleway",
+   "tagline": "European sovereign cloud with GPU compute",
+   "tags": [
+    "enterprise",
+    "eu-sovereign",
+    "green"
+   ],
+   "website": "https://www.scaleway.com/"
+  },
+  {
+   "category": "GPU-focused",
+   "description": "Seeweb is an Italian cloud provider offering GPU-accelerated cloud servers since 2020, with pay-per-hour billing and data centers across Europe.",
+   "docs_url": "https://docs.seeweb.it/en/",
+   "hq_country": "IT",
+   "id": "a2ba7db9-21d5-4d23-a0e4-77e77972d0c8",
+   "name": "Seeweb",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://www.seeweb.it/en/products/cloud-server-gpu",
+   "slug": "seeweb",
+   "tagline": "Italian cloud provider with GPU solutions since 2020",
+   "tags": [
+    "budget"
+   ],
+   "website": "https://www.seeweb.it/en"
+  },
+  {
+   "category": "GPU-focused",
+   "description": "Sesterce is a European GPU cloud platform offering on-demand NVIDIA GPUs for AI training and inference, with bare-metal, VM, and container deployment options across multiple regions.",
+   "docs_url": "https://docs.sesterce.com/",
+   "hq_country": "FR",
+   "id": "d7779dc9-0811-4241-9585-588b9c5db78e",
+   "name": "Sesterce",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://www.sesterce.com/pricing",
+   "slug": "sesterce",
+   "tagline": "European GPU cloud for AI training and inference",
+   "tags": [
+    "gpu-cloud",
+    "inference"
+   ],
+   "website": "https://www.sesterce.com/"
+  },
+  {
+   "category": "GPU marketplace",
+   "description": "Shadeform is a GPU marketplace that aggregates on-demand GPU instances from multiple cloud providers into a single platform, letting users compare prices and deploy across providers with one API.",
+   "docs_url": "https://docs.shadeform.ai/",
+   "hq_country": "US",
+   "id": "5e21f784-4a7f-476d-9f5b-306b19e0a0bc",
+   "name": "Shadeform",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://shadeform.com/directory/instances",
+   "slug": "shadeform",
+   "tagline": "One API, every GPU cloud",
+   "tags": [
+    "marketplace",
+    "aggregator"
+   ],
+   "website": "https://www.shadeform.ai/"
+  },
+  {
+   "category": "GPU neocloud",
+   "description": "SK Telecom's GPUaaS infrastructure featuring over 1,000 NVIDIA Blackwell B200 GPUs in a single cluster, powered by proprietary Petasus virtualization for isolated, flexible AI training environments.",
+   "docs_url": "https://news.sktelecom.com/en/tag/haein",
+   "hq_country": "KR",
+   "id": "626a4677-5a03-4d8f-a991-46681fc43589",
+   "name": "SKT (Haein Cluster)",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": null,
+   "slug": "skt",
+   "tagline": "Korea's largest NVIDIA B200 dedicated GPU cluster",
+   "tags": [
+    "enterprise",
+    "bare-metal",
+    "kubernetes",
+    "sovereign-ai"
+   ],
+   "website": "https://www.sktelecom.com/"
+  },
+  {
+   "category": "Cloud marketplace",
+   "description": "TensorDock is a GPU cloud marketplace where independent hosts offer compute across 100+ locations in 20+ countries, with pay-per-second billing and no quotas or commitments.",
+   "docs_url": "https://docs.tensordock.com/",
+   "hq_country": "US",
+   "id": "e59fd1e8-2706-4c21-a9fd-a63ef9386b24",
+   "name": "TensorDock",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://www.tensordock.com/cloud-gpus.html",
+   "slug": "tensordock",
+   "tagline": "Affordable GPU cloud marketplace",
+   "tags": [
+    "budget",
+    "decentralized"
+   ],
+   "website": "https://www.tensordock.com/"
+  },
+  {
+   "category": "Rapidly-catching neocloud",
+   "description": "TensorWave is an AMD‑first AI cloud with bare‑metal and managed clusters built on Instinct MI300X/MI325X/MI355X accelerators with large VRAM and ROCm.",
+   "docs_url": "https://docs.tensorwave.com/",
+   "hq_country": "US",
+   "id": "ee80fbec-5f7f-4f44-b6bb-d70042b0a799",
+   "name": "TensorWave",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://tensorwave.com/bare-metal",
+   "slug": "tensorwave",
+   "tagline": "AMD-powered cloud challenging Nvidia dominance",
+   "tags": [
+    "inference"
+   ],
+   "website": "https://tensorwave.com/"
+  },
+  {
+   "category": "DC aggregator",
+   "description": "Theta EdgeCloud is a hybrid cloud-edge computing platform that combines 30,000+ distributed edge nodes with Google Cloud and AWS partnerships, offering GPU instances for AI training, inference, video transcoding, and rendering at 50-70% cost savings versus traditional hyperscalers.",
+   "docs_url": "https://docs.thetatoken.org/docs/theta-edgecloud-overview",
+   "hq_country": "US",
+   "id": "c890b9b7-4580-4f46-bf82-30cc081f2ba3",
+   "name": "Theta EdgeCloud",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://www.thetaedgecloud.com/",
+   "slug": "theta-edgecloud",
+   "tagline": "Hybrid cloud-edge GPU marketplace with 50-70% cost savings",
+   "tags": [
+    "budget",
+    "decentralized"
+   ],
+   "website": "https://www.thetaedgecloud.com/"
+  },
+  {
+   "category": "GPU-focused",
+   "description": "Thunder Compute provides dedicated cloud GPU services with rapid deployment options.",
+   "docs_url": "https://www.thundercompute.com/docs/vscode/quickstart",
+   "hq_country": "US",
+   "id": "86388f13-8674-49d8-9329-94a149a1c4cc",
+   "name": "Thunder Compute",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://www.thundercompute.com/pricing",
+   "slug": "thundercompute-com",
+   "tagline": "One-click GPU servers for quick deployment",
+   "tags": [
+    "gpu",
+    "cloud",
+    "development"
+   ],
+   "website": "https://thundercompute.com"
+  },
+  {
+   "category": "Inference specialist",
+   "description": "Together AI is the AI Native Cloud platform engineered for developers building with open-source and frontier AI models. They provide serverless inference, fine-tuning, and GPU clusters with industry-leading performance optimizations.",
+   "docs_url": "https://docs.together.ai",
+   "hq_country": "US",
+   "id": "b876b598-03b3-46ec-b349-7aa47583a92c",
+   "name": "Together AI",
+   "offerings": {
+    "gpu": true,
+    "llm": true
+   },
+   "pricing_url": "https://www.together.ai/pricing",
+   "slug": "together-ai",
+   "tagline": "The AI Native Cloud",
+   "tags": [
+    "inference",
+    "open-source",
+    "training"
+   ],
+   "website": "https://www.together.ai"
+  },
+  {
+   "category": "Rapidly-catching neocloud",
+   "description": "UpCloud is a European cloud provider headquartered in Helsinki, Finland, offering NVIDIA L40S GPU servers powered by 100% renewable energy with zero-cost data transfer and usage-based billing.",
+   "docs_url": "https://upcloud.com/docs/products/gpu-servers/",
+   "hq_country": "FI",
+   "id": "54dcc55e-c630-4f0b-a9b8-3834fd7e3010",
+   "name": "UpCloud",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://upcloud.com/pricing/",
+   "slug": "upcloud",
+   "tagline": "European GPU cloud powered by 100% renewable energy",
+   "tags": [
+    "green",
+    "eu-sovereign"
+   ],
+   "website": "https://upcloud.com"
+  },
+  {
+   "category": "DC aggregator",
+   "description": "Vast.ai is a GPU marketplace with live, transparent pricing across thousands of community and datacenter hosts. Deploy high-performance GPU instances in seconds with transparent supply-and-demand pricing.",
+   "docs_url": "https://docs.vast.ai/",
+   "hq_country": "US",
+   "id": "4a4fdeae-7d4f-4d75-9967-54bbd498e4bf",
+   "name": "Vast.ai",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://vast.ai/pricing",
+   "slug": "vast",
+   "tagline": "GPU marketplace with competitive pricing",
+   "tags": [
+    "budget"
+   ],
+   "website": "https://vast.ai/"
+  },
+  {
+   "category": "Rapidly-catching neocloud",
+   "description": "Verda (formerly DataCrunch) is an AI-focused cloud provider specializing in high-performance GPU instances, clusters, and inference services. Built by AI engineers for AI teams, offering full-stack cloud platform optimized for machine learning workflows.",
+   "docs_url": "https://docs.verda.com",
+   "hq_country": "FI",
+   "id": "fd8bfdf8-162d-4a95-954d-ca4279edc46f",
+   "name": "Verda",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://verda.com/products/",
+   "slug": "verda",
+   "tagline": "The Frontier AI Cloud",
+   "tags": [
+    "AI-focused",
+    "Sustainable"
+   ],
+   "website": "https://verda.com"
+  },
+  {
+   "category": "Rapidly-catching neocloud",
+   "description": "Voltage Park provides on‑demand and reserved bare‑metal clusters with NVIDIA HGX H100 today, expanding to H200 and Blackwell (B200/B300, GB200/GB300) on term contracts. Merged with Lightning AI to create an integrated cloud platform for AI development.",
+   "docs_url": "https://docs.voltagepark.com/",
+   "hq_country": "US",
+   "id": "5cf897be-8662-4404-9c3b-d4938fb8fa71",
+   "name": "Voltage Park",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://www.voltagepark.com/product/on-demand-hgx-h100s",
+   "slug": "voltage",
+   "tagline": "Accessible and affordable cloud AI infrastructure",
+   "tags": [
+    "enterprise"
+   ],
+   "website": "https://www.voltagepark.com/"
+  },
+  {
+   "category": "Classical hyperscaler",
+   "description": "Vultr offers global access to the latest AMD and NVIDIA GPUs for AI/ML, AR/VR, high-performance computing, VDI/CAD, and more, available on demand either as virtual machines or bare metal across 32 worldwide data center regions.",
+   "docs_url": "https://www.vultr.com/docs/",
+   "hq_country": "US",
+   "id": "b046d087-96e5-4bd0-9c96-060164cf9a04",
+   "name": "Vultr",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://www.vultr.com/pricing/",
+   "slug": "vultr",
+   "tagline": "Simple cloud infrastructure worldwide",
+   "tags": [
+    "budget"
+   ],
+   "website": "https://www.vultr.com/products/cloud-gpu/"
+  },
+  {
+   "category": "GPU-focused",
+   "description": "White Fiber is a Nasdaq-listed enterprise GPU cloud and HPC colocation provider offering bare-metal H100, H200, and GB200 clusters with managed private and hybrid cloud options.",
+   "docs_url": "https://www.whitefiber.com/about-us",
+   "hq_country": "US",
+   "id": "89652cce-71dc-44d0-af20-ab44485e84ba",
+   "name": "White Fiber",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://www.whitefiber.com/gpu-pricing",
+   "slug": "white-fiber",
+   "tagline": "Enterprise GPU cloud and HPC colocation",
+   "tags": [
+    "enterprise",
+    "bare-metal"
+   ],
+   "website": "https://www.whitefiber.com/"
+  },
+  {
+   "category": "GPU-focused",
+   "description": "Zettabyte provides a cloud computing platform with services including on-demand GPU allocation, reserved clusters, and private cloud solutions. Their infrastructure is built on a network of over 40 hardware providers.",
+   "docs_url": null,
+   "hq_country": null,
+   "id": "94be02e8-da12-4412-9967-2ff492f49088",
+   "name": "Zettabyte",
+   "offerings": {
+    "gpu": true,
+    "llm": false
+   },
+   "pricing_url": "https://zettabytecloud.com/pricing",
+   "slug": "zettabytecloud-com",
+   "tagline": "Cost-efficient GPU cloud services",
+   "tags": [
+    "gpu",
+    "cloud",
+    "compute"
+   ],
+   "website": "https://zettabytecloud.com"
+  }
+ ]
+}
