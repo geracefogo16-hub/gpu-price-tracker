@@ -15,8 +15,8 @@
  },
  "new_providers": [],
  "new_rows": {
-  "gpu": 284,
-  "llm": 15
+  "gpu": 0,
+  "llm": 0
  },
  "pricing_type_combos": {
   "on_demand|None": 253,
@@ -36,7 +36,7 @@
   "gpu": 359,
   "llm": 15
  },
- "ts": "2026-07-04T07:16:48.475796+00:00",
+ "ts": "2026-07-04T11:00:33.849998+00:00",
  "updated_rows": {
   "gpu": 0,
   "llm": 0
