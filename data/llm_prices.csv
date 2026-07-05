@@ -146,6 +146,7 @@ effective_date,provider_slug,model_slug,pricing_type,price_per_1m_input_usd,pric
 2026-07-05,deep-infra,gpt-oss-120b,standard,0.039,0.17,,128000,OpenAI,Deep Infra,GPT-OSS-120B,https://deepinfra.com/pricing,2026-07-05T05:00:51.516329+00:00,
 2026-07-05,fireworks-ai,gpt-oss-120b,standard,0.15,0.6,0.15,128000,OpenAI,Fireworks AI,GPT-OSS-120B,https://fireworks.ai/models?modelTypes=Serverless,2026-07-05T03:01:23.952601+00:00,
 2026-07-05,groq,gpt-oss-120b,standard,0.15,0.6,,128000,OpenAI,Groq,GPT-OSS-120B,https://groq.com/pricing,2026-07-05T07:01:04.802811+00:00,
+2026-07-05,hyperstack,gpt-oss-120b,standard,0.1,0.4,,128000,OpenAI,Hyperstack,GPT-OSS-120B,https://www.hyperstack.cloud/ai-studio,2026-07-05T09:01:58.985673+00:00,
 2026-07-05,ionet,gpt-oss-120b,standard,0.17,0.64,0.085,128000,OpenAI,IO.NET,GPT-OSS-120B,https://io.net/intelligence,2026-07-05T05:00:19.001192+00:00,
 2026-07-05,openrouter,claude-opus-4-5,standard,5,25,0.5,200000,Anthropic,OpenRouter,Claude Opus 4.5,https://openrouter.ai/pricing,2026-07-05T05:00:04.104645+00:00,
 2026-07-05,openrouter,gpt-oss-120b,standard,0.03,0.15,,128000,OpenAI,OpenRouter,GPT-OSS-120B,https://openrouter.ai/pricing,2026-07-05T05:00:05.448692+00:00,

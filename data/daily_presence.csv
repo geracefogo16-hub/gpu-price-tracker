@@ -3994,11 +3994,11 @@ pull_date,kind,provider_slug,item_slug,gpu_count,pricing_type,commitment_months,
 2026-07-05,gpu,digitalocean,h200,8,on_demand,,2026-07-05T00:00:02.879170+00:00
 2026-07-05,gpu,digitalocean,mi300x,1,on_demand,,2026-07-05T00:00:02.731567+00:00
 2026-07-05,gpu,digitalocean,mi300x,8,on_demand,,2026-07-05T00:00:02.812593+00:00
-2026-07-05,gpu,fal-ai,b200,1,on_demand,,2026-07-02T07:00:50.209381+00:00
+2026-07-05,gpu,fal-ai,b200,1,on_demand,,2026-07-05T03:00:58.769054+00:00
 2026-07-05,gpu,fal-ai,b200,1,spot,,2026-06-26T13:01:00.982566+00:00
-2026-07-05,gpu,fal-ai,h100,1,on_demand,,2026-06-29T23:00:30.363127+00:00
+2026-07-05,gpu,fal-ai,h100,1,on_demand,,2026-07-05T03:00:58.866736+00:00
 2026-07-05,gpu,fal-ai,h100,1,spot,,2026-06-26T13:01:01.130728+00:00
-2026-07-05,gpu,fal-ai,h200,1,on_demand,,2026-06-29T23:00:30.341205+00:00
+2026-07-05,gpu,fal-ai,h200,1,on_demand,,2026-07-05T03:00:58.819719+00:00
 2026-07-05,gpu,fal-ai,h200,1,spot,,2026-06-26T13:01:01.072565+00:00
 2026-07-05,gpu,gcore,a100sxm,1,on_demand,,2026-06-05T15:01:15.949624+00:00
 2026-07-05,gpu,gcore,a100sxm,8,on_demand,,2026-06-05T15:01:15.749316+00:00
@@ -4233,7 +4233,7 @@ pull_date,kind,provider_slug,item_slug,gpu_count,pricing_type,commitment_months,
 2026-07-05,llm,deep-infra,gpt-oss-120b,,standard,,2026-07-05T05:00:51.516329+00:00
 2026-07-05,llm,fireworks-ai,gpt-oss-120b,,standard,,2026-07-05T03:01:23.952601+00:00
 2026-07-05,llm,groq,gpt-oss-120b,,standard,,2026-07-05T07:01:04.802811+00:00
-2026-07-05,llm,hyperstack,gpt-oss-120b,,standard,,2026-07-04T07:01:09.350449+00:00
+2026-07-05,llm,hyperstack,gpt-oss-120b,,standard,,2026-07-05T09:01:58.985673+00:00
 2026-07-05,llm,ionet,gpt-oss-120b,,standard,,2026-07-05T05:00:19.001192+00:00
 2026-07-05,llm,openrouter,claude-opus-4-5,,standard,,2026-07-05T05:00:04.104645+00:00
 2026-07-05,llm,openrouter,gpt-oss-120b,,standard,,2026-07-05T05:00:05.448692+00:00
