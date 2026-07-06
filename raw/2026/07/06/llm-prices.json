@@ -1,12 +1,12 @@
 {
  "fetched_at_date": "2026-07-06",
  "meta": {
-  "count": 511,
-  "generated_at": "2026-07-06T08:12:42.167Z",
+  "count": 508,
+  "generated_at": "2026-07-06T12:58:18.444Z",
   "rate_limit": {
    "limit": 10,
-   "remaining": 9,
-   "reset": 1783328400000,
+   "remaining": 5,
+   "reset": 1783342800000,
    "window_seconds": 3600
   },
   "tier": "public",
@@ -155,13 +155,13 @@
    "context_window": 128000,
    "creator": "OpenAI",
    "knowledge_cutoff": "2025-01-01",
-   "last_updated": "2026-07-05T03:01:23.952601+00:00",
+   "last_updated": "2026-07-06T11:01:11.361405+00:00",
    "modalities": [
     "text"
    ],
    "model": "GPT-OSS-120B",
    "model_slug": "gpt-oss-120b",
-   "price_per_1m_cached_input_usd": 0.15,
+   "price_per_1m_cached_input_usd": null,
    "price_per_1m_input_usd": 0.15,
    "price_per_1m_output_usd": 0.6,
    "pricing_type": "standard",
@@ -305,5 +305,5 @@
    "source_url": "https://www.together.ai/pricing"
   }
  ],
- "total_rows_returned": 511
+ "total_rows_returned": 508
 }
