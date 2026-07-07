@@ -1,0 +1,309 @@
+{
+ "fetched_at_date": "2026-07-07",
+ "meta": {
+  "count": 513,
+  "generated_at": "2026-07-07T07:53:53.190Z",
+  "rate_limit": {
+   "limit": 10,
+   "remaining": 5,
+   "reset": 1783411200000,
+   "window_seconds": 3600
+  },
+  "tier": "public",
+  "upgrade_hint": "A free API key lifts your limit from 10/hr per IP to 500/hr per key and extends trend windows to 30 days. Get one at https://computeprices.com/account/api-keys",
+  "version": "v1"
+ },
+ "rows": [
+  {
+   "context_window": 200000,
+   "creator": "Anthropic",
+   "knowledge_cutoff": "2025-05-20",
+   "last_updated": "2026-07-06T01:02:37.401455+00:00",
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "model": "Claude Opus 4.5",
+   "model_slug": "claude-opus-4-5",
+   "price_per_1m_cached_input_usd": null,
+   "price_per_1m_input_usd": 2.5,
+   "price_per_1m_output_usd": 12.5,
+   "pricing_type": "batch",
+   "provider": "Anthropic",
+   "provider_slug": "anthropic",
+   "provider_url": "https://www.anthropic.com",
+   "source_url": "https://www.anthropic.com/pricing"
+  },
+  {
+   "context_window": 200000,
+   "creator": "Anthropic",
+   "knowledge_cutoff": "2025-05-20",
+   "last_updated": "2026-07-06T01:02:37.374555+00:00",
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "model": "Claude Opus 4.5",
+   "model_slug": "claude-opus-4-5",
+   "price_per_1m_cached_input_usd": null,
+   "price_per_1m_input_usd": 5,
+   "price_per_1m_output_usd": 25,
+   "pricing_type": "standard",
+   "provider": "Anthropic",
+   "provider_slug": "anthropic",
+   "provider_url": "https://www.anthropic.com",
+   "source_url": "https://www.anthropic.com/pricing"
+  },
+  {
+   "context_window": 200000,
+   "creator": "Anthropic",
+   "knowledge_cutoff": "2025-05-20",
+   "last_updated": "2026-07-07T05:00:16.397165+00:00",
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "model": "Claude Opus 4.5",
+   "model_slug": "claude-opus-4-5",
+   "price_per_1m_cached_input_usd": null,
+   "price_per_1m_input_usd": 2.75,
+   "price_per_1m_output_usd": 13.75,
+   "pricing_type": "batch",
+   "provider": "Amazon AWS",
+   "provider_slug": "aws",
+   "provider_url": "https://aws.amazon.com",
+   "source_url": "https://aws.amazon.com/bedrock/pricing/"
+  },
+  {
+   "context_window": 200000,
+   "creator": "Anthropic",
+   "knowledge_cutoff": "2025-05-20",
+   "last_updated": "2026-07-07T05:00:16.369255+00:00",
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "model": "Claude Opus 4.5",
+   "model_slug": "claude-opus-4-5",
+   "price_per_1m_cached_input_usd": null,
+   "price_per_1m_input_usd": 5.5,
+   "price_per_1m_output_usd": 27.5,
+   "pricing_type": "standard",
+   "provider": "Amazon AWS",
+   "provider_slug": "aws",
+   "provider_url": "https://aws.amazon.com",
+   "source_url": "https://aws.amazon.com/bedrock/pricing/"
+  },
+  {
+   "context_window": 128000,
+   "creator": "OpenAI",
+   "knowledge_cutoff": "2025-01-01",
+   "last_updated": "2026-07-07T05:00:15.185276+00:00",
+   "modalities": [
+    "text"
+   ],
+   "model": "GPT-OSS-120B",
+   "model_slug": "gpt-oss-120b",
+   "price_per_1m_cached_input_usd": null,
+   "price_per_1m_input_usd": 0.07,
+   "price_per_1m_output_usd": 0.3,
+   "pricing_type": "batch",
+   "provider": "Amazon AWS",
+   "provider_slug": "aws",
+   "provider_url": "https://aws.amazon.com",
+   "source_url": "https://aws.amazon.com/bedrock/pricing/"
+  },
+  {
+   "context_window": 128000,
+   "creator": "OpenAI",
+   "knowledge_cutoff": "2025-01-01",
+   "last_updated": "2026-07-07T05:00:13.92825+00:00",
+   "modalities": [
+    "text"
+   ],
+   "model": "GPT-OSS-120B",
+   "model_slug": "gpt-oss-120b",
+   "price_per_1m_cached_input_usd": null,
+   "price_per_1m_input_usd": 0.15,
+   "price_per_1m_output_usd": 0.6,
+   "pricing_type": "standard",
+   "provider": "Amazon AWS",
+   "provider_slug": "aws",
+   "provider_url": "https://aws.amazon.com",
+   "source_url": "https://aws.amazon.com/bedrock/pricing/"
+  },
+  {
+   "context_window": 128000,
+   "creator": "OpenAI",
+   "knowledge_cutoff": "2025-01-01",
+   "last_updated": "2026-07-07T05:00:40.436216+00:00",
+   "modalities": [
+    "text"
+   ],
+   "model": "GPT-OSS-120B",
+   "model_slug": "gpt-oss-120b",
+   "price_per_1m_cached_input_usd": null,
+   "price_per_1m_input_usd": 0.039,
+   "price_per_1m_output_usd": 0.17,
+   "pricing_type": "standard",
+   "provider": "Deep Infra",
+   "provider_slug": "deep-infra",
+   "provider_url": "https://deepinfra.com",
+   "source_url": "https://deepinfra.com/pricing"
+  },
+  {
+   "context_window": 128000,
+   "creator": "OpenAI",
+   "knowledge_cutoff": "2025-01-01",
+   "last_updated": "2026-07-06T11:01:11.361405+00:00",
+   "modalities": [
+    "text"
+   ],
+   "model": "GPT-OSS-120B",
+   "model_slug": "gpt-oss-120b",
+   "price_per_1m_cached_input_usd": null,
+   "price_per_1m_input_usd": 0.15,
+   "price_per_1m_output_usd": 0.6,
+   "pricing_type": "standard",
+   "provider": "Fireworks AI",
+   "provider_slug": "fireworks-ai",
+   "provider_url": "https://fireworks.ai",
+   "source_url": "https://fireworks.ai/models?modelTypes=Serverless"
+  },
+  {
+   "context_window": 128000,
+   "creator": "OpenAI",
+   "knowledge_cutoff": "2025-01-01",
+   "last_updated": "2026-07-06T15:00:52.027815+00:00",
+   "modalities": [
+    "text"
+   ],
+   "model": "GPT-OSS-120B",
+   "model_slug": "gpt-oss-120b",
+   "price_per_1m_cached_input_usd": null,
+   "price_per_1m_input_usd": 0.15,
+   "price_per_1m_output_usd": 0.6,
+   "pricing_type": "standard",
+   "provider": "Groq",
+   "provider_slug": "groq",
+   "provider_url": "https://groq.com",
+   "source_url": "https://groq.com/pricing"
+  },
+  {
+   "context_window": 128000,
+   "creator": "OpenAI",
+   "knowledge_cutoff": "2025-01-01",
+   "last_updated": "2026-07-06T17:00:35.654924+00:00",
+   "modalities": [
+    "text"
+   ],
+   "model": "GPT-OSS-120B",
+   "model_slug": "gpt-oss-120b",
+   "price_per_1m_cached_input_usd": null,
+   "price_per_1m_input_usd": 0.1,
+   "price_per_1m_output_usd": 0.4,
+   "pricing_type": "standard",
+   "provider": "Hyperstack",
+   "provider_slug": "hyperstack",
+   "provider_url": "https://www.hyperstack.cloud/",
+   "source_url": "https://www.hyperstack.cloud/ai-studio"
+  },
+  {
+   "context_window": 128000,
+   "creator": "OpenAI",
+   "knowledge_cutoff": "2025-01-01",
+   "last_updated": "2026-07-07T05:00:14.987982+00:00",
+   "modalities": [
+    "text"
+   ],
+   "model": "GPT-OSS-120B",
+   "model_slug": "gpt-oss-120b",
+   "price_per_1m_cached_input_usd": 0.089,
+   "price_per_1m_input_usd": 0.178,
+   "price_per_1m_output_usd": 0.68,
+   "pricing_type": "standard",
+   "provider": "IO.NET",
+   "provider_slug": "ionet",
+   "provider_url": "https://io.net/",
+   "source_url": "https://io.net/intelligence"
+  },
+  {
+   "context_window": 200000,
+   "creator": "Anthropic",
+   "knowledge_cutoff": "2025-05-20",
+   "last_updated": "2026-07-07T05:00:14.884544+00:00",
+   "modalities": [
+    "text",
+    "image"
+   ],
+   "model": "Claude Opus 4.5",
+   "model_slug": "claude-opus-4-5",
+   "price_per_1m_cached_input_usd": 0.5,
+   "price_per_1m_input_usd": 5,
+   "price_per_1m_output_usd": 25,
+   "pricing_type": "standard",
+   "provider": "OpenRouter",
+   "provider_slug": "openrouter",
+   "provider_url": "https://openrouter.ai",
+   "source_url": "https://openrouter.ai/pricing"
+  },
+  {
+   "context_window": 128000,
+   "creator": "OpenAI",
+   "knowledge_cutoff": "2025-01-01",
+   "last_updated": "2026-07-07T05:00:15.999082+00:00",
+   "modalities": [
+    "text"
+   ],
+   "model": "GPT-OSS-120B",
+   "model_slug": "gpt-oss-120b",
+   "price_per_1m_cached_input_usd": null,
+   "price_per_1m_input_usd": 0.03,
+   "price_per_1m_output_usd": 0.15,
+   "pricing_type": "standard",
+   "provider": "OpenRouter",
+   "provider_slug": "openrouter",
+   "provider_url": "https://openrouter.ai",
+   "source_url": "https://openrouter.ai/pricing"
+  },
+  {
+   "context_window": 128000,
+   "creator": "OpenAI",
+   "knowledge_cutoff": "2025-01-01",
+   "last_updated": "2026-07-07T03:00:57.45574+00:00",
+   "modalities": [
+    "text"
+   ],
+   "model": "GPT-OSS-120B",
+   "model_slug": "gpt-oss-120b",
+   "price_per_1m_cached_input_usd": null,
+   "price_per_1m_input_usd": 0.1712,
+   "price_per_1m_output_usd": 0.6849,
+   "pricing_type": "standard",
+   "provider": "Scaleway",
+   "provider_slug": "scaleway",
+   "provider_url": "https://www.scaleway.com/",
+   "source_url": "https://www.scaleway.com/en/pricing/model-as-a-service/"
+  },
+  {
+   "context_window": 128000,
+   "creator": "OpenAI",
+   "knowledge_cutoff": "2025-01-01",
+   "last_updated": "2026-07-07T05:01:09.176317+00:00",
+   "modalities": [
+    "text"
+   ],
+   "model": "GPT-OSS-120B",
+   "model_slug": "gpt-oss-120b",
+   "price_per_1m_cached_input_usd": null,
+   "price_per_1m_input_usd": 0.15,
+   "price_per_1m_output_usd": 0.6,
+   "pricing_type": "standard",
+   "provider": "Together AI",
+   "provider_slug": "together-ai",
+   "provider_url": "https://www.together.ai",
+   "source_url": "https://www.together.ai/pricing"
+  }
+ ],
+ "total_rows_returned": 513
+}
