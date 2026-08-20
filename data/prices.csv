@@ -4667,3 +4667,92 @@ scrape_date,gpu_model,category,price,currency,unit,provider,rental_type,gpu_coun
 2026-08-18,H200,Theta EdgeCloud · On-demand,3.69,USD,per GPU per hour,Theta EdgeCloud,on_demand,1,141,
 2026-08-18,H200,Vast.ai · Spot,0.92,USD,per GPU per hour,Vast.ai,spot,1,141,us
 2026-08-18,H200,Verda · Spot,2.0,USD,per GPU per hour,Verda,spot,1,141,
+2026-08-19,A100,AceCloud · Spot,0.4827,USD,per GPU per hour,AceCloud,spot,1,80,us
+2026-08-19,A100,Cheapest,0.13,USD,per GPU per hour,Vast.ai,spot,1,80,gb
+2026-08-19,A100,Cyfuture AI · Reserved,1.8348,USD,per GPU per hour,Cyfuture AI,reserved,8,80,in
+2026-08-19,A100,Geodd · On-demand,1.49,USD,per GPU per hour,Geodd,on_demand,1,80,us
+2026-08-19,A100,Hyperstack · Spot,1.08,USD,per GPU per hour,Hyperstack,spot,1,80,ca
+2026-08-19,A100,Lambda · On-demand,1.99,USD,per GPU per hour,Lambda,on_demand,1,80,"us,in"
+2026-08-19,A100,Oblivus · On-demand,1.47,USD,per GPU per hour,Oblivus,on_demand,1,80,us
+2026-08-19,A100,Omega Gradient · On-demand,1.42,USD,per GPU per hour,Omega Gradient,on_demand,1,80,ca
+2026-08-19,A100,On-demand (median),1.49,USD,per GPU per hour,,on_demand,,,
+2026-08-19,A100,On-demand (min),1.09,USD,per GPU per hour,Thunder Compute,on_demand,1,80,
+2026-08-19,A100,Reserved (median),1.8348,USD,per GPU per hour,,reserved,,,
+2026-08-19,A100,Reserved (min),1.8348,USD,per GPU per hour,Cyfuture AI,reserved,8,80,in
+2026-08-19,A100,Runcrate · On-demand,1.49,USD,per GPU per hour,Runcrate,on_demand,1,80,"fi,us,ca"
+2026-08-19,A100,Runpod · On-demand,1.39,USD,per GPU per hour,Runpod,on_demand,1,80,"us,ca"
+2026-08-19,A100,Sesterce Cloud · On-demand,1.54,USD,per GPU per hour,Sesterce Cloud,on_demand,8,80,ca
+2026-08-19,A100,Spot (median),0.6888,USD,per GPU per hour,,spot,,,
+2026-08-19,A100,Spot (min),0.13,USD,per GPU per hour,Vast.ai,spot,1,80,gb
+2026-08-19,A100,Theta EdgeCloud · On-demand,1.99,USD,per GPU per hour,Theta EdgeCloud,on_demand,1,80,
+2026-08-19,A100,Thunder Compute · On-demand,1.09,USD,per GPU per hour,Thunder Compute,on_demand,1,80,
+2026-08-19,A100,Vast.ai · Spot,0.13,USD,per GPU per hour,Vast.ai,spot,1,80,gb
+2026-08-19,A100,Verda · Spot,0.895,USD,per GPU per hour,Verda,spot,1,80,
+2026-08-19,B200,Beyond.pl · On-demand,5.1,USD,per GPU per hour,Beyond.pl,on_demand,1,180,pl
+2026-08-19,B200,Cheapest,3.055,USD,per GPU per hour,Verda,spot,1,180,
+2026-08-19,B200,Hyperstack · On-demand,6.0,USD,per GPU per hour,Hyperstack,on_demand,8,180,ca
+2026-08-19,B200,Lambda · On-demand,6.69,USD,per GPU per hour,Lambda,on_demand,8,180,
+2026-08-19,B200,On-demand (median),6.0,USD,per GPU per hour,,on_demand,,,
+2026-08-19,B200,On-demand (min),4.114,USD,per GPU per hour,Sesterce Cloud,on_demand,8,180,
+2026-08-19,B200,Runpod · On-demand,6.79,USD,per GPU per hour,Runpod,on_demand,1,180,us
+2026-08-19,B200,Sesterce Cloud · On-demand,4.114,USD,per GPU per hour,Sesterce Cloud,on_demand,8,180,
+2026-08-19,B200,Spot (median),4.0275,USD,per GPU per hour,,spot,,,
+2026-08-19,B200,Spot (min),3.055,USD,per GPU per hour,Verda,spot,1,180,
+2026-08-19,B200,Vast.ai · Spot,5.0,USD,per GPU per hour,Vast.ai,spot,1,180,us
+2026-08-19,B200,Verda · Spot,3.055,USD,per GPU per hour,Verda,spot,1,180,
+2026-08-19,B300,Cheapest,3.75,USD,per GPU per hour,Verda,spot,1,288,
+2026-08-19,B300,DigitalOcean · On-demand,11.19,USD,per GPU per hour,DigitalOcean,on_demand,1,288,
+2026-08-19,B300,On-demand (median),8.646,USD,per GPU per hour,,on_demand,,,
+2026-08-19,B300,On-demand (min),7.89,USD,per GPU per hour,Runpod,on_demand,1,288,nl
+2026-08-19,B300,Reserved (median),5.3,USD,per GPU per hour,,reserved,,,
+2026-08-19,B300,Reserved (min),5.3,USD,per GPU per hour,TheAI Cloud,reserved,8,288,us
+2026-08-19,B300,Runpod · On-demand,7.89,USD,per GPU per hour,Runpod,on_demand,1,288,nl
+2026-08-19,B300,Scaleway · On-demand,8.7037,USD,per GPU per hour,Scaleway,on_demand,8,288,fr
+2026-08-19,B300,Sesterce Cloud · On-demand,8.5883,USD,per GPU per hour,Sesterce Cloud,on_demand,4,288,
+2026-08-19,B300,Spot (median),3.75,USD,per GPU per hour,,spot,,,
+2026-08-19,B300,Spot (min),3.75,USD,per GPU per hour,Verda,spot,1,288,
+2026-08-19,B300,TheAI Cloud · Reserved,5.3,USD,per GPU per hour,TheAI Cloud,reserved,8,288,us
+2026-08-19,B300,Verda · Spot,3.75,USD,per GPU per hour,Verda,spot,1,288,
+2026-08-19,H100,AceCloud · Reserved,2.3168,USD,per GPU per hour,AceCloud,reserved,1,80,in
+2026-08-19,H100,Cheapest,0.33,USD,per GPU per hour,Vast.ai,spot,2,80,us
+2026-08-19,H100,Cyfuture AI · Reserved,2.148,USD,per GPU per hour,Cyfuture AI,reserved,8,80,in
+2026-08-19,H100,DigitalOcean · On-demand,4.41,USD,per GPU per hour,DigitalOcean,on_demand,1,80,"us,ca"
+2026-08-19,H100,Geodd · On-demand,3.0,USD,per GPU per hour,Geodd,on_demand,1,80,
+2026-08-19,H100,Hyperstack · Spot,2.0,USD,per GPU per hour,Hyperstack,spot,1,80,ca
+2026-08-19,H100,Lambda · On-demand,3.29,USD,per GPU per hour,Lambda,on_demand,1,80,us
+2026-08-19,H100,Novita AI · Spot,1.7,USD,per GPU per hour,Novita AI,spot,1,80,"is,us"
+2026-08-19,H100,Oblivus · On-demand,4.312,USD,per GPU per hour,Oblivus,on_demand,8,80,us
+2026-08-19,H100,Omega Gradient · On-demand,2.87,USD,per GPU per hour,Omega Gradient,on_demand,1,80,us
+2026-08-19,H100,On-demand (median),3.29,USD,per GPU per hour,,on_demand,,,
+2026-08-19,H100,On-demand (min),2.19,USD,per GPU per hour,Thunder Compute,on_demand,1,80,
+2026-08-19,H100,Reserved (median),2.2324,USD,per GPU per hour,,reserved,,,
+2026-08-19,H100,Reserved (min),2.148,USD,per GPU per hour,Cyfuture AI,reserved,8,80,in
+2026-08-19,H100,Runcrate · On-demand,2.75,USD,per GPU per hour,Runcrate,on_demand,1,80,"pl,us,ca,fr"
+2026-08-19,H100,Runpod · On-demand,3.29,USD,per GPU per hour,Runpod,on_demand,1,80,"is,ca,us,nl,jp,no,in,fr"
+2026-08-19,H100,Scaleway · On-demand,3.3266,USD,per GPU per hour,Scaleway,on_demand,1,80,"fr,pl"
+2026-08-19,H100,Sesterce Cloud · On-demand,3.63,USD,per GPU per hour,Sesterce Cloud,on_demand,2,80,"fr,pl"
+2026-08-19,H100,Spot (median),1.6625,USD,per GPU per hour,,spot,,,
+2026-08-19,H100,Spot (min),0.33,USD,per GPU per hour,Vast.ai,spot,2,80,us
+2026-08-19,H100,Theta EdgeCloud · On-demand,2.29,USD,per GPU per hour,Theta EdgeCloud,on_demand,1,80,
+2026-08-19,H100,Thunder Compute · On-demand,2.19,USD,per GPU per hour,Thunder Compute,on_demand,1,80,
+2026-08-19,H100,Vast.ai · Spot,0.33,USD,per GPU per hour,Vast.ai,spot,2,80,us
+2026-08-19,H100,Verda · Spot,1.625,USD,per GPU per hour,Verda,spot,1,80,
+2026-08-19,H200,AceCloud · Reserved,2.8674,USD,per GPU per hour,AceCloud,reserved,1,141,in
+2026-08-19,H200,Cheapest,0.92,USD,per GPU per hour,Vast.ai,spot,1,141,us
+2026-08-19,H200,DigitalOcean · On-demand,4.47,USD,per GPU per hour,DigitalOcean,on_demand,1,141,us
+2026-08-19,H200,Geodd · On-demand,2.72,USD,per GPU per hour,Geodd,on_demand,8,141,
+2026-08-19,H200,Hyperstack · On-demand,3.99,USD,per GPU per hour,Hyperstack,on_demand,8,141,ca
+2026-08-19,H200,Oblivus · On-demand,3.99,USD,per GPU per hour,Oblivus,on_demand,1,141,us
+2026-08-19,H200,Omega Gradient · On-demand,3.36,USD,per GPU per hour,Omega Gradient,on_demand,8,141,
+2026-08-19,H200,On-demand (median),3.99,USD,per GPU per hour,,on_demand,,,
+2026-08-19,H200,On-demand (min),2.72,USD,per GPU per hour,Geodd,on_demand,8,141,
+2026-08-19,H200,Reserved (median),2.8674,USD,per GPU per hour,,reserved,,,
+2026-08-19,H200,Reserved (min),2.8674,USD,per GPU per hour,AceCloud,reserved,1,141,in
+2026-08-19,H200,Runcrate · On-demand,3.52,USD,per GPU per hour,Runcrate,on_demand,1,141,"fi,jp,us"
+2026-08-19,H200,Runpod · On-demand,4.59,USD,per GPU per hour,Runpod,on_demand,1,141,"jp,ca,us,is,fr"
+2026-08-19,H200,Sesterce Cloud · On-demand,4.6255,USD,per GPU per hour,Sesterce Cloud,on_demand,4,141,fi
+2026-08-19,H200,Spot (median),1.46,USD,per GPU per hour,,spot,,,
+2026-08-19,H200,Spot (min),0.92,USD,per GPU per hour,Vast.ai,spot,1,141,us
+2026-08-19,H200,Theta EdgeCloud · On-demand,3.69,USD,per GPU per hour,Theta EdgeCloud,on_demand,1,141,
+2026-08-19,H200,Vast.ai · Spot,0.92,USD,per GPU per hour,Vast.ai,spot,1,141,us
+2026-08-19,H200,Verda · Spot,2.0,USD,per GPU per hour,Verda,spot,1,141,
